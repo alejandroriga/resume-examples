@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA Dashboard — Toptal Resume Templates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #00CC83; --green-dark: #059669;
+      --blue: #204ECF; --blue-light: #EDF1FD;
+      --navy: #0F256E; --navy-dark: #030A42;
+      --charcoal: #262D3D; --near-black: #191E28;
+      --body-text: #455065; --muted: #84888E;
+      --surface: #F5F5F7; --border: #E5E7EA; --white: #FFFFFF;
+      --radius: 4px; --radius-lg: 8px; --radius-xl: 12px; --radius-2xl: 16px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+      --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+      --red: #EF4444; --amber: #D97706; --amber-light: #FFFBF0;
+      --purple: #7C3AED; --cyan: #06B6D4; --pink: #EC4899;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--surface); color: var(--charcoal);
+      line-height: 1.5; -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── HEADER ─── */
+    .header {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+      padding: 0 32px; height: 60px; display: flex; align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: sticky; top: 0; z-index: 50;
+    }
+    .header-brand { font-size: 16px; font-weight: 700; color: var(--white); display: flex; align-items: center; gap: 8px; }
+    .header-brand .dot { color: var(--green); }
+    .header-brand span { font-weight: 400; font-size: 13px; color: rgba(255,255,255,0.5); margin-left: 4px; }
+    .header-nav { margin-left: auto; display: flex; gap: 6px; }
+    .header-nav a {
+      font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7);
+      text-decoration: none; padding: 6px 14px; border-radius: var(--radius);
+      transition: all 0.2s;
+    }
+    .header-nav a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+    .header-nav a.active { color: var(--white); background: rgba(255,255,255,0.15); }
+
+    /* ─── PAGE ─── */
+    .page { max-width: 1320px; margin: 0 auto; padding: 28px 32px 60px; }
+
+    /* ─── PAGE SELECTOR BAR ─── */
+    .controls-bar {
+      display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;
+    }
+    .controls-bar h1 { font-size: 22px; font-weight: 800; color: var(--near-black); margin-right: auto; }
+    .select-wrap select {
+      font-family: inherit; font-size: 13px; font-weight: 600;
+      padding: 9px 32px 9px 12px; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); background: var(--white); color: var(--charcoal);
+      cursor: pointer; outline: none; appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2384888E' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 10px center;
+    }
+    .btn-refresh {
+      font-family: inherit; font-size: 12px; font-weight: 600;
+      padding: 9px 16px; border-radius: var(--radius-lg); cursor: pointer;
+      border: 1px solid var(--border); background: var(--white); color: var(--charcoal);
+      transition: all 0.2s;
+    }
+    .btn-refresh:hover { background: var(--surface); }
+    .last-checked { font-size: 11px; color: var(--muted); }
+
+    /* ─── KPI CARDS ─── */
+    .kpi-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 24px; }
+    .kpi-card {
+      background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-xl);
+      padding: 20px; box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
+    }
+    .kpi-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    }
+    .kpi-card.green::before { background: var(--green); }
+    .kpi-card.blue::before { background: var(--blue); }
+    .kpi-card.amber::before { background: var(--amber); }
+    .kpi-card.red::before { background: var(--red); }
+    .kpi-card.purple::before { background: var(--purple); }
+    .kpi-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .kpi-value { font-size: 32px; font-weight: 800; color: var(--near-black); line-height: 1; }
+    .kpi-sub { font-size: 12px; color: var(--muted); margin-top: 6px; display: flex; align-items: center; gap: 4px; }
+    .kpi-sub .up { color: var(--green-dark); font-weight: 600; }
+    .kpi-sub .down { color: var(--red); font-weight: 600; }
+
+    /* ─── GRID ─── */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+    .grid-3-1 { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-bottom: 24px; }
+
+    /* ─── PANEL ─── */
+    .panel {
+      background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm); overflow: hidden;
+    }
+    .panel-header {
+      padding: 16px 20px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .panel-title { font-size: 14px; font-weight: 700; color: var(--near-black); flex: 1; }
+    .panel-badge {
+      font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 20px;
+      text-transform: uppercase; letter-spacing: 0.3px;
+    }
+    .panel-badge.green { background: #D1FAE5; color: #065F46; }
+    .panel-badge.amber { background: #FEF3C7; color: #92400E; }
+    .panel-badge.red { background: #FEE2E2; color: #991B1B; }
+    .panel-body { padding: 20px; }
+
+    /* ─── SCORE RING (SVG) ─── */
+    .score-ring-wrap { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 6px; }
+    .score-ring { position: relative; width: 120px; height: 120px; }
+    .score-ring svg { width: 120px; height: 120px; transform: rotate(-90deg); }
+    .score-ring-value {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      font-size: 28px; font-weight: 800; color: var(--near-black);
+    }
+    .score-ring-label { font-size: 12px; font-weight: 600; color: var(--muted); text-align: center; }
+
+    /* ─── BAR CHART ─── */
+    .bar-chart { display: flex; flex-direction: column; gap: 8px; }
+    .bar-row { display: flex; align-items: center; gap: 10px; }
+    .bar-label { font-size: 12px; font-weight: 500; color: var(--body-text); width: 140px; flex-shrink: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .bar-track { flex: 1; height: 20px; background: var(--surface); border-radius: 4px; position: relative; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease; position: relative; }
+    .bar-fill-text {
+      position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+      font-size: 10px; font-weight: 700; color: var(--white);
+    }
+    .bar-value { font-size: 12px; font-weight: 700; width: 36px; text-align: right; flex-shrink: 0; }
+
+    /* ─── TABLE ─── */
+    .qa-table { width: 100%; border-collapse: collapse; }
+    .qa-table th {
+      font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase;
+      letter-spacing: 0.5px; padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border);
+      background: var(--surface); position: sticky; top: 0;
+    }
+    .qa-table td {
+      font-size: 13px; padding: 10px 12px; border-bottom: 1px solid var(--border);
+      color: var(--body-text);
+    }
+    .qa-table tr:hover td { background: #FAFBFC; }
+    .qa-table tr.selected td { background: var(--blue-light); }
+    .qa-table .clickable { cursor: pointer; }
+    .score-pill {
+      display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px;
+      border-radius: 20px; min-width: 38px; text-align: center;
+    }
+    .score-pill.high { background: #D1FAE5; color: #065F46; }
+    .score-pill.mid { background: #FEF3C7; color: #92400E; }
+    .score-pill.low { background: #FEE2E2; color: #991B1B; }
+    .ai-pill {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px;
+    }
+    .ai-pill.safe { background: #D1FAE5; color: #065F46; }
+    .ai-pill.warn { background: #FEF3C7; color: #92400E; }
+    .ai-pill.danger { background: #FEE2E2; color: #991B1B; }
+    .ai-pill .dot { width: 6px; height: 6px; border-radius: 50%; }
+    .ai-pill.safe .dot { background: #059669; }
+    .ai-pill.warn .dot { background: var(--amber); }
+    .ai-pill.danger .dot { background: var(--red); }
+
+    /* ─── COMPETITOR CHART ─── */
+    .comp-chart { display: flex; flex-direction: column; gap: 6px; }
+    .comp-row { display: flex; align-items: center; gap: 10px; }
+    .comp-rank { font-size: 10px; font-weight: 800; color: var(--muted); width: 20px; text-align: center; }
+    .comp-name { font-size: 12px; font-weight: 500; color: var(--body-text); width: 130px; flex-shrink: 0; }
+    .comp-name.ours { font-weight: 700; color: var(--blue); }
+    .comp-bar-track { flex: 1; height: 24px; background: var(--surface); border-radius: 6px; overflow: hidden; position: relative; }
+    .comp-bar-fill { height: 100%; border-radius: 6px; display: flex; align-items: center; padding-left: 8px; transition: width 0.6s ease; }
+    .comp-bar-fill span { font-size: 10px; font-weight: 700; color: var(--white); }
+    .comp-bar-fill.ours { background: linear-gradient(90deg, var(--blue) 0%, #5B7FFF 100%); }
+    .comp-bar-fill.comp1 { background: linear-gradient(90deg, #94A3B8 0%, #CBD5E1 100%); }
+    .comp-bar-fill.comp2 { background: linear-gradient(90deg, #A78BFA 0%, #C4B5FD 100%); }
+    .comp-bar-fill.comp3 { background: linear-gradient(90deg, #67E8F9 0%, #A5F3FC 100%); }
+
+    /* ─── AI DETECTION METER ─── */
+    .ai-meter { display: flex; flex-direction: column; gap: 12px; }
+    .ai-meter-row { display: flex; align-items: center; gap: 10px; }
+    .ai-meter-label { font-size: 12px; color: var(--body-text); width: 100px; flex-shrink: 0; }
+    .ai-meter-track { flex: 1; height: 10px; background: var(--surface); border-radius: 5px; overflow: hidden; position: relative; }
+    .ai-meter-fill { height: 100%; border-radius: 5px; }
+    .ai-meter-fill.human { background: linear-gradient(90deg, var(--green) 0%, #34D399 100%); }
+    .ai-meter-fill.mixed { background: linear-gradient(90deg, var(--amber) 0%, #FBBF24 100%); }
+    .ai-meter-fill.ai { background: linear-gradient(90deg, var(--red) 0%, #F87171 100%); }
+    .ai-meter-val { font-size: 11px; font-weight: 700; width: 44px; text-align: right; flex-shrink: 0; }
+
+    /* ─── FIELD DETAIL ─── */
+    .field-detail { margin-bottom: 24px; }
+    .field-detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+    .field-card {
+      border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 12px 14px;
+      background: var(--white); display: flex; flex-direction: column; gap: 6px;
+    }
+    .field-card-name { font-size: 12px; font-weight: 700; color: var(--charcoal); }
+    .field-card-meta { display: flex; gap: 6px; flex-wrap: wrap; }
+    .field-card .mini-bar { height: 4px; background: var(--surface); border-radius: 2px; overflow: hidden; }
+    .field-card .mini-bar-fill { height: 100%; border-radius: 2px; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1100px) { .kpi-row { grid-template-columns: repeat(3, 1fr); } .grid-2 { grid-template-columns: 1fr; } .grid-3-1 { grid-template-columns: 1fr; } }
+    @media (max-width: 700px) { .kpi-row { grid-template-columns: repeat(2, 1fr); } .page { padding: 16px; } }
+
+    /* ─── SCROLLABLE TABLE WRAP ─── */
+    .table-scroll { max-height: 400px; overflow-y: auto; }
+    .table-scroll::-webkit-scrollbar { width: 4px; }
+    .table-scroll::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    /* ─── LEGEND ─── */
+    .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px; }
+    .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--muted); }
+    .legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+
+    /* ─── SECTION DIVIDER ─── */
+    .section-label {
+      font-size: 11px; font-weight: 800; color: var(--muted); text-transform: uppercase;
+      letter-spacing: 1px; margin-bottom: 12px; margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-brand">Toptal<span class="dot">.</span> <span>QA Dashboard</span></div>
+    <div class="header-nav">
+      <a href="/editor" >Content Editor</a>
+      <a href="/dashboard" class="active">QA Dashboard</a>
+      <a href="/">Homepage</a>
+    </div>
+  </div>
+
+  <div class="page" id="app">
+    <!-- Controls -->
+    <div class="controls-bar">
+      <h1>Quality Assurance</h1>
+      <div class="select-wrap">
+        <select id="pageSelector" onchange="onPageSelect()">
+          <option value="all">All Pages (Aggregate)</option>
+        </select>
+      </div>
+      <button class="btn-refresh" onclick="refreshData()">Re-check All</button>
+      <span class="last-checked">Last checked: Mar 6, 2026 \u2014 14:32 UTC</span>
+    </div>
+
+    <!-- KPI ROW -->
+    <div class="kpi-row" id="kpiRow"></div>
+
+    <!-- ROW 1: Aggregate Score + AI Detection -->
+    <div class="grid-2" id="row1"></div>
+
+    <!-- ROW 2: Competitor Comparison + Page Scores Table -->
+    <div class="grid-3-1" id="row2"></div>
+
+    <!-- ROW 3: Field-Level Completion (per-page) -->
+    <div id="fieldSection"></div>
+
+    <!-- ROW 4: Full Page Scores Table -->
+    <div class="panel" id="allPagesPanel" style="margin-bottom:24px;">
+      <div class="panel-header">
+        <div class="panel-title">All Pages \u2014 Detailed Scores</div>
+      </div>
+      <div class="table-scroll">
+        <table class="qa-table" id="allPagesTable"></table>
+      </div>
+    </div>
+  </div>
+
+<script>
+// ═══════════════════════════════════════════════════
+//  FAKE DATA GENERATION
+// ═══════════════════════════════════════════════════
+
+const PAGE_SLUGS = [
+  'ats','simple','professional','one-page','with-photo','word','google-docs',
+  'creative','minimalist','two-column','modern','traditional','student',
+  'free','easy','basic','europass','overleaf','internship','experienced',
+  'two-page','pdf','functional','chronological','printable','british',
+  'canadian','american','australian'
+];
+
+const COMPETITORS = ['Zety', 'Novoresume', 'Resume.io'];
+
+const FIELD_NAMES = [
+  'title','metaDescription','h1','heroSubtitle','trustSignal',
+  'template1.name','template1.desc','template2.name','template2.desc',
+  'template3.name','template3.desc','template4.name','template4.desc',
+  'template5.name','template5.desc','template6.name','template6.desc',
+  'guide.whatIs.heading','guide.whatIs.body',
+  'guide.whenToUse.heading','guide.whenToUse.items',
+  'guide.whenNotToUse.heading','guide.whenNotToUse.items',
+  'guide.howToCustomize.heading','guide.howToCustomize.steps',
+  'guide.expertTips.heading','guide.expertTips.tips',
+  'faq1.question','faq1.answer','faq2.question','faq2.answer',
+  'faq3.question','faq3.answer','faq4.question','faq4.answer',
+  'relatedPages'
+];
+
+function seed(s) { return function() { s = (s * 16807 + 0) % 2147483647; return (s - 1) / 2147483646; }; }
+const rng = seed(42);
+function rand(min, max) { return min + rng() * (max - min); }
+function randInt(min, max) { return Math.round(rand(min, max)); }
+function pick(arr) { return arr[Math.floor(rng() * arr.length)]; }
+
+// Generate page data
+const pagesData = PAGE_SLUGS.map((slug, i) => {
+  const completed = randInt(24, 36);
+  const total = 36;
+  const pctComplete = Math.round((completed / total) * 100);
+
+  const fields = FIELD_NAMES.map(name => {
+    const filled = rng() < (pctComplete / 100 + 0.1);
+    const instructionScore = filled ? randInt(55, 100) : 0;
+    const aiProbability = filled ? Math.round(rand(2, 65)) : 0;
+    return { name, filled, instructionScore, aiProbability };
+  });
+
+  const filledFields = fields.filter(f => f.filled);
+  const avgInstructionScore = filledFields.length > 0
+    ? Math.round(filledFields.reduce((s, f) => s + f.instructionScore, 0) / filledFields.length)
+    : 0;
+  const avgAI = filledFields.length > 0
+    ? Math.round(filledFields.reduce((s, f) => s + f.aiProbability, 0) / filledFields.length)
+    : 0;
+
+  // Competitor scores (our page vs top 3)
+  const ourContentScore = randInt(60, 95);
+  const compScores = COMPETITORS.map(c => ({ name: c, score: randInt(55, 92) }));
+
+  return {
+    slug,
+    displayName: slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+    total,
+    completed,
+    pctComplete,
+    avgInstructionScore,
+    avgAI,
+    ourContentScore,
+    compScores,
+    fields,
+    pageScore: Math.round((pctComplete * 0.3) + (avgInstructionScore * 0.4) + ((100 - avgAI) * 0.3))
+  };
+});
+
+// Aggregates
+function getAggregates(data) {
+  const totalFields = data.reduce((s, p) => s + p.total, 0);
+  const completedFields = data.reduce((s, p) => s + p.completed, 0);
+  const pctComplete = Math.round((completedFields / totalFields) * 100);
+  const avgInstruction = Math.round(data.reduce((s, p) => s + p.avgInstructionScore, 0) / data.length);
+  const avgAI = Math.round(data.reduce((s, p) => s + p.avgAI, 0) / data.length);
+  const avgPage = Math.round(data.reduce((s, p) => s + p.pageScore, 0) / data.length);
+  const avgContent = Math.round(data.reduce((s, p) => s + p.ourContentScore, 0) / data.length);
+  const avgCompAvg = Math.round(data.reduce((s, p) => s + (p.compScores.reduce((a, c) => a + c.score, 0) / 3), 0) / data.length);
+  return { totalFields, completedFields, pctComplete, avgInstruction, avgAI, avgPage, avgContent, avgCompAvg };
+}
+
+// ═══════════════════════════════════════════════════
+//  RENDERING
+// ═══════════════════════════════════════════════════
+
+let selectedPage = 'all';
+
+function init() {
+  // Populate selector
+  const sel = document.getElementById('pageSelector');
+  pagesData.forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p.slug;
+    opt.textContent = p.displayName;
+    sel.appendChild(opt);
+  });
+  render();
+}
+
+function onPageSelect() {
+  selectedPage = document.getElementById('pageSelector').value;
+  render();
+}
+
+function refreshData() {
+  document.querySelector('.last-checked').textContent = 'Last checked: ' + new Date().toLocaleString();
+  render();
+}
+
+function render() {
+  if (selectedPage === 'all') {
+    renderAllView();
+  } else {
+    renderPageView(pagesData.find(p => p.slug === selectedPage));
+  }
+}
+
+function scoreColor(v) { return v >= 80 ? 'green' : v >= 60 ? 'amber' : 'red'; }
+function scorePill(v) { return '<span class="score-pill ' + (v >= 80 ? 'high' : v >= 60 ? 'mid' : 'low') + '">' + v + '</span>'; }
+function aiPill(v) {
+  const cls = v <= 20 ? 'safe' : v <= 45 ? 'warn' : 'danger';
+  const label = v <= 20 ? 'Human' : v <= 45 ? 'Mixed' : 'Likely AI';
+  return '<span class="ai-pill ' + cls + '"><span class="dot"></span>' + label + ' ' + v + '%</span>';
+}
+
+// ═════ ALL VIEW ═════
+
+function renderAllView() {
+  const agg = getAggregates(pagesData);
+
+  // KPIs
+  document.getElementById('kpiRow').innerHTML = `
+    <div class="kpi-card green">
+      <div class="kpi-label">Fields Completed</div>
+      <div class="kpi-value">${agg.pctComplete}%</div>
+      <div class="kpi-sub">${agg.completedFields} / ${agg.totalFields} fields</div>
+    </div>
+    <div class="kpi-card blue">
+      <div class="kpi-label">Avg Instruction Score</div>
+      <div class="kpi-value">${agg.avgInstruction}</div>
+      <div class="kpi-sub"><span class="up">\u2191 +3 vs last week</span></div>
+    </div>
+    <div class="kpi-card ${scoreColor(100 - agg.avgAI)}">
+      <div class="kpi-label">Human Originality</div>
+      <div class="kpi-value">${100 - agg.avgAI}%</div>
+      <div class="kpi-sub">avg AI probability: ${agg.avgAI}%</div>
+    </div>
+    <div class="kpi-card purple">
+      <div class="kpi-label">Competitive Position</div>
+      <div class="kpi-value">${agg.avgContent}</div>
+      <div class="kpi-sub">vs competitor avg: ${agg.avgCompAvg}</div>
+    </div>
+    <div class="kpi-card ${scoreColor(agg.avgPage)}">
+      <div class="kpi-label">Overall QA Score</div>
+      <div class="kpi-value">${agg.avgPage}</div>
+      <div class="kpi-sub">across ${pagesData.length} pages</div>
+    </div>
+  `;
+
+  // Row 1: Score ring + AI Detection
+  document.getElementById('row1').innerHTML = `
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Aggregate Quality Score</div>
+        <span class="panel-badge ${scoreColor(agg.avgPage)}">${agg.avgPage >= 80 ? 'Excellent' : agg.avgPage >= 60 ? 'Needs Work' : 'Critical'}</span>
+      </div>
+      <div class="panel-body" style="display:flex;gap:32px;align-items:center;">
+        <div class="score-ring-wrap">
+          ${renderScoreRing(agg.avgPage, 120)}
+          <div class="score-ring-label">Overall Score</div>
+        </div>
+        <div style="flex:1;">
+          <div class="bar-chart">
+            <div class="bar-row">
+              <span class="bar-label">Completion</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${agg.pctComplete}%;background:var(--green);"><span class="bar-fill-text">${agg.pctComplete}%</span></div></div>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Instruction Adherence</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${agg.avgInstruction}%;background:var(--blue);"><span class="bar-fill-text">${agg.avgInstruction}%</span></div></div>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Human Originality</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${100 - agg.avgAI}%;background:${(100 - agg.avgAI) >= 80 ? 'var(--green)' : 'var(--amber)'};"><span class="bar-fill-text">${100 - agg.avgAI}%</span></div></div>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Competitive Edge</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${agg.avgContent}%;background:var(--purple);"><span class="bar-fill-text">${agg.avgContent}</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">AI Content Detection \u2014 All Pages</div>
+        <span class="panel-badge ${agg.avgAI <= 20 ? 'green' : agg.avgAI <= 45 ? 'amber' : 'red'}">${agg.avgAI <= 20 ? 'Mostly Human' : agg.avgAI <= 45 ? 'Some Flags' : 'High AI'}</span>
+      </div>
+      <div class="panel-body">
+        <div style="display:flex;align-items:center;gap:20px;margin-bottom:16px;">
+          ${renderScoreRing(100 - agg.avgAI, 90, agg.avgAI <= 20 ? '#059669' : agg.avgAI <= 45 ? '#D97706' : '#EF4444')}
+          <div>
+            <div style="font-size:20px;font-weight:800;color:var(--near-black);">${100 - agg.avgAI}% Human</div>
+            <div style="font-size:12px;color:var(--muted);margin-top:2px;">Average across all filled fields</div>
+          </div>
+        </div>
+        <div class="section-label">Breakdown by content type</div>
+        <div class="ai-meter">
+          ${renderAIMeterRow('Metadata', randInt(8, 22))}
+          ${renderAIMeterRow('Template Cards', randInt(12, 35))}
+          ${renderAIMeterRow('Guide Articles', randInt(25, 55))}
+          ${renderAIMeterRow('FAQs', randInt(18, 48))}
+          ${renderAIMeterRow('Trust Signals', randInt(5, 18))}
+        </div>
+        <div class="legend" style="margin-top:14px;">
+          <div class="legend-item"><div class="legend-dot" style="background:var(--green);"></div> Human (\u226420%)</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--amber);"></div> Mixed (21-45%)</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--red);"></div> Likely AI (>45%)</div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Row 2: Competitor chart + top/bottom pages
+  const sorted = [...pagesData].sort((a, b) => b.pageScore - a.pageScore);
+  const top5 = sorted.slice(0, 5);
+  const bottom5 = sorted.slice(-5).reverse();
+
+  document.getElementById('row2').innerHTML = `
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Competitive Position \u2014 Content Score vs Top 3</div>
+      </div>
+      <div class="panel-body">
+        <div class="section-label">Average across all pages</div>
+        <div class="comp-chart" style="margin-bottom:20px;">
+          ${renderCompRow('Toptal (ours)', agg.avgContent, 'ours', 1)}
+          ${COMPETITORS.map((c, ci) => {
+            const avg = Math.round(pagesData.reduce((s, p) => s + p.compScores[ci].score, 0) / pagesData.length);
+            return renderCompRow(c, avg, 'comp' + (ci + 1), ci + 2);
+          }).join('')}
+        </div>
+        <div class="section-label">Per-page comparison (top 8)</div>
+        <div class="comp-chart">
+          ${sorted.slice(0, 8).map(p => {
+            const best = Math.max(p.ourContentScore, ...p.compScores.map(c => c.score));
+            return `<div class="comp-row">
+              <span class="comp-name ${p.ourContentScore >= best ? 'ours' : ''}" style="width:100px;font-size:11px;">${p.displayName}</span>
+              <div class="comp-bar-track">
+                <div class="comp-bar-fill ours" style="width:${p.ourContentScore}%;"><span>${p.ourContentScore}</span></div>
+              </div>
+              <span style="font-size:10px;color:var(--muted);width:60px;text-align:right;">${p.compScores.map(c => c.score).join(' / ')}</span>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Top 5 Pages</div>
+          <span class="panel-badge green">Best</span>
+        </div>
+        <div class="panel-body" style="padding:12px 16px;">
+          ${top5.map((p, i) => `
+            <div style="display:flex;align-items:center;gap:8px;padding:6px 0;${i < 4 ? 'border-bottom:1px solid var(--border);' : ''}">
+              <span style="font-size:11px;font-weight:800;color:var(--muted);width:18px;">#${i + 1}</span>
+              <span style="font-size:12px;font-weight:600;flex:1;">${p.displayName}</span>
+              ${scorePill(p.pageScore)}
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Bottom 5 Pages</div>
+          <span class="panel-badge red">Needs Attention</span>
+        </div>
+        <div class="panel-body" style="padding:12px 16px;">
+          ${bottom5.map((p, i) => `
+            <div style="display:flex;align-items:center;gap:8px;padding:6px 0;${i < 4 ? 'border-bottom:1px solid var(--border);' : ''}">
+              <span style="font-size:11px;font-weight:800;color:var(--muted);width:18px;">#${pagesData.length - i}</span>
+              <span style="font-size:12px;font-weight:600;flex:1;">${p.displayName}</span>
+              ${scorePill(p.pageScore)}
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Field section hidden in aggregate view
+  document.getElementById('fieldSection').innerHTML = '';
+
+  // All Pages Table
+  renderAllPagesTable();
+  document.getElementById('allPagesPanel').style.display = '';
+}
+
+// ═════ SINGLE PAGE VIEW ═════
+
+function renderPageView(page) {
+  if (!page) return;
+
+  // KPIs
+  document.getElementById('kpiRow').innerHTML = `
+    <div class="kpi-card green">
+      <div class="kpi-label">Fields Completed</div>
+      <div class="kpi-value">${page.pctComplete}%</div>
+      <div class="kpi-sub">${page.completed} / ${page.total} fields</div>
+    </div>
+    <div class="kpi-card blue">
+      <div class="kpi-label">Instruction Score</div>
+      <div class="kpi-value">${page.avgInstructionScore}</div>
+      <div class="kpi-sub">${page.avgInstructionScore >= 80 ? '<span class="up">Excellent</span>' : '<span class="down">Needs work</span>'}</div>
+    </div>
+    <div class="kpi-card ${scoreColor(100 - page.avgAI)}">
+      <div class="kpi-label">Human Originality</div>
+      <div class="kpi-value">${100 - page.avgAI}%</div>
+      <div class="kpi-sub">AI probability: ${page.avgAI}%</div>
+    </div>
+    <div class="kpi-card purple">
+      <div class="kpi-label">Content Score</div>
+      <div class="kpi-value">${page.ourContentScore}</div>
+      <div class="kpi-sub">vs best competitor: ${Math.max(...page.compScores.map(c => c.score))}</div>
+    </div>
+    <div class="kpi-card ${scoreColor(page.pageScore)}">
+      <div class="kpi-label">Page QA Score</div>
+      <div class="kpi-value">${page.pageScore}</div>
+      <div class="kpi-sub">${page.pageScore >= 80 ? 'Passing' : 'Failing'}</div>
+    </div>
+  `;
+
+  // Row 1: Score ring + AI per field
+  document.getElementById('row1').innerHTML = `
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">${page.displayName} \u2014 Quality Breakdown</div>
+        <span class="panel-badge ${scoreColor(page.pageScore)}">${page.pageScore >= 80 ? 'Passing' : 'Failing'}</span>
+      </div>
+      <div class="panel-body" style="display:flex;gap:32px;align-items:center;">
+        <div class="score-ring-wrap">
+          ${renderScoreRing(page.pageScore, 120)}
+          <div class="score-ring-label">Page Score</div>
+        </div>
+        <div style="flex:1;">
+          <div class="bar-chart">
+            <div class="bar-row">
+              <span class="bar-label">Completion</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${page.pctComplete}%;background:var(--green);"><span class="bar-fill-text">${page.pctComplete}%</span></div></div>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Instruction Adherence</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${page.avgInstructionScore}%;background:var(--blue);"><span class="bar-fill-text">${page.avgInstructionScore}</span></div></div>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Human Originality</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${100 - page.avgAI}%;background:${(100 - page.avgAI) >= 80 ? 'var(--green)' : 'var(--amber)'};"><span class="bar-fill-text">${100 - page.avgAI}%</span></div></div>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">vs Competitors</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${page.ourContentScore}%;background:var(--purple);"><span class="bar-fill-text">${page.ourContentScore}</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">AI Content Detection \u2014 ${page.displayName}</div>
+        <span class="panel-badge ${page.avgAI <= 20 ? 'green' : page.avgAI <= 45 ? 'amber' : 'red'}">${page.avgAI <= 20 ? 'Human' : page.avgAI <= 45 ? 'Mixed' : 'Flagged'}</span>
+      </div>
+      <div class="panel-body">
+        <div style="display:flex;align-items:center;gap:20px;margin-bottom:16px;">
+          ${renderScoreRing(100 - page.avgAI, 90, page.avgAI <= 20 ? '#059669' : page.avgAI <= 45 ? '#D97706' : '#EF4444')}
+          <div>
+            <div style="font-size:20px;font-weight:800;color:var(--near-black);">${100 - page.avgAI}% Human</div>
+            <div style="font-size:12px;color:var(--muted);margin-top:2px;">Average AI probability: ${page.avgAI}%</div>
+          </div>
+        </div>
+        <div class="section-label">Per-field AI probability</div>
+        <div class="ai-meter">
+          ${page.fields.filter(f => f.filled).slice(0, 8).map(f => renderAIMeterRow(fieldLabel(f.name), f.aiProbability)).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Row 2: Competitor + empty
+  document.getElementById('row2').innerHTML = `
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Competitive Position \u2014 ${page.displayName}</div>
+      </div>
+      <div class="panel-body">
+        <div class="comp-chart">
+          ${renderCompRow('Toptal (ours)', page.ourContentScore, 'ours', 0)}
+          ${page.compScores.map((c, ci) => renderCompRow(c.name, c.score, 'comp' + (ci + 1), 0)).join('')}
+        </div>
+        <div style="margin-top:16px;padding:12px;background:var(--surface);border-radius:var(--radius-lg);">
+          <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:6px;">Analysis</div>
+          <div style="font-size:12px;color:var(--body-text);line-height:1.6;">
+            ${page.ourContentScore >= Math.max(...page.compScores.map(c => c.score))
+              ? 'This page <strong style="color:var(--green-dark);">outperforms</strong> all top 3 competitors. Maintain quality and update quarterly.'
+              : 'This page is <strong style="color:var(--red);">behind</strong> at least one competitor. Prioritize content depth, keyword coverage, and UX improvements.'
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  `;
+
+  // Field section
+  document.getElementById('fieldSection').innerHTML = `
+    <div class="panel" style="margin-bottom:24px;">
+      <div class="panel-header">
+        <div class="panel-title">Field-Level Detail \u2014 ${page.displayName}</div>
+        <span class="panel-badge ${scoreColor(page.avgInstructionScore)}">${page.completed}/${page.total} filled</span>
+      </div>
+      <div class="table-scroll">
+        <table class="qa-table">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Status</th>
+              <th>Instruction Score</th>
+              <th>AI Detection</th>
+              <th>Verdict</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${page.fields.map(f => `
+              <tr>
+                <td style="font-weight:600;">${fieldLabel(f.name)}</td>
+                <td>${f.filled ? '<span class="score-pill high">Filled</span>' : '<span class="score-pill low">Empty</span>'}</td>
+                <td>${f.filled ? scorePill(f.instructionScore) : '<span style="color:var(--muted);">\u2014</span>'}</td>
+                <td>${f.filled ? aiPill(f.aiProbability) : '<span style="color:var(--muted);">\u2014</span>'}</td>
+                <td>${f.filled
+                  ? (f.instructionScore >= 75 && f.aiProbability <= 30
+                    ? '<span style="color:var(--green-dark);font-weight:700;">\u2713 Pass</span>'
+                    : '<span style="color:var(--red);font-weight:700;">\u2717 Review</span>')
+                  : '<span style="color:var(--muted);">Pending</span>'
+                }</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('allPagesPanel').style.display = 'none';
+}
+
+// ═════ ALL PAGES TABLE ═════
+
+function renderAllPagesTable() {
+  const sorted = [...pagesData].sort((a, b) => b.pageScore - a.pageScore);
+  document.getElementById('allPagesTable').innerHTML = `
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Page</th>
+        <th>Completion</th>
+        <th>Instruction Score</th>
+        <th>Human Originality</th>
+        <th>AI Prob.</th>
+        <th>Content Score</th>
+        <th>vs Best Comp.</th>
+        <th>QA Score</th>
+        <th>Verdict</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${sorted.map((p, i) => {
+        const bestComp = Math.max(...p.compScores.map(c => c.score));
+        const winning = p.ourContentScore >= bestComp;
+        return `
+          <tr class="clickable" onclick="document.getElementById('pageSelector').value='${p.slug}';onPageSelect();">
+            <td style="font-weight:700;color:var(--muted);">${i + 1}</td>
+            <td style="font-weight:600;">${p.displayName}</td>
+            <td>
+              <div style="display:flex;align-items:center;gap:6px;">
+                <div style="width:60px;height:6px;background:var(--surface);border-radius:3px;overflow:hidden;">
+                  <div style="width:${p.pctComplete}%;height:100%;background:var(--green);border-radius:3px;"></div>
+                </div>
+                <span style="font-size:11px;font-weight:600;">${p.pctComplete}%</span>
+              </div>
+            </td>
+            <td>${scorePill(p.avgInstructionScore)}</td>
+            <td>${scorePill(100 - p.avgAI)}</td>
+            <td>${aiPill(p.avgAI)}</td>
+            <td style="font-weight:700;">${p.ourContentScore}</td>
+            <td>
+              <span style="font-size:11px;font-weight:600;color:${winning ? 'var(--green-dark)' : 'var(--red)'};">
+                ${winning ? '\u2191 Winning' : '\u2193 Behind'}
+              </span>
+            </td>
+            <td>${scorePill(p.pageScore)}</td>
+            <td>
+              ${p.pageScore >= 75 && p.avgAI <= 35
+                ? '<span style="color:var(--green-dark);font-weight:700;">\u2713 Pass</span>'
+                : '<span style="color:var(--red);font-weight:700;">\u2717 Review</span>'
+              }
+            </td>
+          </tr>
+        `;
+      }).join('')}
+    </tbody>
+  `;
+}
+
+// ═══════════════════════════════════════════════════
+//  HELPERS
+// ═══════════════════════════════════════════════════
+
+function renderScoreRing(value, size, color) {
+  size = size || 120;
+  color = color || (value >= 80 ? '#059669' : value >= 60 ? '#D97706' : '#EF4444');
+  const r = (size / 2) - 8;
+  const circ = 2 * Math.PI * r;
+  const offset = circ - (value / 100) * circ;
+  const fontSize = size > 100 ? 28 : 20;
+  return `
+    <div class="score-ring" style="width:${size}px;height:${size}px;">
+      <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+        <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="#E5E7EA" stroke-width="6"/>
+        <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="6"
+          stroke-dasharray="${circ}" stroke-dashoffset="${offset}" stroke-linecap="round"/>
+      </svg>
+      <div class="score-ring-value" style="font-size:${fontSize}px;">${value}</div>
+    </div>
+  `;
+}
+
+function renderAIMeterRow(label, pct) {
+  const cls = pct <= 20 ? 'human' : pct <= 45 ? 'mixed' : 'ai';
+  return `
+    <div class="ai-meter-row">
+      <span class="ai-meter-label">${label}</span>
+      <div class="ai-meter-track"><div class="ai-meter-fill ${cls}" style="width:${pct}%;"></div></div>
+      <span class="ai-meter-val" style="color:${pct <= 20 ? 'var(--green-dark)' : pct <= 45 ? 'var(--amber)' : 'var(--red)'};">${pct}% AI</span>
+    </div>
+  `;
+}
+
+function renderCompRow(name, score, cls, rank) {
+  const isOurs = cls === 'ours';
+  return `
+    <div class="comp-row">
+      ${rank ? '<span class="comp-rank">#' + rank + '</span>' : '<span class="comp-rank"></span>'}
+      <span class="comp-name ${isOurs ? 'ours' : ''}">${name}</span>
+      <div class="comp-bar-track"><div class="comp-bar-fill ${cls}" style="width:${score}%;"><span>${score}</span></div></div>
+    </div>
+  `;
+}
+
+function fieldLabel(name) {
+  return name
+    .replace(/\./g, ' \u203A ')
+    .replace(/([A-Z])/g, ' $1')
+    .replace(/^./, c => c.toUpperCase())
+    .replace(/\d+/g, m => ' ' + (parseInt(m) + 1));
+}
+
+// ═══════════════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

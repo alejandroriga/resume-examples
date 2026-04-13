@@ -1,0 +1,521 @@
+{
+  "meta": {
+    "title": "Resume Examples by Job Title | Real Samples & Writing Tips | Toptal Resume",
+    "metaDescription": "Browse 500+ real resume examples organized by job title. See how professionals in your field write their resumes, with expert tips and writing guides.",
+    "ogTitle": "500+ Resume Examples by Job Title — Real Samples & Expert Tips",
+    "ogDescription": "Professional resume examples reviewed by hiring managers. Find real resumes for your job title with writing tips and industry-specific advice."
+  },
+  "hero": {
+    "badge": "Updated for 2025",
+    "h1": "Resume Examples for Every Job Title",
+    "subtitle": "Browse real resume examples from professionals in your field. Each example is reviewed by hiring managers and includes expert writing tips tailored to your industry.",
+    "trustLine": "Based on analysis of 50,000+ resumes reviewed by hiring managers across 40+ industries",
+    "ctaPrimary": "Build My Resume",
+    "ctaSecondary": "Browse Examples",
+    "noAccountChip": "No Account Required"
+  },
+  "performanceScore": {
+    "value": 94,
+    "label": "Toptal Performance Score™",
+    "subtitle": "Recruiter-graded across ATS parsing, readability, and impact metrics",
+    "note": "Based on analysis of 50,000+ resumes across 40+ industries"
+  },
+  "trustpilot": {
+    "rating": 4.7,
+    "reviewCount": "3,200+"
+  },
+  "filterCounts": {
+    "total": 215
+  },
+  "galleryExampleIds": [],
+  "featuredExampleIds": [],
+  "guide": {
+    "chapters": [
+      {
+        "heading": "How to Use Resume Examples Effectively",
+        "bodyType": "paragraph",
+        "body": "<p>Resume examples are powerful tools for job seekers because they show you exactly how successful candidates present their qualifications. Rather than copying an example word-for-word, use them as inspiration to understand formatting conventions, achievement-focused language, and industry-specific terminology that resonates with hiring managers.</p>"
+      },
+      {
+        "heading": "Resume Examples vs. Resume Templates",
+        "bodyType": "paragraph + table",
+        "body": "<p>While resume templates provide the visual framework and layout for your resume, resume examples show you real content — how to phrase achievements, what skills to highlight, and how much detail to include for your specific role and experience level.</p>",
+        "table": [
+          [
+            "Feature",
+            "Resume Example",
+            "Resume Template"
+          ],
+          [
+            "Purpose",
+            "Shows real content and phrasing",
+            "Provides visual layout and formatting"
+          ],
+          [
+            "Content",
+            "Pre-written for specific roles",
+            "Placeholder text only"
+          ],
+          [
+            "Best for",
+            "Learning what to write",
+            "Learning how to format"
+          ],
+          [
+            "Customization",
+            "Adapt language and achievements",
+            "Fill in your own content"
+          ]
+        ]
+      },
+      {
+        "heading": "Choosing the Right Resume Example for Your Career Stage",
+        "bodyType": "paragraph",
+        "body": "<p>Your career stage significantly impacts how your resume should be structured. Entry-level candidates should emphasize education, internships, and transferable skills. Mid-career professionals should focus on quantified achievements and progressive responsibility. Senior professionals should highlight leadership impact, strategic initiatives, and industry recognition.</p>"
+      },
+      {
+        "heading": "Industry-Specific Resume Conventions",
+        "bodyType": "paragraph",
+        "body": "<p>Different industries have distinct expectations for resumes. Technology roles emphasize technical skills and project outcomes. Healthcare positions require certifications and compliance knowledge. Creative fields may allow more design flexibility, while finance and consulting demand precise, metrics-driven language.</p>"
+      }
+    ],
+    "_seeded": true
+  },
+  "faqs": [
+    {
+      "question": "How should I use resume examples?",
+      "answer": "Use resume examples as inspiration, not templates to copy. Study how professionals in your field present their experience, note the action verbs and metrics they use, and adapt similar approaches to your own background. Focus on the structure and phrasing rather than copying content directly."
+    },
+    {
+      "question": "Are these resume examples based on real resumes?",
+      "answer": "Yes, our resume examples are based on real resumes that have been reviewed and anonymized by hiring managers. They represent successful applications across various industries and experience levels."
+    },
+    {
+      "question": "How many resume examples should I review?",
+      "answer": "We recommend reviewing 3-5 examples for your specific job title and experience level. This gives you a good sense of industry conventions without overwhelming you with options."
+    },
+    {
+      "question": "Can I combine elements from different resume examples?",
+      "answer": "Absolutely. In fact, combining the best elements from multiple examples often produces the strongest result. You might borrow the summary style from one example, the achievement format from another, and the skills section layout from a third."
+    },
+    {
+      "question": "How often are resume examples updated?",
+      "answer": "Our resume examples are reviewed and updated quarterly to reflect current hiring trends, evolving industry standards, and feedback from our panel of hiring managers and recruiters."
+    }
+  ],
+  "whyToptal": [
+    {
+      "icon": "check-circle",
+      "title": "Hiring Manager Reviewed",
+      "description": "Every example is reviewed by active hiring managers in the relevant field"
+    },
+    {
+      "icon": "users",
+      "title": "Role-Specific",
+      "description": "Examples tailored to 40+ job titles across every major industry"
+    },
+    {
+      "icon": "trending-up",
+      "title": "Multiple Experience Levels",
+      "description": "From entry-level to executive, find examples matching your career stage"
+    },
+    {
+      "icon": "award",
+      "title": "Expert Writing Tips",
+      "description": "Each example includes industry-specific advice from career coaches"
+    }
+  ],
+  "expertise": [
+    {
+      "stat": "50,000+",
+      "label": "Resumes Analyzed"
+    },
+    {
+      "stat": "40+",
+      "label": "Job Categories"
+    },
+    {
+      "stat": "200+",
+      "label": "Resume Examples"
+    },
+    {
+      "stat": "94%",
+      "label": "ATS Pass Rate"
+    }
+  ],
+  "expertPanel": {
+    "heading": "Reviewed by Industry Experts",
+    "subtitle": "Our resume examples are reviewed by hiring managers and recruiters with decades of combined experience.",
+    "experts": [],
+    "_recruitersV2": true,
+    "_recruitersV3": true,
+    "recruiters": [
+      {
+        "initials": "AB",
+        "avatarColor": "#204ECF",
+        "name": "Adrian Bora",
+        "role": "Principal Recruiter",
+        "location": "Timișoara, Romania",
+        "linkedin": "https://www.linkedin.com/in/adrian-bora/",
+        "bio": "Adrian Bora is a Principal Recruiter specializing in talent acquisition for Product, Engineering, Marketing, and Sales functions. With a background in electronics and telecommunications from Politehnica University Timișoara, he has hired 200+ engineers and nearly doubled Toptal's internal Product team. Known for data-driven sourcing, multi-step nurture campaigns, and a >90% offer acceptance rate, he partners with hiring managers and executives to build high-performing distributed teams.",
+        "credential": "Principal Recruiter",
+        "credentialIcon": "badge-check",
+        "visible": false
+      },
+      {
+        "initials": "JP",
+        "avatarColor": "#0F256E",
+        "name": "Jaclyn Price",
+        "role": "Senior Recruiter",
+        "location": "Clearwater, Florida, United States",
+        "linkedin": "https://www.linkedin.com/in/jaclyn-price",
+        "bio": "Jaclyn Price is a Senior Recruiter with 10 years of full-cycle recruiting experience across startups and Fortune 500 companies, including Wayfair and Bliss Point Media. A Yale University graduate with a BA in Political Science, she has led cross-functional recruiting programs, served as an ATS subject matter expert, and developed talent initiatives that significantly reduced time-to-fill and cost per hire. She brings a data-driven, people-first approach to building high-impact teams.",
+        "credential": "Senior Recruiter",
+        "credentialIcon": "badge-check",
+        "visible": true
+      },
+      {
+        "initials": "JW",
+        "avatarColor": "#7C3AED",
+        "name": "Jason Woodard",
+        "role": "Principal Recruiter",
+        "location": "Columbia, South Carolina, United States",
+        "linkedin": "https://www.linkedin.com/in/jason-woodard",
+        "bio": "Jason Woodard is a Principal Recruiter with over 14 years of experience in talent acquisition across IT staffing, Fortune 200 logistics, and professional services. He holds a BS in Sport Management from Winthrop University and has built his career at Insight Global, XPO Logistics, and Toptal. Selected for Toptal's 2025 High-Potential Leadership Development Program — a distinction held by fewer than 3% of the company — he specializes in Sales, Technology, and Operations recruiting.",
+        "credential": "Principal Recruiter",
+        "credentialIcon": "badge-check",
+        "visible": false
+      },
+      {
+        "initials": "LS",
+        "avatarColor": "#1E3A5F",
+        "name": "Lazar Stevic",
+        "role": "Recruiter",
+        "location": "Požarevac, Serbia",
+        "linkedin": "https://www.linkedin.com/in/lazarstevic46b156139/",
+        "bio": "Lazar Stevic is a Recruiter at Toptal, where he has progressively advanced from Recruiting Operations Coordinator to Junior Recruiter and Recruiter over more than six years. He holds a degree in Human Resources Management and Security Studies from the Faculty of Security Studies, University of Belgrade. Prior to recruiting, he developed cross-cultural communication skills through online English teaching roles across multiple international platforms, serving students in China, Ukraine, and Serbia.",
+        "credential": "Recruiter",
+        "credentialIcon": "badge-check",
+        "visible": false
+      },
+      {
+        "initials": "LP",
+        "avatarColor": "#6D28D9",
+        "name": "Lyndsey Price",
+        "role": "Executive Recruiting Lead",
+        "location": "Easton, Connecticut, United States",
+        "linkedin": "https://www.linkedin.com/in/lyndseyprice1",
+        "bio": "Lyndsey Price is Toptal's Executive Recruiting Lead, specializing in senior and executive-level hiring across Product and Marketing. She holds a BS in Accounting from Sacred Heart University and began her career in financial staffing at Kforce and Atlantic Group before transitioning into tech recruiting at Yext. With over five years at Toptal — progressing from Recruiting Lead to Head of Product & Marketing Recruiting to Executive Recruiting Lead — she brings sharp strategic instincts to high-stakes hiring.",
+        "credential": "Executive Recruiting Lead",
+        "credentialIcon": "badge-check",
+        "visible": true
+      },
+      {
+        "initials": "MB",
+        "avatarColor": "#059669",
+        "name": "Malinda Berry",
+        "role": "Senior Recruiter",
+        "location": "Denver, Colorado, United States",
+        "linkedin": "https://www.linkedin.com/in/malindaberry04081992/",
+        "bio": "Malinda Berry is a Senior Recruiter with a dual BA in Psychology and Criminal Justice from the University of Arizona, where she graduated with a 4.0 GPA. She began her career at AppleOne Employment Services before joining Toptal in 2021, where she supports full-cycle recruiting across Marketing, Customer, Product, and Technical functions. Her background in behavioral science and talent mobility informs a consultative, data-informed approach to identifying and engaging top talent.",
+        "credential": "Senior Recruiter",
+        "credentialIcon": "badge-check",
+        "visible": false
+      },
+      {
+        "initials": "MG",
+        "avatarColor": "#DC2626",
+        "name": "Marisa Goldberg",
+        "role": "Senior Director of Recruiting",
+        "location": "Scarsdale, New York, United States",
+        "linkedin": "https://www.linkedin.com/in/marisagoldberg123/",
+        "bio": "Marisa Goldberg is Toptal's Senior Director of Recruiting, leading the full recruiting function with a team-first philosophy. She holds a BA from Queens College and an MBA from Pace University, and has built her career at Time Warner, JPMorgan Private Bank, BlackRock, and Paxos, where she served as Director of Talent Acquisition. With deep expertise across financial services, fintech, and technology sectors, she brings both strategic leadership and hands-on recruiting excellence to Toptal.",
+        "credential": "Senior Director of Recruiting",
+        "credentialIcon": "badge-check",
+        "visible": true
+      }
+    ],
+    "_writersV2": true,
+    "writers": [
+      {
+        "initials": "BD",
+        "avatarColor": "#7C3AED",
+        "name": "Branka Divčić",
+        "role": "Profile Content Editor",
+        "location": "Belgrade, Serbia",
+        "linkedin": "https://www.linkedin.com/in/branka-div%C4%8Di%C4%87-65361861/",
+        "bio": "Branka Divcic is a language specialist and Profile Content Editor with over 15 years of experience in English education, translation, and editorial work. She holds an MA in English Language and Literature from the University of Belgrade, where she is also completing her doctoral dissertation in English Literature. She specializes in ESL, Legal English, and education management, and has run her own language center since 2017.",
+        "credential": "Profile Content Editor",
+        "credentialIcon": "badge-check",
+        "visible": true
+      },
+      {
+        "initials": "JL",
+        "avatarColor": "#2563EB",
+        "name": "Juan Laudren",
+        "role": "Profile Content Editor",
+        "location": "Buenos Aires, Argentina",
+        "linkedin": "https://ar.linkedin.com/in/juan-pablo-laudren-712a0549",
+        "bio": "Juan Pablo Laudren is a certified English-Spanish translator and Profile Content Editor with over 15 years of experience in linguistic quality control, editing, and copywriting. He has worked at S&P Global and TransPerfect, specializing in financial, legal, and corporate content. He holds a degree from the University of Buenos Aires, where he also teaches translation courses, bringing both academic rigor and industry depth to every profile he crafts.",
+        "credential": "Profile Content Editor",
+        "credentialIcon": "badge-check",
+        "visible": true
+      },
+      {
+        "initials": "KV",
+        "avatarColor": "#059669",
+        "name": "KC Vedra",
+        "role": "Profile Content Editor",
+        "location": "Cagayan De Oro City, Philippines",
+        "linkedin": "https://www.linkedin.com/in/kc-vedra/",
+        "bio": "KC Vedra is a licensed educator, expert writer, and Profile Content Editor with a background spanning technical writing, UX writing, copywriting, and content management. A graduate of Xavier University -- Ateneo de Cagayan and a licensed teacher, she has led editorial teams and produced content across diverse industries. At Toptal, she brings precision, editorial discipline, and a growth mindset to crafting profiles that are clear, compelling, and accurate.",
+        "credential": "Profile Content Editor",
+        "credentialIcon": "badge-check",
+        "visible": true
+      },
+      {
+        "initials": "MA",
+        "avatarColor": "#DC2626",
+        "name": "Marina Alavanja",
+        "role": "Profile Content Specialist",
+        "location": "Novi Beograd, Serbia",
+        "linkedin": "https://www.linkedin.com/in/marina-alavanja-79b78410/",
+        "bio": "Marina Alavanja is a Profile Content Specialist and adult education professional with a BA in Andragogy from the University of Belgrade. With a background in marketing, editing, and client services, she brings a structured, detail-oriented approach to profile management and content quality. She specializes in coordinating complex activation workflows, ensuring consistency across platforms, and maintaining high editorial standards under dynamic, high-demand conditions.",
+        "credential": "Profile Content Specialist",
+        "credentialIcon": "badge-check",
+        "visible": false
+      },
+      {
+        "initials": "ML",
+        "avatarColor": "#D97706",
+        "name": "Midel Linsangan",
+        "role": "Profile Content Specialist",
+        "location": "Quezon City, Philippines",
+        "linkedin": "https://www.linkedin.com/in/midel-linsangan-b9b90473/",
+        "bio": "Midel Linsangan is a Profile Content Specialist and seasoned communication professional with a degree from the University of the Philippines. He brings over a decade of experience in training delivery, language assessment, and content editing, having worked at Concentrix, Cognizant, and Sutherland. His background in evaluating communication skills and screening talent gives him a sharp editorial eye for crafting profiles that are both precise and impactful.",
+        "credential": "Profile Content Specialist",
+        "credentialIcon": "badge-check",
+        "visible": false
+      },
+      {
+        "initials": "MG",
+        "avatarColor": "#0F256E",
+        "name": "Milena Gosevski",
+        "role": "Profile Content Team Lead",
+        "location": "Belgrade, Serbia",
+        "linkedin": "https://www.linkedin.com/in/milena-gosevski-8424861a9/",
+        "bio": "Milena Gosevski is the Profile Content Team Lead at Toptal, where she has built over seven years of expertise in editorial quality, content operations, and team leadership. With a foundation in international law and advanced studies in human psychology, she brings an analytical and people-centered approach to profile development. Her deep understanding of how professional narratives are structured makes her a key driver of content excellence across the team.",
+        "credential": "Profile Content Team Lead",
+        "credentialIcon": "badge-check",
+        "visible": false
+      },
+      {
+        "initials": "RD",
+        "avatarColor": "#1E3A5F",
+        "name": "Rita Duro",
+        "role": "Profile Content Specialist",
+        "location": "Matosinhos, Portugal",
+        "linkedin": "https://www.linkedin.com/in/rita-duro/",
+        "bio": "Rita Duro is a Profile Content Specialist and digital content creator with a Master's degree in Project Management from Politecnico do Porto. She brings experience across hospitality, academic research administration, and digital content creation, developing a cross-industry perspective on how professionals present themselves. Self-driven and multilingual, she has been with Toptal since 2021, specializing in editing and optimizing profiles to clearly communicate expertise and value.",
+        "credential": "Profile Content Specialist",
+        "credentialIcon": "badge-check",
+        "visible": false
+      },
+      {
+        "initials": "SH",
+        "avatarColor": "#78716C",
+        "name": "Suzana Hasani Harkin",
+        "role": "Profile Content Editor",
+        "location": "Belgrade, Serbia",
+        "linkedin": "https://www.linkedin.com/in/suzana-hasani-harkin-744a45156/",
+        "bio": "Suzana Hasani Harkin is a Profile Content Editor, English literature teacher, and psychologist holding master's degrees from the University of Belgrade and the University of Roehampton. With expertise spanning English language editing, academic writing, and applied psychology, she brings a uniquely analytical lens to how professional profiles communicate. Her dual background in linguistics and human behavior informs her precise, thoughtful approach to crafting clear and credible professional narratives.",
+        "credential": "Profile Content Editor",
+        "credentialIcon": "badge-check",
+        "visible": false
+      }
+    ],
+    "_visibilityV1": true
+  },
+  "testimonials": [],
+  "examplesSection": [],
+  "categoriesGrid": [
+    {
+      "slug": "software-engineer",
+      "label": "Software Engineer"
+    },
+    {
+      "slug": "nurse",
+      "label": "Nurse"
+    },
+    {
+      "slug": "teacher",
+      "label": "Teacher"
+    },
+    {
+      "slug": "product-manager",
+      "label": "Product Manager"
+    },
+    {
+      "slug": "data-analyst",
+      "label": "Data Analyst"
+    },
+    {
+      "slug": "graphic-designer",
+      "label": "Graphic Designer"
+    },
+    {
+      "slug": "administrative-assistant",
+      "label": "Administrative Assistant"
+    },
+    {
+      "slug": "financial-analyst",
+      "label": "Financial Analyst"
+    },
+    {
+      "slug": "sales-associate",
+      "label": "Sales Associate"
+    },
+    {
+      "slug": "customer-service-representative",
+      "label": "Customer Service Representative"
+    },
+    {
+      "slug": "registered-nurse",
+      "label": "Registered Nurse"
+    },
+    {
+      "slug": "business-analyst",
+      "label": "Business Analyst"
+    },
+    {
+      "slug": "operations-manager",
+      "label": "Operations Manager"
+    },
+    {
+      "slug": "social-media-manager",
+      "label": "Social Media Manager"
+    },
+    {
+      "slug": "data-scientist",
+      "label": "Data Scientist"
+    },
+    {
+      "slug": "executive-assistant",
+      "label": "Executive Assistant"
+    }
+  ],
+  "cta": {
+    "heading": "Ready to Build Your Resume?",
+    "subtitle": "Use our resume examples as inspiration and create a professional resume in minutes.",
+    "buttonText": "Build My Resume",
+    "buttonUrl": "#"
+  },
+  "_phases": {
+    "hero": 1,
+    "galleryExamples": 2,
+    "performanceScore": 3,
+    "faqs": 4,
+    "whyToptal": 5,
+    "expertise": 6,
+    "expertPanel": 7,
+    "testimonials": 8,
+    "examplesSection": 9,
+    "categoriesGrid": 10,
+    "cta": 11,
+    "guide": 12,
+    "featuredExamples": 13,
+    "meta": 14
+  },
+  "_currentPhase": 1,
+  "_filterPhase": 0,
+  "_cardDescriptions": {
+    "teacher": "",
+    "teacher-assistant": "",
+    "english-teacher": "",
+    "esl-teacher": "",
+    "elementary-teacher": "",
+    "preschool-teacher": "",
+    "kindergarten-teacher": "",
+    "special-education-teacher": "",
+    "nurse": "",
+    "registered-nurse": "",
+    "medical-assistant": "",
+    "pharmacy-technician": "",
+    "physical-therapist": "",
+    "software-engineer": "",
+    "software-developer": "",
+    "data-analyst": "",
+    "data-analytics": "",
+    "data-scientist": "",
+    "business-analyst": "",
+    "product-manager": "",
+    "product-owner": "",
+    "operations-manager": "",
+    "account-manager": "",
+    "property-manager": "",
+    "administrative-assistant": "",
+    "office-assistant": "",
+    "executive-assistant": "",
+    "office-administrator": "",
+    "sales-associate": "",
+    "sales": "",
+    "customer-service-representative": "",
+    "customer-service": "",
+    "graphic-designer": "",
+    "graphic-artist": "",
+    "designer": "",
+    "social-media-manager": "",
+    "financial-analyst": "",
+    "architect": "",
+    "social-worker": "",
+    "electrician": "",
+    "pilot": "",
+    "event-planner": "",
+    "real-estate-agent": ""
+  },
+  "_cardExampleCounts": {
+    "teacher": 5,
+    "teacher-assistant": 4,
+    "english-teacher": 5,
+    "esl-teacher": 4,
+    "elementary-teacher": 5,
+    "preschool-teacher": 4,
+    "kindergarten-teacher": 5,
+    "special-education-teacher": 5,
+    "nurse": 5,
+    "registered-nurse": 5,
+    "medical-assistant": 4,
+    "pharmacy-technician": 4,
+    "physical-therapist": 5,
+    "software-engineer": 5,
+    "software-developer": 4,
+    "data-analyst": 4,
+    "data-analytics": 4,
+    "data-scientist": 5,
+    "business-analyst": 4,
+    "product-manager": 4,
+    "product-owner": 4,
+    "operations-manager": 4,
+    "account-manager": 4,
+    "property-manager": 4,
+    "administrative-assistant": 4,
+    "office-assistant": 4,
+    "executive-assistant": 4,
+    "office-administrator": 4,
+    "sales-associate": 4,
+    "sales": 4,
+    "customer-service-representative": 4,
+    "customer-service": 4,
+    "graphic-designer": 4,
+    "graphic-artist": 4,
+    "designer": 4,
+    "social-media-manager": 4,
+    "financial-analyst": 5,
+    "architect": 4,
+    "social-worker": 4,
+    "electrician": 4,
+    "pilot": 4,
+    "event-planner": 4,
+    "real-estate-agent": 4
+  }
+}

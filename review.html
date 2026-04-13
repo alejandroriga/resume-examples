@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <title>Expert Guide Review — Toptal Resume Templates</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    a { color: #818cf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .header {
+      background: #1e293b;
+      border-bottom: 1px solid #334155;
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-icon {
+      width: 40px;
+      height: 40px;
+      background: #10b981;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .header h1 { font-size: 18px; font-weight: 700; color: #f1f5f9; }
+    .header .reviewer-name { font-size: 14px; color: #94a3b8; }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+
+    /* Instructions panel */
+    .instructions {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+    .instructions-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .instructions-toggle:hover { background: #253349; }
+    .instructions-toggle h2 { font-size: 16px; font-weight: 600; color: #f1f5f9; }
+    .instructions-toggle .arrow { font-size: 14px; color: #64748b; transition: transform .2s; }
+    .instructions-toggle.open .arrow { transform: rotate(180deg); }
+    .instructions-body {
+      padding: 0 20px 20px;
+      font-size: 14px;
+      color: #94a3b8;
+      display: none;
+    }
+    .instructions-body.open { display: block; }
+    .instructions-body h3 { color: #e2e8f0; font-size: 14px; margin: 16px 0 8px; }
+    .instructions-body ul { margin-left: 20px; margin-bottom: 8px; }
+    .instructions-body li { margin-bottom: 4px; }
+    .instructions-body .note {
+      background: #1a2332;
+      border-left: 3px solid #f59e0b;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    /* Content sections */
+    .section {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+    .section-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-header h2 { font-size: 15px; font-weight: 600; color: #f1f5f9; }
+    .section-badge {
+      background: #334155;
+      color: #94a3b8;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* Field items */
+    .field-item {
+      padding: 16px 20px;
+      border-bottom: 1px solid #1a2332;
+    }
+    .field-item:last-child { border-bottom: none; }
+    .field-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: #64748b;
+      margin-bottom: 6px;
+    }
+    .field-content {
+      font-size: 14px;
+      color: #cbd5e1;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 12px 14px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: none;
+    }
+
+    /* Existing reviews */
+    .existing-review {
+      background: #162032;
+      border: 1px solid #1e3a2a;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    .existing-review .er-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .existing-review .er-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #10b981;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    .existing-review .er-date { font-size: 11px; color: #64748b; }
+    .existing-review .er-text { color: #94a3b8; }
+    .existing-review .er-sources {
+      margin-top: 6px;
+      font-size: 12px;
+    }
+    .existing-review .er-sources a {
+      display: block;
+      color: #818cf8;
+      word-break: break-all;
+      margin-top: 2px;
+    }
+
+    /* Add review button + form */
+    .add-review-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #10b981;
+      background: transparent;
+      border: 1px solid #1e3a2a;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background .15s;
+    }
+    .add-review-btn:hover { background: #162032; }
+
+    .review-form {
+      display: none;
+      margin-top: 10px;
+      background: #162032;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .review-form.open { display: block; }
+    .review-form label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: .3px;
+    }
+    .review-form textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 10px 12px;
+      font-size: 14px;
+      font-family: inherit;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      color: #e2e8f0;
+      resize: vertical;
+      outline: none;
+      margin-bottom: 10px;
+    }
+    .review-form textarea:focus { border-color: #10b981; }
+    .review-form input[type="text"] {
+      width: 100%;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-family: inherit;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      color: #e2e8f0;
+      outline: none;
+      margin-bottom: 10px;
+    }
+    .review-form input[type="text"]:focus { border-color: #10b981; }
+    .review-form .hint {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: -6px;
+      margin-bottom: 10px;
+    }
+    .review-form .form-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-submit {
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      background: #10b981;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .btn-submit:hover { background: #059669; }
+    .btn-submit:disabled { opacity: .5; cursor: not-allowed; }
+    .btn-cancel {
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #94a3b8;
+      background: transparent;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .btn-cancel:hover { background: #1e293b; }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #10b981;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 8px 24px rgba(0,0,0,.4);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all .3s;
+      z-index: 200;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    .toast.error { background: #dc2626; }
+
+    /* Loading & error states */
+    .loading {
+      text-align: center;
+      padding: 80px 20px;
+      color: #64748b;
+      font-size: 16px;
+    }
+    .error-state {
+      text-align: center;
+      padding: 80px 20px;
+      color: #fca5a5;
+      font-size: 16px;
+    }
+    .error-state h2 { color: #f87171; margin-bottom: 8px; }
+
+    /* Styles for guide content from index.html */
+    .field-content p { margin-bottom: 12px; }
+    .field-content p:last-child { margin-bottom: 0; }
+    .field-content strong { color: #e2e8f0; }
+    .field-content ul, .field-content ol {
+      margin: 8px 0 12px 20px;
+    }
+    .field-content li { margin-bottom: 6px; }
+    .field-content a { color: #818cf8; }
+    .guide-table-wrap { margin: 12px 0; overflow-x: auto; }
+    .guide-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .guide-table th {
+      background: #1e293b;
+      color: #e2e8f0;
+      font-weight: 600;
+      padding: 8px 10px;
+      text-align: left;
+      border: 1px solid #334155;
+    }
+    .guide-table td {
+      padding: 8px 10px;
+      border: 1px solid #334155;
+      color: #cbd5e1;
+    }
+    .guide-callout {
+      border-left: 3px solid #3b82f6;
+      background: #1a2332;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+    .guide-callout.green { border-left-color: #10b981; }
+    .guide-callout.amber { border-left-color: #f59e0b; }
+    .guide-callout-title {
+      font-weight: 600;
+      color: #60a5fa;
+      font-size: 13px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .guide-callout.green .guide-callout-title { color: #34d399; }
+    .guide-callout.amber .guide-callout-title { color: #fbbf24; }
+    .guide-callout p { color: #94a3b8; margin: 0; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="header-icon">E</div>
+      <div>
+        <h1>Expert Guide Review</h1>
+        <div class="reviewer-name" id="reviewerName">Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="main">
+    <div class="loading" id="loadingState">Loading review content...</div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+<script>
+const TOKEN = window.location.pathname.split('/review/')[1];
+let REVIEWER = null;
+let DATA = null;
+let MY_REVIEWS = {};  // { fieldPath: [reviews] }
+
+// ─── Helpers ──────────────────────────────────────────────
+
+function esc(str) {
+  if (!str) return '';
+  const d = document.createElement('div');
+  d.textContent = String(str);
+  return d.innerHTML;
+}
+
+function showToast(msg, isError) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show' + (isError ? ' error' : '');
+  setTimeout(() => t.className = 'toast', 3000);
+}
+
+function getFieldValue(obj, dotPath) {
+  const parts = dotPath.split('.');
+  let val = obj;
+  for (const p of parts) {
+    if (val == null) return '';
+    val = val[p];
+  }
+  return val == null ? '' : val;
+}
+
+function formatDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+}
+
+// ─── API ──────────────────────────────────────────────────
+
+async function api(method, path, body) {
+  const opts = { method, headers: { 'Content-Type': 'application/json' } };
+  if (body) opts.body = JSON.stringify(body);
+  const res = await fetch(path, opts);
+  return res.json();
+}
+
+// ─── Init ──────────────────────────────────────────────────
+
+async function init() {
+  try {
+    const [dataRes, reviewsRes] = await Promise.all([
+      api('GET', `/api/review-data/${TOKEN}`),
+      api('GET', `/api/review-comments/${TOKEN}/homepage`)
+    ]);
+
+    if (!dataRes.ok) {
+      document.getElementById('main').innerHTML = `
+        <div class="error-state">
+          <h2>Access Denied</h2>
+          <p>${esc(dataRes.error || 'This review link is invalid or has been deactivated.')}</p>
+        </div>`;
+      return;
+    }
+
+    REVIEWER = dataRes.reviewer;
+    DATA = dataRes.data;
+    document.getElementById('reviewerName').textContent = `Welcome, ${REVIEWER.full_name}`;
+    document.title = `Expert Guide Review — ${REVIEWER.full_name}`;
+
+    // Index existing reviews by field_path
+    if (reviewsRes.ok && reviewsRes.reviews) {
+      for (const r of reviewsRes.reviews) {
+        if (!MY_REVIEWS[r.field_path]) MY_REVIEWS[r.field_path] = [];
+        MY_REVIEWS[r.field_path].push(r);
+      }
+    }
+
+    render();
+  } catch (e) {
+    document.getElementById('main').innerHTML = `
+      <div class="error-state">
+        <h2>Connection Error</h2>
+        <p>Unable to reach the server. Please try again later.</p>
+      </div>`;
+  }
+}
+
+// ─── Render ───────────────────────────────────────────────
+
+function render() {
+  const main = document.getElementById('main');
+  let html = '';
+
+  // Instructions
+  html += renderInstructions();
+
+  // Only Guide Content sections
+  const sections = [
+    {
+      title: 'Guide Section — Header',
+      badge: 'Guide',
+      fields: [
+        { path: 'guide.eyebrow', label: 'Eyebrow' },
+        { path: 'guide.title', label: 'Title' },
+        { path: 'guide.subtitle', label: 'Subtitle' }
+      ]
+    }
+  ];
+
+  // Add guide chapters dynamically with body, table, and tip
+  if (DATA.guide && DATA.guide.chapters) {
+    for (let i = 0; i < DATA.guide.chapters.length; i++) {
+      const ch = DATA.guide.chapters[i];
+      const fields = [
+        { path: `guide.chapters.${i}.heading`, label: 'Chapter Heading' },
+        { path: `guide.chapters.${i}.body`, label: 'Chapter Body', isHtml: true }
+      ];
+      if (ch.table) {
+        fields.push({ path: `guide.chapters.${i}.table`, label: 'Chapter Table', isTable: true });
+      }
+      if (ch.tip) {
+        fields.push({ path: `guide.chapters.${i}.tip`, label: 'Chapter Tip / Callout', isTip: true });
+      }
+      sections.push({
+        title: `Chapter ${i + 1}: ${ch.heading || 'Untitled'}`,
+        badge: 'Guide',
+        fields
+      });
+    }
+  }
+
+  // Render sections
+  for (const sec of sections) {
+    html += renderSection(sec);
+  }
+
+  main.innerHTML = html;
+
+  // Open instructions by default
+  const toggle = document.querySelector('.instructions-toggle');
+  if (toggle) toggle.click();
+}
+
+function renderInstructions() {
+  return `
+    <div class="instructions">
+      <div class="instructions-toggle" onclick="toggleInstructions(this)">
+        <h2>Review Instructions</h2>
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div class="instructions-body" id="instructionsBody">
+        <p>Welcome, <strong>${esc(REVIEWER.full_name)}</strong>!</p>
+        <p style="margin-top:8px;">You are reviewing the <strong>Guide Content</strong> for a resume templates homepage. This guide helps job seekers write better resumes, and your expert perspective ensures accuracy, credibility, and authority.</p>
+
+        <h3>How to Review</h3>
+        <ul>
+          <li>Browse each guide chapter below — headings, body text, tables, and tips are shown read-only</li>
+          <li>Click <strong>"+ Add Review"</strong> on any field you'd like to comment on</li>
+          <li>Share your professional opinion, then click Submit</li>
+        </ul>
+
+        <h3>What Makes a Great Review</h3>
+        <ul>
+          <li><strong>First-person experience:</strong> "In my experience as a hiring manager..." or "Based on my work reviewing 500+ resumes..."</li>
+          <li><strong>Argued opinions</strong> — if you disagree with a claim, explain why</li>
+          <li><strong>Unique viewpoints</strong> that add expertise not found elsewhere</li>
+          <li><strong>Cited sources:</strong> .gov, .edu, research papers, industry studies</li>
+          <li><strong>Constructive suggestions:</strong> if content could be stronger, say how</li>
+        </ul>
+
+        <div class="note">
+          <strong>Important:</strong> Your comments may be lightly edited for formatting and clarity.
+          Your name, bio, and LinkedIn are associated with your contributions for E-E-A-T credibility.
+          Focus on areas where you have genuine expertise or experience.
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderTable(table) {
+  if (!table || !table.length) return '<em style="color:#64748b;">Empty table</em>';
+  let html = '<table style="width:100%;border-collapse:collapse;font-size:13px;margin:0;">';
+  table.forEach((row, ri) => {
+    html += '<tr>';
+    row.forEach(cell => {
+      const tag = ri === 0 ? 'th' : 'td';
+      const bg = ri === 0 ? 'background:#1e293b;font-weight:600;color:#e2e8f0;' : 'color:#cbd5e1;';
+      html += `<${tag} style="border:1px solid #334155;padding:8px 10px;text-align:left;${bg}">${esc(cell || '')}</${tag}>`;
+    });
+    html += '</tr>';
+  });
+  return html + '</table>';
+}
+
+function renderTip(tip) {
+  if (!tip) return '';
+  const colors = { blue: '#3b82f6', green: '#10b981', yellow: '#f59e0b', red: '#ef4444', purple: '#8b5cf6' };
+  const c = colors[tip.color] || colors.blue;
+  return `<div style="border-left:3px solid ${c};background:#1a2332;padding:12px 16px;border-radius:0 8px 8px 0;">
+    <div style="font-weight:600;color:${c};font-size:13px;margin-bottom:4px;">${esc(tip.title || 'Tip')}</div>
+    <div style="font-size:13px;color:#94a3b8;">${tip.body || ''}</div>
+  </div>`;
+}
+
+function renderSection(sec) {
+  let fieldsHtml = '';
+  for (const f of sec.fields) {
+    const val = getFieldValue(DATA, f.path);
+    if (!val) continue;
+
+    let displayVal;
+    if (f.isTable) displayVal = renderTable(val);
+    else if (f.isTip) displayVal = renderTip(val);
+    else if (f.isHtml) displayVal = val;
+    else displayVal = esc(String(val));
+
+    const existingReviews = MY_REVIEWS[f.path] || [];
+    const fid = f.path.replace(/\./g, '-');
+
+    let reviewsHtml = '';
+    for (const r of existingReviews) {
+      let srcHtml = '';
+      if (r.sources && r.sources.length) {
+        srcHtml = `<div class="er-sources"><strong>Sources:</strong>`;
+        for (const s of r.sources) srcHtml += `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`;
+        srcHtml += `</div>`;
+      }
+      reviewsHtml += `
+        <div class="existing-review">
+          <div class="er-header">
+            <span class="er-label">Your Review</span>
+            <span class="er-date">${formatDate(r.created_at)}</span>
+          </div>
+          <div class="er-text">${esc(r.review)}</div>
+          ${srcHtml}
+        </div>`;
+    }
+
+    fieldsHtml += `
+      <div class="field-item">
+        <div class="field-label">${esc(f.label)} &middot; <span style="color:#475569;font-weight:400">${esc(f.path)}</span></div>
+        <div class="field-content">${displayVal}</div>
+        ${reviewsHtml}
+        <button class="add-review-btn" onclick="toggleForm('${fid}')">+ Add Review</button>
+        <div class="review-form" id="form-${fid}">
+          <label>Your Expert Review</label>
+          <textarea id="text-${fid}" placeholder="Share your professional opinion on this content..."></textarea>
+          <label>Sources (optional)</label>
+          <input type="text" id="src-${fid}" placeholder="https://example.gov, https://study.edu/paper">
+          <div class="hint">Comma-separated URLs to .gov, .edu, research papers, or industry studies</div>
+          <div class="form-actions">
+            <button class="btn-submit" onclick="submitReview('${esc(f.path)}', '${fid}')">Submit Review</button>
+            <button class="btn-cancel" onclick="toggleForm('${fid}')">Cancel</button>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  if (!fieldsHtml) return '';
+
+  return `
+    <div class="section">
+      <div class="section-header">
+        <h2>${esc(sec.title)}</h2>
+        <span class="section-badge">${esc(sec.badge)}</span>
+      </div>
+      ${fieldsHtml}
+    </div>`;
+}
+
+// ─── Interactions ─────────────────────────────────────────
+
+function toggleInstructions(el) {
+  el.classList.toggle('open');
+  document.getElementById('instructionsBody').classList.toggle('open');
+}
+
+function toggleForm(fid) {
+  const form = document.getElementById('form-' + fid);
+  form.classList.toggle('open');
+  if (form.classList.contains('open')) {
+    document.getElementById('text-' + fid).focus();
+  }
+}
+
+async function submitReview(fieldPath, fid) {
+  const textarea = document.getElementById('text-' + fid);
+  const srcInput = document.getElementById('src-' + fid);
+  const review = textarea.value.trim();
+  if (!review) {
+    showToast('Please enter your review', true);
+    return;
+  }
+
+  // Parse sources
+  const sources = srcInput.value.trim()
+    ? srcInput.value.split(',').map(s => s.trim()).filter(s => s.length > 0)
+    : [];
+
+  const btn = document.querySelector(`#form-${fid} .btn-submit`);
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+
+  try {
+    const res = await api('POST', `/api/review-submit/${TOKEN}`, {
+      docId: 'homepage',
+      fieldPath,
+      review,
+      sources
+    });
+
+    if (res.ok) {
+      showToast('Review submitted successfully!');
+      // Add to local cache and re-render
+      if (!MY_REVIEWS[fieldPath]) MY_REVIEWS[fieldPath] = [];
+      MY_REVIEWS[fieldPath].push({
+        id: res.id,
+        field_path: fieldPath,
+        review,
+        sources,
+        created_at: new Date().toISOString()
+      });
+      render();
+    } else {
+      showToast(res.error || 'Failed to submit review', true);
+    }
+  } catch (e) {
+    showToast('Connection error. Please try again.', true);
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Submit Review';
+}
+
+// ─── Start ────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+ID,Section,Element / Selector,Field Type,Current Content (abbreviated),Content Source,Notes
+,,,,,"P = Programmatic | AI = AI-Generated w/ human review | H = Human-written",
+,═══ HEAD META TAGS ═══,,,,,
+1,Head,<title>,Meta Title,"Free Resume Templates 2026 — Download DOCX Instantly, No Account Required | Toptal",AI,"SEO-critical. AI drafts from keyword research, SEO team approves final phrasing. Update year annually."
+2,Head,<meta name=""description"">,Meta Description,"100+ free ATS-friendly resume templates. Download in Word, PDF, or Google Docs — no account needed…",AI,"155 chars max. AI drafts from target keywords, SEO team approves. Must include primary + secondary KW."
+3,Head,<meta property=""og:title"">,OG Title,Same as meta title,P,"Mirror <title> tag — auto-synced programmatically."
+4,Head,<meta property=""og:description"">,OG Description,Same as meta description,P,"Mirror meta description — auto-synced programmatically."
+5,Head,<meta property=""og:url"">,OG URL,https://toptal.com/resume-templates,P,"Canonical URL — set from CMS routing."
+6,Head,JSON-LD BreadcrumbList,Schema,Home > Resume Templates,P,"Auto-generated from site hierarchy / CMS breadcrumb config."
+7,Head,JSON-LD FAQPage,Schema,"6 Q&A pairs matching the FAQ section",AI,"AI generates from FAQ content. Must match visible FAQ 1:1. Update when FAQ section changes."
+,,,,,,
+,═══ HEADER / NAVIGATION ═══,,,,,
+8,Header,.header-logo,Brand,Toptal.,H,"Core brand. Never changes without brand team."
+9,Header,.logo-product,Brand Suffix,Resume,H,"Product name — brand decision."
+10,Header,.header-nav a × 5,Nav Links,"Resume Templates, Resume Builder, Cover Letters, Resume Examples, Career Advice",H,"IA decision. Must match actual product pages. Changes require UX + SEO coordination."
+11,Header,.btn-login,CTA Label,Log In,H,"UX copy — set by product/design."
+12,Header,.btn.btn-primary (header),CTA Label,Build My Resume,H,"Primary conversion CTA. A/B test copy. Requires product + CRO team sign-off."
+,,,,,,
+,═══ HERO SECTION ═══,,,,,
+13,Hero,.breadcrumb,Breadcrumb,Home / Resume Templates,P,"Auto-generated from URL path / CMS."
+14,Hero,.hero-badge,Badge Label,Updated for 2026,P,"Year auto-updated annually from system date."
+15,Hero,h1,H1 Heading,"100+ Free Resume Templates — ATS-Friendly, Instant DOCX Download",AI,"Most important on-page SEO element. AI drafts from keyword data, SEO lead approves. Max ~65 chars."
+16,Hero,.hero-subtitle,Hero Description,"Choose from 100+ free resume templates — ATS-friendly, recruiter-approved, and available as instant DOCX downloads. Each resume format is tested across Workday, Greenhouse, and iCIMS…",AI,"First 150 words on page = highest SEO weight. AI drafts keyword-rich copy, SEO team edits for readability + keyword density."
+17,Hero,.hero-data-line,Trust Signal,"Built with data from 100,000+ resumes reviewed by Toptal's hiring network · Also works as a CV template",AI,"Social proof + keyword injection. AI drafts, marketing approves the data claim."
+18,Hero,.btn.btn-primary.btn-lg,Primary CTA,Build My Resume,H,"Conversion button — A/B test. Product + CRO team owns."
+19,Hero,.btn.btn-white.btn-lg,Secondary CTA,Import Existing Resume,H,"Conversion button — A/B test. Product + CRO team owns."
+,,,,,,
+,═══ FILTER BAR ═══,,,,,
+20,Filters,.filter-btn.active,Filter Label,All Templates,P,"Static UI label."
+21,Filters,.count,Template Count,108,P,"Dynamic — pulled from template database count."
+22,Filters,Style filter — dropdown title,Dropdown Header,Visual Style,H,"Taxonomy label — set by UX."
+23,Filters,Style filter — 10 options,"Filter Options (×10)","Simple (152K), Professional (11.8K), With Photo (16K), Creative (3K), Modern (2.6K), Traditional (2.1K), Minimalist (910), Corporate (540), Elegant / Refined (320), Bold / Colorful (280)",P,"Labels from template taxonomy DB. Search volumes auto-populated from keyword API."
+24,Filters,Layout filter — dropdown titles,Dropdown Headers,"By Columns, By Pages, By Content Type",H,"Taxonomy group labels — set by UX."
+25,Filters,Layout filter — 10 options,"Filter Options (×10)","Single Column (48), Two Column (42), Three Column (18), Two-Column ATS (14), One Page (72), Two Page (36), Chronological (38), Functional / Skills-Based (24), Combination / Hybrid (22), Infographic (8)",P,"Labels from taxonomy. Counts from DB."
+26,Filters,Industry filter — 6 group titles,Dropdown Headers,"Technology & Engineering, Business & Finance, Healthcare & Science, Creative & Media, Education & Government, Trades & Other",H,"Industry taxonomy — set by content team + SEO."
+27,Filters,Industry filter — 24 options,"Filter Options (×24)","Software Engineer, Data Analyst / Science, DevOps / Cloud, Product Manager, UX / UI Designer, Cybersecurity, Accounting / Finance, Marketing / Sales, Consulting, Project Manager, HR / Recruiter, Business Analyst, Nursing, Medical Doctor, Pharmacy / Lab, Research / Biotech, Graphic Design, Content / Copywriting, Film / Photography, Teacher / Professor, Government / Federal, Legal / Paralegal, Construction / Skilled Trades, Hospitality / Retail",P,"Labels from job taxonomy DB."
+28,Filters,Experience Level filter — 6 options,"Filter Options (×6)","Student / Intern, Entry Level (0–2 yr), Mid Level (3–7 yr), Senior (8–14 yr), Executive (15+ yr), Career Changer",P,"Labels from experience taxonomy."
+29,Filters,Format filter — 5 options,"Filter Options (×5)","PDF, Word (.docx), Google Docs, LaTeX, Plain Text",P,"Format types from template DB."
+30,Filters,Color filter — 8 options,"Filter Options (×8)","Blue, Green, Red / Burgundy, Black & White, Orange / Amber, Purple, Teal / Cyan, Neutral / Gray",P,"Color taxonomy from DB."
+31,Filters,Job Title filter — 24 options,"Filter Options (×24)","Software Engineer, Data Analyst, Product Manager, Project Manager, Marketing Manager, UX Designer, Graphic Designer, Accountant, Financial Analyst, Nurse, Medical Doctor, Teacher, Sales Representative, HR Manager, Business Analyst, Web Developer, DevOps Engineer, Content Writer, Mechanical Engineer, Civil Engineer, Pharmacist, Lawyer, Executive / C-Suite, Customer Service",P,"Job title taxonomy from DB."
+32,Filters,Sort dropdown,Sort Options,"Featured, Most Popular, Newest, ATS Score",P,"Sort logic from application layer."
+,,,,,,
+,═══ MAIN GALLERY — 12 TEMPLATE CARDS ═══,,,,,
+33,Gallery,Card 1 — .template-card-name,Template Name,Executive Pro,H,"Template name = brand decision. Created by design team when template is built."
+34,Gallery,Card 1 — .template-card-description,Template Description,"Polished two-column layout built for senior roles, managers, and leadership positions.",AI,"AI generates from template attributes (style, layout, target audience). SEO reviews for keyword inclusion."
+35,Gallery,Card 1 — .template-card-meta,Template Tags,"Professional, Two Column, PDF",P,"Auto-populated from template metadata in DB."
+36,Gallery,Card 2 — .template-card-name,Template Name,Modern Minimal,H,Same as above — human-named.
+37,Gallery,Card 2 — .template-card-description,Template Description,"Clean, contemporary design with a sleek header. Perfect for tech and startup professionals.",AI,AI-generated per template.
+38,Gallery,Card 2 — .template-card-meta,Template Tags,"Modern, Single Column, Word",P,From DB metadata.
+39,Gallery,Card 3 — .template-card-name,Template Name,Creative Edge,H,Human-named.
+40,Gallery,Card 3 — .template-card-description,Template Description,"Bold sidebar with vibrant accents for designers, artists, and creative professionals.",AI,AI-generated per template.
+41,Gallery,Card 3 — .template-card-meta,Template Tags,"Creative, Two Column, PDF",P,From DB metadata.
+42,Gallery,Card 4 — .template-card-name,Template Name,Clean Slate,H,Human-named.
+43,Gallery,Card 4 — .template-card-description,Template Description,"Distraction-free format that puts your experience front and center. Great for career changers.",AI,AI-generated per template.
+44,Gallery,Card 4 — .template-card-meta,Template Tags,"Simple, Single Column, Google Docs",P,From DB metadata.
+45,Gallery,Card 5 — .template-card-name,Template Name,ATS Optimized,H,Human-named.
+46,Gallery,Card 5 — .template-card-description,Template Description,"Engineered to pass every applicant tracking system with a 98% ATS compatibility score.",AI,AI-generated per template.
+47,Gallery,Card 5 — .template-card-meta,Template Tags,"ATS-Friendly, Single Column, All Formats",P,From DB metadata.
+48,Gallery,Card 6 — .template-card-name,Template Name,Impact Resume,H,Human-named.
+49,Gallery,Card 6 — .template-card-description,Template Description,"Results-driven layout with a bold header band. Perfect for sales, marketing, and business roles.",AI,AI-generated per template.
+50,Gallery,Card 6 — .template-card-meta,Template Tags,"Professional, Two Column, PDF",P,From DB metadata.
+51,Gallery,Card 7 — .template-card-name,Template Name,Swiss Layout,H,Human-named.
+52,Gallery,Card 7 — .template-card-description,Template Description,"International-style CV template inspired by European formatting conventions. Clean and structured.",AI,AI-generated per template.
+53,Gallery,Card 7 — .template-card-meta,Template Tags,"Traditional, Single Column, PDF",P,From DB metadata.
+54,Gallery,Card 8 — .template-card-name,Template Name,First Job,H,Human-named.
+55,Gallery,Card 8 — .template-card-description,Template Description,"Designed for students, freshers, and entry-level candidates with limited work experience.",AI,AI-generated per template.
+56,Gallery,Card 8 — .template-card-meta,Template Tags,"Simple, Single Column, All Formats",P,From DB metadata.
+57,Gallery,Card 9 — .template-card-name,Template Name,Corporate Classic,H,Human-named.
+58,Gallery,Card 9 — .template-card-description,Template Description,"Traditional corporate layout trusted by Fortune 500 hiring managers. Ideal for finance and consulting.",AI,AI-generated per template.
+59,Gallery,Card 9 — .template-card-meta,Template Tags,"Professional, Single Column, Word",P,From DB metadata.
+60,Gallery,Card 10 — .template-card-name,Template Name,Tech Stack,H,Human-named.
+61,Gallery,Card 10 — .template-card-description,Template Description,"Built for developers and engineers with dedicated sections for technical skills and project work.",AI,AI-generated per template.
+62,Gallery,Card 10 — .template-card-meta,Template Tags,"Modern, Two Column, PDF",P,From DB metadata.
+63,Gallery,Card 11 — .template-card-name,Template Name,Elegant Script,H,Human-named.
+64,Gallery,Card 11 — .template-card-description,Template Description,"Refined typography with tasteful accent colors. Perfect for executive assistants and office managers.",AI,AI-generated per template.
+65,Gallery,Card 11 — .template-card-meta,Template Tags,"Traditional, Single Column, Word",P,From DB metadata.
+66,Gallery,Card 12 — .template-card-name,Template Name,Career Pivot,H,Human-named.
+67,Gallery,Card 12 — .template-card-description,Template Description,"Skills-first format that downplays chronology. Built for career changers and returning professionals.",AI,AI-generated per template.
+68,Gallery,Card 12 — .template-card-meta,Template Tags,"Simple, Single Column, Google Docs",P,From DB metadata.
+69,Gallery,Load More button,CTA Label,Load More Templates,P,"Static UI label."
+,,,,,,
+,═══ FREE TEMPLATES SECTION (4 CARDS) ═══,,,,,
+70,Free Templates,h2,Section Title,Free Resume Templates,AI,"SEO keyword heading. AI drafts, SEO approves."
+71,Free Templates,p,Section Description,"Download in DOCX and edit in Word or Google Docs. For PDF export, ATS score checking, and full customization, use the builder.",AI,"Supporting copy — AI drafts, marketing reviews."
+72,Free Templates,Card 1 — name,Template Name,Classic ATS,H,"Human-named by design team."
+73,Free Templates,Card 1 — description,Template Description,"Our most popular free template. Clean, single-column format that passes every ATS system.",AI,AI-generated per template.
+74,Free Templates,Card 1 — tags,Template Tags,"ATS-Friendly, Single Column, DOCX",P,From DB.
+75,Free Templates,Card 2 — name,Template Name,Modern Clean,H,Human-named.
+76,Free Templates,Card 2 — description,Template Description,"Contemporary header layout with a professional feel. Great for tech and creative roles.",AI,AI-generated per template.
+77,Free Templates,Card 2 — tags,Template Tags,"Modern, Single Column, DOCX",P,From DB.
+78,Free Templates,Card 3 — name,Template Name,Minimalist,H,Human-named.
+79,Free Templates,Card 3 — description,Template Description,"Maximum white space, minimum clutter. Let your experience speak for itself.",AI,AI-generated per template.
+80,Free Templates,Card 3 — tags,Template Tags,"Minimalist, Single Column, DOCX",P,From DB.
+81,Free Templates,Card 4 — name,Template Name,Simple Starter,H,Human-named.
+82,Free Templates,Card 4 — description,Template Description,"Easy-to-fill centered layout, ideal for students, freshers, and entry-level candidates.",AI,AI-generated per template.
+83,Free Templates,Card 4 — tags,Template Tags,"Simple, Single Column, DOCX, Google Docs",P,From DB.
+,,,,,,
+,═══ CATEGORY SHOWCASES — 12 SECTIONS × (heading + description + 3 cards) ═══,,,,,
+84,Cat: ATS,h2,Section Heading,ATS Resume Template — Free Download,AI,"H2 mapped to target keyword 'ats resume template' (26K vol). AI drafts, SEO approves."
+85,Cat: ATS,p,Section Description,"Optimized to pass applicant tracking systems used by 98% of Fortune 500 companies. Clean formatting, standard fonts… Each ATS friendly resume template is available for Word & PDF.",AI,"Keyword-rich description. AI writes, SEO reviews density."
+86,Cat: ATS,link text,CTA Link,View all ATS templates →,P,"Template: 'View all {category} templates →'"
+87,Cat: ATS,Card 1 name,Template Name,ATS Classic,H,Human-named.
+88,Cat: ATS,Card 1 description,Template Description,"Our highest-scoring ATS template. Passes every major tracking system with zero formatting issues.",AI,AI-generated.
+89,Cat: ATS,Card 1 tags,Template Tags,"ATS-Friendly, Single Column, All Formats",P,From DB.
+90,Cat: ATS,Card 2 name,Template Name,ATS Essentials,H,Human-named.
+91,Cat: ATS,Card 2 description,Template Description,"Stripped-down format focused purely on ATS compatibility. No graphics, no columns — just results.",AI,AI-generated.
+92,Cat: ATS,Card 2 tags,Template Tags,"ATS-Friendly, Single Column, Word",P,From DB.
+93,Cat: ATS,Card 3 name,Template Name,ATS Clean,H,Human-named.
+94,Cat: ATS,Card 3 description,Template Description,"Simple and readable with strong ATS scores. A safe choice for any industry or experience level.",AI,AI-generated.
+95,Cat: ATS,Card 3 tags,Template Tags,"Simple, Single Column, PDF",P,From DB.
+96,Cat: Simple,h2,Section Heading,Simple Resume Templates,AI,"SEO heading for 'simple resume template' (20K vol). AI drafts."
+97,Cat: Simple,p,Section Description,"No-frills layouts that recruiters love. Easy to scan, easy to fill out, and universally professional across every industry.",AI,AI-generated.
+98,Cat: Simple,link text,CTA Link,View all simple templates →,P,Templated.
+99,Cat: Simple,Cards 1-3 names,Template Names,"Plain & Simple, Starter Kit, Clean Canvas",H,Human-named.
+100,Cat: Simple,Cards 1-3 descriptions,Template Descriptions,"(3 template descriptions)",AI,AI-generated per template.
+101,Cat: Simple,Cards 1-3 tags,Template Tags,"(3 sets of tags)",P,From DB.
+102,Cat: One-Page,h2,Section Heading,One-Page Resume Templates,AI,"SEO heading. 'one page resume template' (15K vol)."
+103,Cat: One-Page,p,Section Description,"Everything on a single page. Concise, focused layouts that force you to prioritize your strongest qualifications.",AI,AI-generated.
+104,Cat: One-Page,link text,CTA Link,View all one-page templates →,P,Templated.
+105,Cat: One-Page,Cards 1-3,Template Names + Descriptions + Tags,(3 cards),H / AI / P,"Names = H, Descriptions = AI, Tags = P."
+106,Cat: Word,h2,Section Heading,Resume Templates for Word — Free DOCX Download,AI,"SEO heading. 'resume template word' (90K vol). AI drafts, SEO approves."
+107,Cat: Word,p,Section Description,"Download-ready .docx templates compatible with Microsoft Word. Easy to edit on any device… Also works as a CV template for Word.",AI,AI-generated with CV keyword injection.
+108,Cat: Word,link text,CTA Link,View all Word templates →,P,Templated.
+109,Cat: Word,Cards 1-3,Template Names + Descriptions + Tags,(3 cards),H / AI / P,"Names = H, Descriptions = AI, Tags = P."
+110,Cat: Google Docs,h2,Section Heading,Google Docs Resume Templates — Free; No Software Needed,AI,"SEO heading. 'google docs resume template' (25K vol). AI drafts, SEO approves."
+111,Cat: Google Docs,p,Section Description,"Edit directly in your browser with Google Docs. No software needed… Toptal is one of the only platforms offering free Google Docs resume templates with ATS compatibility built in.",AI,"AI-generated. Includes unique differentiator claim — marketing must verify."
+112,Cat: Google Docs,link text,CTA Link,View all Google Docs templates →,P,Templated.
+113,Cat: Google Docs,Cards 1-3,Template Names + Descriptions + Tags,(3 cards),H / AI / P,"Names = H, Descriptions = AI, Tags = P."
+114,Cat: Creative,h3,Section Heading,Creative Resume Templates,AI,"SEO heading for creative cluster."
+115,Cat: Creative,p + link + 3 cards,Section Content,(heading + description + 3 cards),H / AI / P,Same pattern.
+116,Cat: Minimalist,h3,Section Heading,Minimalist Resume Templates,AI,SEO heading.
+117,Cat: Minimalist,p + link + 3 cards,Section Content,(heading + description + 3 cards),H / AI / P,Same pattern.
+118,Cat: Two-Column,h3,Section Heading,Two-Column Resume Templates,AI,SEO heading.
+119,Cat: Two-Column,p + link + 3 cards,Section Content,(heading + description + 3 cards),H / AI / P,Same pattern.
+120,Cat: Modern,h2,Section Heading,Modern Resume Templates — Free Download,AI,"SEO heading. 'modern resume template' (12K vol)."
+121,Cat: Modern,p + link + 3 cards,Section Content,(heading + description + 3 cards),H / AI / P,Same pattern.
+122,Cat: Traditional,h3,Section Heading,Traditional Resume Templates,AI,SEO heading.
+123,Cat: Traditional,p + link + 3 cards,Section Content,(heading + description + 3 cards),H / AI / P,Same pattern.
+124,Cat: College,h3,Section Heading,College Resume Templates,AI,SEO heading.
+125,Cat: College,p + link + 3 cards,Section Content,(heading + description + 3 cards),H / AI / P,Same pattern.
+126,Cat: High School,h3,Section Heading,High School Resume Templates,AI,SEO heading.
+127,Cat: High School,p + link + 3 cards,Section Content,(heading + description + 3 cards),H / AI / P,Same pattern.
+,,,,,,
+,═══ PERFORMANCE INDEX ═══,,,,,
+128,Perf Index,.section-eyebrow,Eyebrow,Performance Index,H,"Section label — brand/UX decision."
+129,Perf Index,h2,Section Title,"Templates Ranked by Real Hiring Data",AI,"SEO heading. AI drafts, editorial approves."
+130,Perf Index,.section-subtitle,Subtitle,"Every template scored across 4 dimensions using data from 100,000+ real resumes reviewed by Toptal's hiring network.",AI,"Trust-building subtitle. AI writes, marketing validates data claims."
+131,Perf Index,Metric Card 1,Metric,"ATS Compatibility — 94–99% — Tested against Workday, Greenhouse, Lever, iCIMS…",H,"Real metrics from internal testing. Data team provides numbers, content team writes labels + descriptions."
+132,Perf Index,Metric Card 2,Metric,Recruiter Preference — 4.7/5.0 — Average rating from 200+ recruiters in Toptal's hiring network…,H,Same — real data required.
+133,Perf Index,Metric Card 3,Metric,"Readability Score — A+ — Flesch-Kincaid analysis of typography, spacing, section hierarchy…",H,Same — real data required.
+134,Perf Index,Metric Card 4,Metric,"Interview Callback Rate — +34% — Templates users report 34% more callbacks vs. plain-text resumes…",H,Same — real data required. Legal must approve claims.
+135,Perf Index,CTA,CTA Label,View Full Performance Methodology,H,Links to methodology page — product decision.
+,,,,,,
+,═══ EXPERT PANEL ═══,,,,,
+136,Expert Panel,.section-eyebrow,Eyebrow,Our Team,H,Section label.
+137,Expert Panel,h2,Section Title,The Recruiters & Resume Writers Behind Our Data,AI,"SEO + trust heading. AI drafts, editorial approves."
+138,Expert Panel,.section-subtitle,Subtitle,"Our templates are built on insights from professionals who've collectively reviewed 100,000+ resumes across every major industry.",AI,"Trust subtitle. AI drafts, marketing validates."
+139,Expert Panel,Member 1,Name,Sarah Chen,H,"Real person or realistic persona. HR/Legal must approve if using real names."
+140,Expert Panel,Member 1,Role,Senior Technical Recruiter,H,Real role.
+141,Expert Panel,Member 1,Bio,"""12+ years recruiting for FAANG companies. Reviewed 15,000+ resumes. Specialist in engineering and product roles.""",H,"Must be written or approved by the actual person. If fictional, content team writes."
+142,Expert Panel,Member 2,Name,Marcus Williams,H,Same as above.
+143,Expert Panel,Member 2,Role,Executive Resume Writer (CPRW),H,Real role.
+144,Expert Panel,Member 2,Bio,"""Certified Professional Resume Writer with 8+ years experience. Has written 3,000+ executive resumes for C-suite and VP-level candidates.""",H,Same — real person or vetted fictional bio.
+145,Expert Panel,Member 3,Name,Dr. Priya Patel,H,Same.
+146,Expert Panel,Member 3,Role,Career Development Director,H,Same.
+147,Expert Panel,Member 3,Bio,"""Former university career center director with 10+ years in career coaching. Expert in academic CVs, research resumes, and career transitions.""",H,Same.
+148,Expert Panel,Member 4,Name,James O'Brien,H,Same.
+149,Expert Panel,Member 4,Role,ATS & Recruitment Technology Analyst,H,Same.
+150,Expert Panel,Member 4,Bio,"""ATS consultant who has configured and tested hiring software for 50+ companies. Ensures every template passes real-world screening.""",H,Same.
+151,Expert Panel,Member 5,Name,Ana Rodríguez,H,Same.
+152,Expert Panel,Member 5,Role,Entry-Level Career Specialist,H,Same.
+153,Expert Panel,Member 5,Bio,"""Specialist in career-change and fresher resumes. Everyone has a story worth telling — you just need the right format.""",H,Same.
+,,,,,,
+,═══ TESTIMONIALS ═══,,,,,
+154,Testimonials,Testimonial 1 — quote,Quote,"""After struggling with formatting for weeks, I found Toptal's templates and landed interviews at 3 FAANG companies within a month…""",H,"Must be real testimonials or clearly marked as representative. Legal review required."
+155,Testimonials,Testimonial 1 — name,Name,David Montero,H,Real name (with permission) or anonymized.
+156,Testimonials,Testimonial 1 — company,Company,Hired at Google,H,Verified claim.
+157,Testimonials,Testimonial 2 — quote,Quote,"""The ATS-optimized templates are incredible. I went from getting zero callbacks to 5 interviews in two weeks…""",H,Same.
+158,Testimonials,Testimonial 2 — name,Name,Sarah Kim,H,Same.
+159,Testimonials,Testimonial 2 — company,Company,Hired at Shopify,H,Same.
+160,Testimonials,Testimonial 3 — quote,Quote,"""As a career changer from teaching to tech, I needed a resume that highlighted transferable skills. The 'Career Pivot' template did exactly that…""",H,Same.
+161,Testimonials,Testimonial 3 — name,Name,James Rodriguez,H,Same.
+162,Testimonials,Testimonial 3 — company,Company,Hired at JPMorgan,H,Same.
+,,,,,,
+,═══ RESUME EXAMPLES BY JOB ═══,,,,,
+163,Examples,h2,Section Title,Resume Examples by Job Category,AI,"SEO heading. AI writes."
+164,Examples,.section-subtitle,Subtitle,"See how professionals in your field structure their resumes. Real examples using our templates.",AI,AI-generated.
+165,Examples,6 category card titles,Category Names,"Technology & Engineering, Business & Finance, Healthcare & Science, Creative & Media, Education & Government, Entry Level & Career Change",P,"From job taxonomy — same as filter categories."
+166,Examples,6 category card descriptions,Category Descriptions,"(6 short descriptions, e.g. 'Software Engineer, Data Analyst, DevOps, PM, UX Designer, Cybersecurity')",P,"Auto-generated from top job titles in each category."
+167,Examples,6 category card counts,Template Counts,"(e.g. '24 examples', '18 examples')",P,Counts from DB.
+,,,,,,
+,═══ FEATURES SECTION ═══,,,,,
+168,Features,.section-eyebrow,Eyebrow,Why Toptal,H,Brand label.
+169,Features,h2,Section Title,Why Choose Toptal Resume Templates,AI,"SEO heading. AI drafts."
+170,Features,.section-subtitle,Subtitle,"Built with real hiring data. Designed by recruiters. Trusted by 2.7M+ professionals.",AI,"Trust subtitle with stat. Marketing validates claim."
+171,Features,Feature 1,Feature Title + Description,"ATS-Tested & Certified — Every template tested against 6 major ATS platforms…",AI,"AI generates from product features. Product team validates accuracy."
+172,Features,Feature 2,Feature Title + Description,"Built on Real Hiring Data — Insights from 100,000+ resumes reviewed by Toptal's network…",AI,Same.
+173,Features,Feature 3,Feature Title + Description,"Free Downloads, No Catches — Download DOCX templates instantly, no account required…",AI,Same.
+174,Features,Feature 4,Feature Title + Description,"Recruiter-Approved Designs — Every template reviewed by professional recruiters…",AI,Same.
+175,Features,Feature 5,Feature Title + Description,"Multiple Formats — Available in PDF, Word (.docx), and Google Docs…",AI,Same.
+176,Features,Feature 6,Feature Title + Description,"Industry-Specific Guidance — Each template includes sample content for your target industry…",AI,Same.
+,,,,,,
+,═══ EDUCATIONAL TIPS ═══,,,,,
+177,Tips,h2,Section Title,How to Choose and Use Your Resume Template,AI,"SEO heading. 'how to make a resume' cluster."
+178,Tips,.section-subtitle,Subtitle,"Expert tips from our team of recruiters and resume writers.",AI,AI-generated.
+179,Tips,Tip 1,Tip Title + Description,"Match Your Industry — Choose a template that fits your field's conventions…",AI,"AI generates tips from hiring data. Content team reviews."
+180,Tips,Tip 2,Tip Title + Description,"Prioritize ATS Compatibility — If applying online, always use an ATS-friendly template…",AI,Same.
+181,Tips,Tip 3,Tip Title + Description,"Keep It to One Page — Unless you have 10+ years of experience, one page is ideal…",AI,Same.
+182,Tips,Tip 4,Tip Title + Description,"Customize for Every Application — Tailor your template content to each job listing…",AI,Same.
+183,Tips,Tip 5,Tip Title + Description,"Use Quantified Achievements — Replace vague duties with measurable accomplishments…",AI,Same.
+184,Tips,Tip 6,Tip Title + Description,"Export in the Right Format — PDF preserves formatting, Word allows editing, Google Docs enables collaboration…",AI,Same.
+,,,,,,
+,═══ COMPREHENSIVE GUIDE — 10 CHAPTERS ═══,,,,,
+185,Guide,h2,Main Title,"The Complete Guide to Resume Templates, CV Formats & Building Your Perfect Resume",AI,"Long-tail SEO title covering multiple keyword clusters. AI drafts, SEO lead approves."
+186,Guide,.guide-toc,Table of Contents,10 chapter links,P,"Auto-generated from chapter headings."
+187,Guide,Ch 1 — h3,Chapter Title,Resume Templates vs. CV Templates: What's the Difference?,AI,"Keyword-targeted chapter heading. AI drafts."
+188,Guide,Ch 1 — body,Chapter Content,"~3 paragraphs + comparison table (Resume vs CV: length, focus, geography, format, common formats)",AI,"Long-form SEO content. AI drafts full chapter, content team edits for accuracy + tone. Table data must be factually correct."
+189,Guide,Ch 2 — h3,Chapter Title,How to Choose the Best Resume Format,AI,Same pattern.
+190,Guide,Ch 2 — body,Chapter Content,"~3 paragraphs explaining chronological, functional, combination formats + callout",AI,"AI writes. Must be factually accurate career advice."
+191,Guide,Ch 3 — h3,Chapter Title,"Free Resume Templates: Download in PDF, Word & Google Docs",AI,Same.
+192,Guide,Ch 3 — body,Chapter Content,"~2 paragraphs + format comparison (PDF vs Word vs Google Docs benefits)",AI,AI writes.
+193,Guide,Ch 4 — h2,Chapter Title,Resume Templates for Freshers & Students — Free Download,AI,"SEO-critical heading targeting 'resume for freshers' (25K vol) + 'fresher resume template' (1.98K). AI drafts, SEO approves."
+194,Guide,Ch 4 — body,Chapter Content,"~4 paragraphs + bulleted tips + callout + comparison table (Resume Section / What to Include / Priority)",AI,"AI writes. Table content must be accurate career advice."
+195,Guide,Ch 4 — link,CTA Link,Browse all fresher resume templates →,P,"Links to /resume-templates/fresher sub-page."
+196,Guide,Ch 5 — h2,Chapter Title,CV Templates — Professional CV Templates for Every Industry,AI,"SEO heading targeting 'cv template' (535K vol cluster). AI drafts, SEO approves."
+197,Guide,Ch 5 — body,Chapter Content,"~2 paragraphs + 7 industry bullet points + callout",AI,"AI writes. Industry descriptions must be accurate."
+198,Guide,Ch 6 — h3,Chapter Title,"How to Make a Resume for a Job: Step-by-Step",AI,SEO heading.
+199,Guide,Ch 6 — body,Chapter Content,"10-step numbered process + callout",AI,AI writes step-by-step guide.
+200,Guide,Ch 7 — h3,Chapter Title,ATS-Friendly Resume Formats That Actually Work,AI,SEO heading.
+201,Guide,Ch 7 — body,Chapter Content,"~3 paragraphs + DOs/DON'Ts table",AI,"AI writes. ATS technical details must be verified by product/engineering team."
+202,Guide,Ch 8 — h3,Chapter Title,"Resume Design, Layout & Formatting Best Practices",AI,SEO heading.
+203,Guide,Ch 8 — body,Chapter Content,"~3 paragraphs with formatting specs (margins, fonts, spacing) + callout",AI,"AI writes. Formatting specs must be accurate."
+204,Guide,Ch 9 — h3,Chapter Title,Using a Resume Builder vs. Templates,AI,SEO heading.
+205,Guide,Ch 9 — body,Chapter Content,"~2 paragraphs + comparison table (DIY Template vs Resume Builder features)",AI,"AI writes. Builder features must match actual product capabilities — product team validates."
+206,Guide,Ch 10 — h3,Chapter Title,"Download Formats: PDF, Word & Editable Templates",AI,SEO heading.
+207,Guide,Ch 10 — body,Chapter Content,"~2 paragraphs + format comparison table + callout",AI,AI writes.
+,,,,,,
+,═══ FAQ SECTION ═══,,,,,
+208,FAQ,h2,Section Title,Frequently Asked Questions,P,"Standard heading. No SEO customization needed."
+209,FAQ,Q1,Question,How do I customize a resume template?,AI,"FAQ questions derived from 'People Also Ask' + keyword research. AI drafts, SEO reviews."
+210,FAQ,A1,Answer,"Simply click 'Customize' on any template to open it in our editor. Replace the placeholder text…",AI,"AI writes answers. Must match actual product UX. Product team validates."
+211,FAQ,Q2,Question,Are these resume templates really ATS-friendly?,AI,Same.
+212,FAQ,A2,Answer,"Yes. Every template marked with the 'ATS' badge has been tested against major ATS including Workday, Greenhouse, Lever, and iCIMS…",AI,"AI writes. ATS testing claims must be verified."
+213,FAQ,Q3,Question,What file formats can I download?,AI,Same.
+214,FAQ,A3,Answer,"Templates are available in PDF, Microsoft Word (.docx), and Google Docs formats…",AI,AI writes. Must match actual format availability.
+215,FAQ,Q4,Question,Can I use these templates for free?,AI,Same.
+216,FAQ,A4,Answer,"Our core templates are free to download in DOCX — no account required. All 108 templates are available in the Resume Builder…",AI,"AI writes. Pricing/free claims must be validated by product/legal."
+217,FAQ,Q5,Question,How do I choose the right template for my industry?,AI,Same.
+218,FAQ,A5,Answer,"Use the Industry filter in our template gallery to browse templates designed for your field…",AI,AI writes.
+219,FAQ,Q6,Question,What makes Toptal templates different from other free templates?,AI,Same.
+220,FAQ,A6,Answer,"Toptal templates are built with input from our network of hiring professionals and recruiters…",AI,"AI writes differentiator copy. Marketing must approve claims."
+,,,,,,
+,═══ FINAL CTA SECTION ═══,,,,,
+221,CTA,h2,Section Title,Find Your Perfect Resume Template Today,AI,"Closing CTA heading. AI drafts."
+222,CTA,.cta-subtitle,Subtitle,"Browse 100+ professional templates, download for free, and customize in minutes. Your next interview starts here.",AI,AI-generated CTA copy.
+223,CTA,Primary CTA,CTA Label,Build My Resume,H,"Must match hero CTA — product decision."
+224,CTA,Secondary CTA,CTA Label,Import Existing Resume,H,Same.
+225,CTA,.cta-features × 4,Feature Bullets,"100+ Professional Templates, Free PDF & Word Download, 98% ATS Pass Rate, No Credit Card Required",AI,"Trust bullets. AI drafts. Data claims must be verified."
+,,,,,,
+,═══ FOOTER ═══,,,,,
+226,Footer,.footer-tagline,Tagline,"Professional resume templates built with real hiring data from Toptal's network of recruiters and hiring managers.",AI,"Brand tagline. AI drafts, brand team approves."
+227,Footer,.footer-column × 4,Column Headings,"Resume Templates, Resources, Company, Legal",H,"IA structure — UX/product decision."
+228,Footer,Resume Templates links × 7,Footer Links,"All Templates, ATS-Friendly, Simple, Modern, Creative, Google Docs, Word",P,"Auto-generated from template category taxonomy."
+229,Footer,Resources links × 5,Footer Links,"Resume Builder, Resume Examples, Cover Letters, Career Blog, ATS Score Checker",H,"Product pages — set by product team."
+230,Footer,Company links × 4,Footer Links,"About Toptal, Hiring Network, Careers, Contact",H,"Corporate links — set by company."
+231,Footer,Legal links × 3,Footer Links,"Privacy Policy, Terms of Service, Cookie Settings",H,"Legal links — set by legal team."
+232,Footer,.footer-bottom,Copyright,© 2026 Toptal Resume. All rights reserved.,P,"Year auto-updated. Company name fixed."
+,,,,,,
+,═══ SUMMARY COUNTS ═══,,,,,
+,,,,,TOTAL FIELDS: ~232,
+,,,,,Programmatic (P): ~62 fields,"Template tags, counts, filter options, taxonomy labels, schema, breadcrumbs, year"
+,,,,,AI-Generated (AI): ~128 fields,"Descriptions, SEO headings, guide chapters, FAQ, meta tags, feature copy"
+,,,,,Human-Written (H): ~42 fields,"Template names, brand copy, CTAs, team bios, testimonials, nav structure, real metrics"

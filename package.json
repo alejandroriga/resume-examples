@@ -1,0 +1,15 @@
+{
+  "name": "toptal-resume-examples-cms",
+  "version": "1.0.0",
+  "description": "Multi-user CMS for Toptal Resume Examples",
+  "main": "server-v2.js",
+  "scripts": {
+    "start": "node server-v2.js",
+    "migrate": "node migrate-data.js"
+  },
+  "dependencies": {
+    "sql.js": "^1.11.0",
+    "bcryptjs": "^2.4.3",
+    "cookie": "^1.0.2"
+  }
+}

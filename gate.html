@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <title>Access Required</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .gate-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 40px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 25px 50px rgba(0,0,0,.4);
+    }
+    .gate-card h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #f1f5f9;
+    }
+    .gate-card p {
+      font-size: 14px;
+      color: #94a3b8;
+      margin-bottom: 28px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 12px 14px;
+      font-size: 15px;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      color: #e2e8f0;
+      outline: none;
+      transition: border-color .2s;
+    }
+    .form-group input:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99,102,241,.15);
+    }
+    .btn-enter {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      background: #6366f1;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .btn-enter:hover { background: #4f46e5; }
+    .btn-enter:disabled { opacity: .6; cursor: not-allowed; }
+    .error-msg {
+      background: #7f1d1d;
+      color: #fca5a5;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      margin-bottom: 16px;
+      display: none;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background: #6366f1;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+    .lock-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gate-card">
+    <div class="brand">
+      <div class="brand-icon">T</div>
+      <div>
+        <div style="font-weight:700;font-size:16px;">Templates Preview</div>
+        <div style="font-size:12px;color:#64748b;">Toptal Resume</div>
+      </div>
+    </div>
+
+    <div class="lock-icon">&#128274;</div>
+    <h1>Access Required</h1>
+    <p>This site is in preview mode. Enter the access keyword to continue.</p>
+
+    <div class="error-msg" id="error"></div>
+
+    <form id="gateForm" onsubmit="handleGate(event)">
+      <div class="form-group">
+        <label>Access Keyword</label>
+        <input type="password" id="keyword" autocomplete="off" required autofocus placeholder="Enter keyword...">
+      </div>
+      <button type="submit" class="btn-enter" id="btnEnter">Enter Site</button>
+    </form>
+  </div>
+
+  <script>
+    async function handleGate(e) {
+      e.preventDefault();
+      const btn = document.getElementById('btnEnter');
+      const err = document.getElementById('error');
+      err.style.display = 'none';
+      btn.disabled = true;
+      btn.textContent = 'Verifying...';
+
+      try {
+        const res = await fetch('/api/gate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            keyword: document.getElementById('keyword').value
+          })
+        });
+        const data = await res.json();
+        if (data.ok) {
+          // Redirect to the originally requested page, or homepage
+          const params = new URLSearchParams(window.location.search);
+          const redirect = params.get('redirect') || '/';
+          window.location.href = redirect;
+        } else {
+          err.textContent = data.error || 'Invalid keyword';
+          err.style.display = 'block';
+        }
+      } catch (e) {
+        err.textContent = 'Server not reachable. Please try again.';
+        err.style.display = 'block';
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Enter Site';
+    }
+  </script>
+</body>
+</html>

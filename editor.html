@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Editor — Toptal Resume Examples</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>
+    :root {
+      --green: #00CC83;
+      --green-hover: #00b874;
+      --blue: #204ECF;
+      --blue-light: #EDF1FD;
+      --navy: #0F256E;
+      --navy-dark: #030A42;
+      --charcoal: #262D3D;
+      --near-black: #191E28;
+      --body-text: #455065;
+      --muted: #84888E;
+      --surface: #F5F5F7;
+      --border: #E5E7EA;
+      --white: #FFFFFF;
+      --radius: 4px;
+      --radius-lg: 8px;
+      --radius-xl: 12px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+      --transition: 0.2s ease;
+      --red: #EF4444;
+      --amber: #D97706;
+      --amber-light: #FFFBF0;
+      --sidebar-w: 260px;
+      --header-h: 56px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--surface);
+      color: var(--charcoal);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* ─── HEADER ─── */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+      height: var(--header-h);
+      display: flex; align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      padding: 0 20px;
+    }
+    .header-brand {
+      font-size: 16px; font-weight: 700; color: var(--white);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .header-brand .dot { color: var(--green); }
+    .header-brand span { font-weight: 400; font-size: 13px; color: rgba(255,255,255,0.5); margin-left: 4px; }
+    .header-right { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+    .header-right .modified-badge {
+      font-size: 11px; font-weight: 600; color: var(--amber);
+      display: none; align-items: center; gap: 4px; margin-right: 8px;
+    }
+    .header-right .modified-badge::before {
+      content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--amber);
+    }
+    .btn-header {
+      font-family: inherit; font-size: 12px; font-weight: 600;
+      padding: 7px 14px; border-radius: var(--radius); cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85);
+      transition: all var(--transition); white-space: nowrap;
+    }
+    .btn-header:hover { background: rgba(255,255,255,0.15); color: var(--white); }
+    .btn-header.primary { background: var(--green); color: var(--navy-dark); border-color: var(--green); }
+    .btn-header.primary:hover { background: var(--green-hover); }
+    .btn-header.seo-toggle { border-color: var(--amber); color: var(--amber); }
+    .btn-header.seo-toggle.active { background: var(--amber); color: var(--white); border-color: var(--amber); }
+    .btn-header.seo-toggle:hover { background: rgba(217,119,6,0.2); }
+    .btn-header.seo-toggle.active:hover { background: #b45309; }
+
+    /* ─── LAYOUT ─── */
+    .app { display: flex; height: 100vh; padding-top: var(--header-h); }
+
+    /* ─── SIDEBAR ─── */
+    .sidebar {
+      width: var(--sidebar-w); min-width: var(--sidebar-w);
+      background: var(--white); border-right: 1px solid var(--border);
+      display: flex; flex-direction: column; overflow: hidden;
+    }
+    .sidebar-search {
+      padding: 12px 14px; border-bottom: 1px solid var(--border);
+    }
+    .sidebar-search input {
+      width: 100%; font-family: inherit; font-size: 13px;
+      padding: 8px 10px 8px 32px; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); outline: none;
+      background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2384888E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E") 10px center no-repeat;
+      transition: border-color var(--transition);
+    }
+    .sidebar-search input:focus { border-color: var(--blue); }
+    .sidebar-search input::placeholder { color: var(--muted); }
+
+    .sidebar-list {
+      flex: 1; overflow-y: auto; padding: 6px 0;
+    }
+    .sidebar-list::-webkit-scrollbar { width: 4px; }
+    .sidebar-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    .sidebar-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 14px; cursor: pointer; transition: all var(--transition);
+      border-left: 3px solid transparent; font-size: 13px; color: var(--body-text);
+      position: relative;
+    }
+    .sidebar-item:hover { background: var(--surface); }
+    .sidebar-item.active {
+      background: var(--blue-light); color: var(--blue);
+      font-weight: 600; border-left-color: var(--blue);
+    }
+    .sidebar-dot {
+      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    }
+    .sidebar-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .sidebar-status {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    }
+    .sidebar-status.modified { background: var(--amber); }
+    .sidebar-status.complete { background: var(--green); }
+    .sidebar-count {
+      font-size: 11px; color: var(--muted); padding: 8px 14px;
+      border-top: 1px solid var(--border); text-align: center;
+    }
+
+    /* ─── MAIN ─── */
+    .main {
+      flex: 1; overflow-y: auto; padding: 28px 36px 60px;
+    }
+    .main::-webkit-scrollbar { width: 6px; }
+    .main::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    .page-header {
+      margin-bottom: 24px;
+    }
+    .page-header h1 {
+      font-size: 22px; font-weight: 700; color: var(--near-black); margin-bottom: 4px;
+    }
+    .page-header .breadcrumb {
+      font-size: 12px; color: var(--muted);
+    }
+
+    /* ─── SECTION ─── */
+    .section {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); margin-bottom: 12px;
+      box-shadow: var(--shadow-sm); overflow: hidden;
+    }
+    .section-header {
+      display: flex; align-items: center; gap: 10px;
+      padding: 14px 18px; cursor: pointer; user-select: none;
+      transition: background var(--transition);
+    }
+    .section-header:hover { background: var(--surface); }
+    .section-toggle {
+      width: 18px; height: 18px; color: var(--muted);
+      transition: transform var(--transition); flex-shrink: 0;
+    }
+    .section.collapsed .section-toggle { transform: rotate(-90deg); }
+    .section-title {
+      font-size: 14px; font-weight: 600; color: var(--charcoal); flex: 1;
+    }
+    .section-count {
+      font-size: 11px; color: var(--muted); background: var(--surface);
+      padding: 2px 10px; border-radius: 20px;
+    }
+    .section-body {
+      padding: 0 18px 20px; max-height: 8000px;
+      overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .section.collapsed .section-body {
+      max-height: 0; padding-top: 0; padding-bottom: 0;
+    }
+
+    /* ─── FIELD ─── */
+    .field { margin-bottom: 16px; }
+    .field:last-child { margin-bottom: 0; }
+    .field label {
+      display: block; font-size: 12px; font-weight: 600;
+      color: var(--charcoal); margin-bottom: 4px;
+      text-transform: uppercase; letter-spacing: 0.3px;
+    }
+    .field-hint {
+      font-size: 11px; color: var(--muted); margin-bottom: 6px;
+      line-height: 1.4; font-style: italic;
+    }
+    .field input[type="text"], .field textarea, .field select {
+      width: 100%; font-family: inherit; font-size: 13px;
+      padding: 9px 12px; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); outline: none;
+      background: var(--white); color: var(--charcoal);
+      transition: border-color var(--transition);
+      line-height: 1.5;
+    }
+    .field input[type="text"]:focus, .field textarea:focus, .field select:focus {
+      border-color: var(--blue);
+    }
+    .field textarea { resize: vertical; }
+    .field-row {
+      display: flex; gap: 12px;
+    }
+    .field-row .field { flex: 1; }
+
+    /* ─── SEO BRIEF ─── */
+    .seo-brief {
+      margin-top: 6px; overflow: hidden;
+      transition: max-height 0.25s ease;
+    }
+    .seo-brief.collapsed { max-height: 24px !important; }
+    .seo-brief-toggle {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-family: inherit; font-size: 11px; font-weight: 600;
+      color: var(--amber); background: none; border: none;
+      cursor: pointer; padding: 2px 0; transition: color var(--transition);
+    }
+    .seo-brief-toggle:hover { color: #92400e; }
+    .seo-brief-toggle .seo-arrow {
+      transition: transform 0.2s ease; display: inline-block; font-size: 9px;
+    }
+    .seo-brief.collapsed .seo-arrow { transform: rotate(-90deg); }
+    .seo-brief-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--amber); display: none; flex-shrink: 0;
+    }
+    .seo-brief-dot.has-content { display: inline-block; }
+    .seo-brief-input {
+      width: 100%; font-family: inherit; font-size: 12px;
+      padding: 8px 12px; margin-top: 4px;
+      border: 1px solid #F3E4C0; border-left: 3px solid var(--amber);
+      border-radius: var(--radius); outline: none;
+      background: var(--amber-light); color: var(--charcoal);
+      line-height: 1.5; resize: vertical;
+      transition: border-color var(--transition);
+    }
+    .seo-brief-input:focus { border-color: var(--amber); }
+    .seo-brief-input::placeholder { color: #C4A35A; font-style: italic; }
+    .seo-brief.collapsed .seo-brief-input { display: none; }
+
+    /* ─── CHAR COUNTER ─── */
+    .char-counter {
+      font-size: 11px; font-weight: 600; text-align: right; margin-top: 3px;
+    }
+    .char-counter.ok { color: var(--green); }
+    .char-counter.warn { color: var(--amber); }
+    .char-counter.over { color: var(--red); }
+
+    /* ─── CARD GRID ─── */
+    .cards-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    }
+    .card-editor {
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 14px; background: var(--surface);
+    }
+    .card-editor-num {
+      font-size: 11px; font-weight: 700; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;
+    }
+    .card-editor .field { margin-bottom: 10px; }
+    .card-editor .field label { font-size: 11px; }
+    .card-editor .field input, .card-editor .field textarea {
+      font-size: 12px; padding: 7px 10px;
+    }
+    .card-editor .seo-brief-input { font-size: 11px; padding: 6px 8px; }
+    .tags-row { display: flex; gap: 6px; }
+    .tags-row input { flex: 1; }
+    .badges-row {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px;
+    }
+    .badge-check {
+      display: flex; align-items: center; gap: 4px;
+      font-size: 11px; color: var(--body-text); cursor: pointer;
+    }
+    .badge-check input { margin: 0; cursor: pointer; }
+
+    /* ─── LIST EDITOR ─── */
+    .list-editor { display: flex; flex-direction: column; gap: 8px; }
+    .list-item {
+      display: flex; gap: 8px; align-items: flex-start;
+    }
+    .list-item-num {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--surface); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-weight: 700; color: var(--muted);
+      flex-shrink: 0; margin-top: 7px;
+    }
+    .list-item-content { flex: 1; }
+    .list-item-content textarea { width: 100%; }
+    .list-item-remove {
+      background: none; border: none; color: var(--muted);
+      cursor: pointer; padding: 4px; margin-top: 6px; flex-shrink: 0;
+      transition: color var(--transition);
+    }
+    .list-item-remove:hover { color: var(--red); }
+    .btn-add-item {
+      font-family: inherit; font-size: 12px; font-weight: 600;
+      color: var(--blue); background: none; border: 1px dashed var(--border);
+      border-radius: var(--radius-lg); padding: 8px;
+      cursor: pointer; transition: all var(--transition); width: 100%;
+    }
+    .btn-add-item:hover { background: var(--blue-light); border-color: var(--blue); }
+
+    /* ─── STEP EDITOR ─── */
+    .step-editor {
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 14px; background: var(--surface); margin-bottom: 10px;
+    }
+    .step-editor:last-of-type { margin-bottom: 0; }
+    .step-header {
+      display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
+    }
+    .step-num {
+      font-size: 11px; font-weight: 700; color: var(--muted);
+      text-transform: uppercase;
+    }
+    .step-remove {
+      margin-left: auto; background: none; border: none;
+      color: var(--muted); cursor: pointer; padding: 2px;
+    }
+    .step-remove:hover { color: var(--red); }
+
+    /* ─── FAQ EDITOR ─── */
+    .faq-editor {
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 14px; background: var(--surface); margin-bottom: 10px;
+    }
+    .faq-editor:last-of-type { margin-bottom: 0; }
+    .faq-num {
+      font-size: 11px; font-weight: 700; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;
+    }
+
+    /* ─── RELATED PAGES ─── */
+    .related-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;
+    }
+    .related-grid select { font-size: 12px; padding: 8px; }
+
+    /* ─── EMPTY STATE ─── */
+    .empty-state {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; height: 60vh; color: var(--muted); text-align: center;
+    }
+    .empty-state svg { width: 48px; height: 48px; margin-bottom: 16px; opacity: 0.3; }
+    .empty-state h2 { font-size: 18px; color: var(--charcoal); margin-bottom: 6px; }
+    .empty-state p { font-size: 13px; }
+
+    /* ─── TOAST ─── */
+    .toast {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px);
+      background: var(--near-black); color: var(--white);
+      font-size: 13px; font-weight: 500; padding: 10px 20px;
+      border-radius: var(--radius-lg); opacity: 0; transition: all 0.3s ease;
+      z-index: 200; white-space: nowrap;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ─── LOADING ─── */
+    .loading {
+      display: flex; align-items: center; justify-content: center;
+      height: 60vh; color: var(--muted); font-size: 14px; gap: 10px;
+    }
+    .spinner {
+      width: 20px; height: 20px; border: 2px solid var(--border);
+      border-top-color: var(--blue); border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1200px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+      .related-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .cards-grid { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: repeat(2, 1fr); }
+      .sidebar { width: 200px; min-width: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-brand">
+      Toptal<span class="dot">.</span> <span>Content Editor</span>
+    </div>
+    <div class="header-right">
+      <span class="modified-badge" id="globalModified">Unsaved changes</span>
+      <button class="btn-header seo-toggle" id="seoToggleBtn" onclick="toggleAllSEO()">SEO Briefs</button>
+      <button class="btn-header" onclick="resetAllChanges()">Reset All</button>
+      <button class="btn-header" onclick="exportSEOBriefs()">Export SEO Briefs</button>
+      <button class="btn-header primary" onclick="exportPageData()">
+        <i data-lucide="download" style="width:13px;height:13px;vertical-align:-2px;margin-right:4px;"></i>
+        Export page-data.js
+      </button>
+    </div>
+  </div>
+
+  <!-- APP -->
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-search">
+        <input type="text" id="searchInput" placeholder="Search pages..." oninput="filterSidebar()">
+      </div>
+      <div class="sidebar-list" id="sidebarList"></div>
+      <div class="sidebar-count" id="sidebarCount"></div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main" id="mainContent">
+      <div class="empty-state" id="emptyState">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        <h2>Select a page</h2>
+        <p>Choose a page from the sidebar to start editing.</p>
+      </div>
+    </div>
+
+  </div>
+
+<script>
+// ═══════════════════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════════════════
+
+let pages = [];
+let activePageIndex = -1;
+let modifiedPages = new Set();
+let saveTimers = {};
+let seoTimers = {};
+let showSEO = false;          // global SEO briefs visibility
+let currentSEO = {};          // SEO data for currently active page
+
+const BADGE_TYPES = [
+  { key: 'ats', label: 'ATS' },
+  { key: 'popular', label: 'Popular' },
+  { key: 'free', label: 'Free' },
+  { key: 'builder-only', label: 'Builder Only' }
+];
+
+// ═══════════════════════════════════════════════════
+//  FIELD INSTRUCTIONS
+// ═══════════════════════════════════════════════════
+
+const HINTS = {
+  title: 'Page title tag. Keep under 60 chars. Front-load the primary keyword.',
+  metaDescription: 'Meta description for search results. 150\u2013160 chars. Include a CTA.',
+  h1: 'Main heading on the page. Should contain the primary keyword naturally.',
+  heroSubtitle: 'Paragraph below the H1. Explain what this category offers and who it\u2019s for. 2\u20133 sentences.',
+  trustSignal: 'One-line trust/credibility statement shown below the subtitle.',
+  exampleName: 'Example display name. Keep concise (2\u20133 words).',
+  exampleDesc: '1\u20132 sentences describing what makes this example unique.',
+  exampleTags: 'Category tags (e.g., \u201cCorporate\u201d, \u201cSingle Column\u201d, \u201cWord\u201d).',
+  exampleBadges: 'Select all that apply: ATS-optimized, Popular, Free download, Builder only.',
+  guideWhatIsHeading: 'Section heading, typically \u201cWhat Is a [Category] Resume Example?\u201d',
+  guideWhatIsBody: 'Detailed paragraph explaining what this example type is and why it matters. 80\u2013150 words. Write for someone who has never seen this format.',
+  guideWhenToUseHeading: 'Heading like \u201cWhen to Use a [Category] Resume Example\u201d',
+  guideWhenToUseItems: 'Each item is a use-case scenario. Start with a context (e.g., \u201cApplying to\u2026\u201d). 4\u20135 items recommended.',
+  guideWhenNotHeading: 'Heading like \u201cWhen to Choose a Different Example\u201d',
+  guideWhenNotItems: 'Situations where this example is NOT the best choice. 2\u20133 items.',
+  guideHowToHeading: 'Heading like \u201cHow to Customize Your [Category] Resume\u201d',
+  guideHowToSteps: 'Each step has a bold title and explanatory paragraph. 3 steps recommended.',
+  guideExpertHeading: 'Heading like \u201cExpert Tips for [Category] Success\u201d',
+  guideExpertTips: 'Pro tips from hiring experts. Each tip has a title and supporting explanation. 3 tips.',
+  faqQuestion: 'Question people actually search for. Use natural phrasing.',
+  faqAnswer: 'Direct, comprehensive answer. 40\u201380 words. Avoid fluff.',
+  relatedPages: 'Select 5 related categories. Choose pages users would naturally explore next.'
+};
+
+// ═══════════════════════════════════════════════════
+//  SEO BRIEF HELPER
+// ═══════════════════════════════════════════════════
+
+function seoBrief(fieldPath, placeholder) {
+  const val = currentSEO[fieldPath] || '';
+  const hasContent = val.trim().length > 0;
+  const collapsedClass = showSEO ? '' : 'collapsed';
+  const ph = placeholder || 'Keywords, search intent, guidelines\u2026';
+  return `
+    <div class="seo-brief ${collapsedClass}">
+      <button class="seo-brief-toggle" onclick="toggleSEOBrief(this)" type="button">
+        <span class="seo-brief-dot ${hasContent ? 'has-content' : ''}"></span>
+        SEO Brief <span class="seo-arrow">\u25BE</span>
+      </button>
+      <textarea class="seo-brief-input" data-seo="${escAttr(fieldPath)}" rows="2"
+        placeholder="${escAttr(ph)}">${esc(val)}</textarea>
+    </div>`;
+}
+
+// ═══════════════════════════════════════════════════
+//  DATA LOADING
+// ═══════════════════════════════════════════════════
+
+async function loadPageData() {
+  try {
+    const res = await fetch('/page-data.js');
+    let text = await res.text();
+    text = text.replace(/^module\.exports\s*=\s*/, '').replace(/;\s*$/, '');
+    pages = (new Function('return ' + text))();
+    renderSidebar();
+    document.getElementById('sidebarCount').textContent = pages.length + ' pages';
+    lucide.createIcons();
+  } catch (err) {
+    console.error('Failed to load page-data.js:', err);
+    document.getElementById('mainContent').innerHTML =
+      '<div class="loading" style="color:var(--red);">Failed to load page-data.js</div>';
+  }
+}
+
+// ═══════════════════════════════════════════════════
+//  SIDEBAR
+// ═══════════════════════════════════════════════════
+
+function renderSidebar() {
+  const list = document.getElementById('sidebarList');
+  list.innerHTML = '';
+  pages.forEach((page, i) => {
+    const item = document.createElement('div');
+    item.className = 'sidebar-item' + (i === activePageIndex ? ' active' : '');
+    item.dataset.index = i;
+    item.dataset.slug = page.slug;
+
+    const statusClass = modifiedPages.has(page.slug) ? 'modified' : '';
+    const displayName = page.slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+    item.innerHTML = `
+      <span class="sidebar-dot" style="background:${esc(page.iconBgColor)};"></span>
+      <span class="sidebar-name">${esc(displayName)}</span>
+      <span class="sidebar-status ${statusClass}" data-slug="${esc(page.slug)}"></span>
+    `;
+    item.addEventListener('click', () => selectPage(i));
+    list.appendChild(item);
+  });
+}
+
+function filterSidebar() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  document.querySelectorAll('.sidebar-item').forEach(item => {
+    const name = item.querySelector('.sidebar-name').textContent.toLowerCase();
+    item.style.display = name.includes(q) ? '' : 'none';
+  });
+}
+
+function selectPage(index) {
+  if (activePageIndex === index) return;
+  // Save current page before switching
+  if (activePageIndex >= 0) {
+    collectAndSave(activePageIndex);
+    collectAndSaveSEO(activePageIndex);
+  }
+
+  activePageIndex = index;
+
+  // Load SEO data for new page
+  currentSEO = loadSEOData(pages[index].slug);
+
+  // Update sidebar active state
+  document.querySelectorAll('.sidebar-item').forEach((item, i) => {
+    item.classList.toggle('active', i === index);
+  });
+
+  renderPage(index);
+}
+
+// ═══════════════════════════════════════════════════
+//  PAGE RENDERING
+// ═══════════════════════════════════════════════════
+
+function renderPage(index) {
+  const page = getPageWithSaved(index);
+  const main = document.getElementById('mainContent');
+
+  const displayName = page.slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  const crumbs = page.canonicalUrl;
+
+  main.innerHTML = `
+    <div class="page-header">
+      <h1>${esc(displayName)}</h1>
+      <div class="breadcrumb">${esc(crumbs)}</div>
+    </div>
+    ${renderMetadata(page)}
+    ${renderExampleCards(page)}
+    ${renderGuideWhatIs(page)}
+    ${renderGuideWhenToUse(page)}
+    ${renderGuideWhenNotToUse(page)}
+    ${renderGuideHowToCustomize(page)}
+    ${renderGuideExpertTips(page)}
+    ${renderFaqs(page)}
+    ${renderRelatedPages(page)}
+  `;
+
+  // Setup section toggles
+  main.querySelectorAll('.section-header').forEach(header => {
+    header.addEventListener('click', () => {
+      header.closest('.section').classList.toggle('collapsed');
+    });
+  });
+
+  // Setup char counters
+  setupCharCounters();
+
+  // Setup change tracking for content fields
+  main.addEventListener('input', (e) => {
+    if (e.target.dataset.seo !== undefined) {
+      // SEO brief input
+      updateSEODot(e.target);
+      debouncedSaveSEO(index);
+    } else {
+      markPageModified(page.slug);
+      setupCharCounters();
+      debouncedSave(index);
+    }
+  });
+
+  main.scrollTop = 0;
+}
+
+// ─── Section 1: Metadata ───
+
+function renderMetadata(page) {
+  return `
+    <div class="section" data-section="metadata">
+      <div class="section-header">
+        <div class="section-toggle"><i data-lucide="chevron-down" style="width:16px;height:16px;"></i></div>
+        <div class="section-title">Page Metadata</div>
+        <span class="section-count">5 fields</span>
+      </div>
+      <div class="section-body">
+        <div class="field">
+          <label>Title</label>
+          <div class="field-hint">${HINTS.title}</div>
+          <input type="text" data-field="title" value="${escAttr(page.title)}">
+          <div class="char-counter" data-counter="title" data-max="60"></div>
+          ${seoBrief('title', 'Primary keyword, secondary keywords, search intent\u2026')}
+        </div>
+        <div class="field">
+          <label>Meta Description</label>
+          <div class="field-hint">${HINTS.metaDescription}</div>
+          <textarea data-field="metaDescription" rows="2">${esc(page.metaDescription)}</textarea>
+          <div class="char-counter" data-counter="metaDescription" data-max="160"></div>
+          ${seoBrief('metaDescription', 'Target keywords, CTA language, SERP intent\u2026')}
+        </div>
+        <div class="field">
+          <label>H1</label>
+          <div class="field-hint">${HINTS.h1}</div>
+          <input type="text" data-field="h1" value="${escAttr(page.h1)}">
+          ${seoBrief('h1', 'Primary keyword placement, tone, length guidance\u2026')}
+        </div>
+        <div class="field">
+          <label>Hero Subtitle</label>
+          <div class="field-hint">${HINTS.heroSubtitle}</div>
+          <textarea data-field="heroSubtitle" rows="3">${esc(page.heroSubtitle)}</textarea>
+          ${seoBrief('heroSubtitle', 'Supporting keywords, value prop emphasis, audience\u2026')}
+        </div>
+        <div class="field">
+          <label>Trust Signal</label>
+          <div class="field-hint">${HINTS.trustSignal}</div>
+          <input type="text" data-field="trustSignal" value="${escAttr(page.trustSignal)}">
+          ${seoBrief('trustSignal', 'E-E-A-T signals, stats to include, credibility angle\u2026')}
+        </div>
+      </div>
+    </div>`;
+}
+
+// ─── Section 2: Example Cards ───
+
+function renderExampleCards(page) {
+  const cardsHtml = page.examples.map((t, i) => `
+    <div class="card-editor" data-card="${i}">
+      <div class="card-editor-num">Card ${i + 1}</div>
+      <div class="field">
+        <label>Name</label>
+        <input type="text" data-field="examples.${i}.name" value="${escAttr(t.name)}">
+        ${seoBrief('examples.' + i + '.name', 'Keyword in example name\u2026')}
+      </div>
+      <div class="field">
+        <label>Description</label>
+        <textarea data-field="examples.${i}.description" rows="2">${esc(t.description)}</textarea>
+        ${seoBrief('examples.' + i + '.description', 'Keywords to weave in, differentiation angle\u2026')}
+      </div>
+      <div class="field">
+        <label>Tags</label>
+        <div class="tags-row">
+          <input type="text" data-field="examples.${i}.tags.0" value="${escAttr(t.tags[0] || '')}">
+          <input type="text" data-field="examples.${i}.tags.1" value="${escAttr(t.tags[1] || '')}">
+          <input type="text" data-field="examples.${i}.tags.2" value="${escAttr(t.tags[2] || '')}">
+        </div>
+      </div>
+      <div class="field">
+        <label>Badges</label>
+        <div class="badges-row">
+          ${BADGE_TYPES.map(b => `
+            <label class="badge-check">
+              <input type="checkbox" data-field="examples.${i}.badges.${b.key}" ${t.badges.includes(b.key) ? 'checked' : ''}>
+              ${b.label}
+            </label>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  return `
+    <div class="section" data-section="examples">
+      <div class="section-header">
+        <div class="section-toggle"><i data-lucide="chevron-down" style="width:16px;height:16px;"></i></div>
+        <div class="section-title">Example Cards</div>
+        <span class="section-count">${page.examples.length} cards</span>
+      </div>
+      <div class="section-body">
+        <div class="field-hint" style="margin-bottom:12px;">${HINTS.exampleName}</div>
+        <div class="cards-grid">${cardsHtml}</div>
+      </div>
+    </div>`;
+}
+
+// ─── Section 3: Guide — What Is ───
+
+function renderGuideWhatIs(page) {
+  const g = page.guide.whatIs;
+  return `
+    <div class="section" data-section="guide-whatIs">
+      <div class="section-header">
+        <div class="section-toggle"><i data-lucide="chevron-down" style="width:16px;height:16px;"></i></div>
+        <div class="section-title">Guide: What Is\u2026</div>
+      </div>
+      <div class="section-body">
+        <div class="field">
+          <label>Heading</label>
+          <div class="field-hint">${HINTS.guideWhatIsHeading}</div>
+          <input type="text" data-field="guide.whatIs.heading" value="${escAttr(g.heading)}">
+          ${seoBrief('guide.whatIs.heading', 'H2 keyword targeting, search query to match\u2026')}
+        </div>
+        <div class="field">
+          <label>Body</label>
+          <div class="field-hint">${HINTS.guideWhatIsBody}</div>
+          <textarea data-field="guide.whatIs.body" rows="8">${esc(g.body)}</textarea>
+          ${seoBrief('guide.whatIs.body', 'LSI keywords, entities to mention, word count target, internal links\u2026')}
+        </div>
+      </div>
+    </div>`;
+}
+
+// ─── Section 4: Guide — When to Use ───
+
+function renderGuideWhenToUse(page) {
+  const g = page.guide.whenToUse;
+  const itemsHtml = g.items.map((item, i) => `
+    <div class="list-item" data-list-index="${i}">
+      <span class="list-item-num">${i + 1}</span>
+      <div class="list-item-content">
+        <textarea data-field="guide.whenToUse.items.${i}" rows="2">${esc(item)}</textarea>
+        ${seoBrief('guide.whenToUse.items.' + i, 'Keyword/scenario to target in this item\u2026')}
+      </div>
+      <button class="list-item-remove" onclick="removeListItem(this, 'guide.whenToUse.items')" title="Remove">&times;</button>
+    </div>
+  `).join('');
+
+  return `
+    <div class="section" data-section="guide-whenToUse">
+      <div class="section-header">
+        <div class="section-toggle"><i data-lucide="chevron-down" style="width:16px;height:16px;"></i></div>
+        <div class="section-title">Guide: When to Use</div>
+        <span class="section-count">${g.items.length} items</span>
+      </div>
+      <div class="section-body">
+        <div class="field">
+          <label>Heading</label>
+          <div class="field-hint">${HINTS.guideWhenToUseHeading}</div>
+          <input type="text" data-field="guide.whenToUse.heading" value="${escAttr(g.heading)}">
+          ${seoBrief('guide.whenToUse.heading', 'H2/H3 keyword targeting\u2026')}
+        </div>
+        <div class="field">
+          <label>Items</label>
+          <div class="field-hint">${HINTS.guideWhenToUseItems}</div>
+          <div class="list-editor" data-list="guide.whenToUse.items">
+            ${itemsHtml}
+          </div>
+          <button class="btn-add-item" onclick="addListItem(this, 'guide.whenToUse.items')" style="margin-top:8px;">+ Add item</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+// ─── Section 5: Guide — When Not to Use ───
+
+function renderGuideWhenNotToUse(page) {
+  const g = page.guide.whenNotToUse;
+  const itemsHtml = g.items.map((item, i) => `
+    <div class="list-item" data-list-index="${i}">
+      <span class="list-item-num">${i + 1}</span>
+      <div class="list-item-content">
+        <textarea data-field="guide.whenNotToUse.items.${i}" rows="2">${esc(item)}</textarea>
+        ${seoBrief('guide.whenNotToUse.items.' + i, 'Alternative keyword/scenario\u2026')}
+      </div>
+      <button class="list-item-remove" onclick="removeListItem(this, 'guide.whenNotToUse.items')" title="Remove">&times;</button>
+    </div>
+  `).join('');
+
+  return `
+    <div class="section" data-section="guide-whenNotToUse">
+      <div class="section-header">
+        <div class="section-toggle"><i data-lucide="chevron-down" style="width:16px;height:16px;"></i></div>
+        <div class="section-title">Guide: When Not to Use</div>
+        <span class="section-count">${g.items.length} items</span>
+      </div>
+      <div class="section-body">
+        <div class="field">
+          <label>Heading</label>
+          <div class="field-hint">${HINTS.guideWhenNotHeading}</div>
+          <input type="text" data-field="guide.whenNotToUse.heading" value="${escAttr(g.heading)}">
+          ${seoBrief('guide.whenNotToUse.heading', 'H2/H3 keyword targeting\u2026')}
+        </div>
+        <div class="field">
+          <label>Items</label>
+          <div class="field-hint">${HINTS.guideWhenNotItems}</div>
+          <div class="list-editor" data-list="guide.whenNotToUse.items">
+            ${itemsHtml}
+          </div>
+          <button class="btn-add-item" onclick="addListItem(this, 'guide.whenNotToUse.items')" style="margin-top:8px;">+ Add item</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+// ─── Section 6: Guide — How to Customize ───
+
+function renderGuideHowToCustomize(page) {
+  const g = page.guide.howToCustomize;
+  const stepsHtml = g.steps.map((step, i) => `
+    <div class="step-editor" data-step-index="${i}">
+      <div class="step-header">
+        <span class="step-num">Step ${i + 1}</span>
+        <button class="step-remove" onclick="removeStep(this, 'guide.howToCustomize.steps')" title="Remove">&times;</button>
+      </div>
+      <div class="field">
+        <label>Title</label>
+        <input type="text" data-field="guide.howToCustomize.steps.${i}.title" value="${escAttr(step.title)}">
+        ${seoBrief('guide.howToCustomize.steps.' + i + '.title', 'Action keyword for this step\u2026')}
+      </div>
+      <div class="field">
+        <label>Body</label>
+        <textarea data-field="guide.howToCustomize.steps.${i}.body" rows="3">${esc(step.body)}</textarea>
+        ${seoBrief('guide.howToCustomize.steps.' + i + '.body', 'Keywords to include, depth\u2026')}
+      </div>
+    </div>
+  `).join('');
+
+  return `
+    <div class="section" data-section="guide-howToCustomize">
+      <div class="section-header">
+        <div class="section-toggle"><i data-lucide="chevron-down" style="width:16px;height:16px;"></i></div>
+        <div class="section-title">Guide: How to Customize</div>
+        <span class="section-count">${g.steps.length} steps</span>
+      </div>
+      <div class="section-body">
+        <div class="field">
+          <label>Heading</label>
+          <div class="field-hint">${HINTS.guideHowToHeading}</div>
+          <input type="text" data-field="guide.howToCustomize.heading" value="${escAttr(g.heading)}">
+          ${seoBrief('guide.howToCustomize.heading', 'H2 keyword targeting\u2026')}
+        </div>
+        <div class="field">
+          <label>Steps</label>
+          <div class="field-hint">${HINTS.guideHowToSteps}</div>
+          <div class="steps-container" data-steps="guide.howToCustomize.steps">
+            ${stepsHtml}
+          </div>
+          <button class="btn-add-item" onclick="addStep(this, 'guide.howToCustomize.steps')" style="margin-top:8px;">+ Add step</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+// ─── Section 7: Guide — Expert Tips ───
+
+function renderGuideExpertTips(page) {
+  const g = page.guide.expertTips;
+  const tipsHtml = g.tips.map((tip, i) => `
+    <div class="step-editor" data-step-index="${i}">
+      <div class="step-header">
+        <span class="step-num">Tip ${i + 1}</span>
+        <button class="step-remove" onclick="removeStep(this, 'guide.expertTips.tips')" title="Remove">&times;</button>
+      </div>
+      <div class="field">
+        <label>Title</label>
+        <input type="text" data-field="guide.expertTips.tips.${i}.title" value="${escAttr(tip.title)}">
+        ${seoBrief('guide.expertTips.tips.' + i + '.title', 'Keyword for this tip\u2026')}
+      </div>
+      <div class="field">
+        <label>Body</label>
+        <textarea data-field="guide.expertTips.tips.${i}.body" rows="3">${esc(tip.body)}</textarea>
+        ${seoBrief('guide.expertTips.tips.' + i + '.body', 'Supporting keywords, E-E-A-T signals\u2026')}
+      </div>
+    </div>
+  `).join('');
+
+  return `
+    <div class="section" data-section="guide-expertTips">
+      <div class="section-header">
+        <div class="section-toggle"><i data-lucide="chevron-down" style="width:16px;height:16px;"></i></div>
+        <div class="section-title">Guide: Expert Tips</div>
+        <span class="section-count">${g.tips.length} tips</span>
+      </div>
+      <div class="section-body">
+        <div class="field">
+          <label>Heading</label>
+          <div class="field-hint">${HINTS.guideExpertHeading}</div>
+          <input type="text" data-field="guide.expertTips.heading" value="${escAttr(g.heading)}">
+          ${seoBrief('guide.expertTips.heading', 'H2 keyword targeting\u2026')}
+        </div>
+        <div class="field">
+          <label>Tips</label>
+          <div class="field-hint">${HINTS.guideExpertTips}</div>
+          <div class="steps-container" data-steps="guide.expertTips.tips">
+            ${tipsHtml}
+          </div>
+          <button class="btn-add-item" onclick="addStep(this, 'guide.expertTips.tips')" style="margin-top:8px;">+ Add tip</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+// ─── Section 8: FAQs ───
+
+function renderFaqs(page) {
+  const faqsHtml = page.faqs.map((faq, i) => `
+    <div class="faq-editor" data-faq="${i}">
+      <div class="faq-num">FAQ ${i + 1}</div>
+      <div class="field">
+        <label>Question</label>
+        <div class="field-hint">${HINTS.faqQuestion}</div>
+        <input type="text" data-field="faqs.${i}.question" value="${escAttr(faq.question)}">
+        ${seoBrief('faqs.' + i + '.question', 'Target search query, People Also Ask match\u2026')}
+      </div>
+      <div class="field">
+        <label>Answer</label>
+        <div class="field-hint">${HINTS.faqAnswer}</div>
+        <textarea data-field="faqs.${i}.answer" rows="4">${esc(faq.answer)}</textarea>
+        ${seoBrief('faqs.' + i + '.answer', 'Keywords for featured snippet, answer format\u2026')}
+      </div>
+    </div>
+  `).join('');
+
+  return `
+    <div class="section" data-section="faqs">
+      <div class="section-header">
+        <div class="section-toggle"><i data-lucide="chevron-down" style="width:16px;height:16px;"></i></div>
+        <div class="section-title">FAQs</div>
+        <span class="section-count">${page.faqs.length} questions</span>
+      </div>
+      <div class="section-body">
+        ${faqsHtml}
+      </div>
+    </div>`;
+}
+
+// ─── Section 9: Related Pages ───
+
+function renderRelatedPages(page) {
+  const allSlugs = pages.map(p => p.slug);
+  const related = page.relatedSlugs || [];
+
+  const selectsHtml = Array.from({ length: 5 }, (_, i) => {
+    const currentVal = related[i] || '';
+    const options = allSlugs.map(s =>
+      `<option value="${esc(s)}" ${s === currentVal ? 'selected' : ''}>${s.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</option>`
+    ).join('');
+    return `
+      <div class="field">
+        <label>Related ${i + 1}</label>
+        <select data-field="relatedSlugs.${i}">
+          <option value="">-- Select --</option>
+          ${options}
+        </select>
+      </div>`;
+  }).join('');
+
+  return `
+    <div class="section" data-section="relatedPages">
+      <div class="section-header">
+        <div class="section-toggle"><i data-lucide="chevron-down" style="width:16px;height:16px;"></i></div>
+        <div class="section-title">Related Pages</div>
+        <span class="section-count">5 links</span>
+      </div>
+      <div class="section-body">
+        <div class="field-hint" style="margin-bottom:12px;">${HINTS.relatedPages}</div>
+        <div class="related-grid">
+          ${selectsHtml}
+        </div>
+      </div>
+    </div>`;
+}
+
+// ═══════════════════════════════════════════════════
+//  SEO BRIEF TOGGLE
+// ═══════════════════════════════════════════════════
+
+function toggleSEOBrief(btn) {
+  const brief = btn.closest('.seo-brief');
+  brief.classList.toggle('collapsed');
+}
+
+function toggleAllSEO() {
+  showSEO = !showSEO;
+  const btn = document.getElementById('seoToggleBtn');
+  btn.classList.toggle('active', showSEO);
+
+  document.querySelectorAll('.seo-brief').forEach(brief => {
+    brief.classList.toggle('collapsed', !showSEO);
+  });
+}
+
+function updateSEODot(textarea) {
+  const brief = textarea.closest('.seo-brief');
+  const dot = brief.querySelector('.seo-brief-dot');
+  if (dot) {
+    dot.classList.toggle('has-content', textarea.value.trim().length > 0);
+  }
+}
+
+// ═══════════════════════════════════════════════════
+//  SEO DATA — SAVE / LOAD
+// ═══════════════════════════════════════════════════
+
+function collectSEOFromDOM() {
+  const data = {};
+  document.querySelectorAll('[data-seo]').forEach(ta => {
+    const key = ta.dataset.seo;
+    if (ta.value.trim()) data[key] = ta.value.trim();
+  });
+  return data;
+}
+
+function collectAndSaveSEO(index) {
+  if (index < 0 || index >= pages.length) return;
+  try {
+    const data = collectSEOFromDOM();
+    currentSEO = data;
+    const key = 'cms-seo-' + pages[index].slug;
+    if (Object.keys(data).length > 0) {
+      localStorage.setItem(key, JSON.stringify(data));
+    } else {
+      localStorage.removeItem(key);
+    }
+  } catch (e) {
+    console.warn('SEO save failed:', e);
+  }
+}
+
+// Cache of SEO briefs loaded from the JSON file (fallback when localStorage is empty)
+let seoBriefsFromFile = null;
+
+async function preloadSEOBriefs() {
+  try {
+    const res = await fetch('/seo-briefs-all.json');
+    if (res.ok) {
+      seoBriefsFromFile = await res.json();
+      // Seed localStorage for any slug that doesn't already have data
+      let seeded = 0;
+      for (const [slug, briefs] of Object.entries(seoBriefsFromFile)) {
+        const key = 'cms-seo-' + slug;
+        if (!localStorage.getItem(key)) {
+          localStorage.setItem(key, JSON.stringify(briefs));
+          seeded++;
+        }
+      }
+      if (seeded > 0) console.log(`SEO briefs: seeded ${seeded} pages from seo-briefs-all.json`);
+    }
+  } catch (e) {
+    console.warn('Could not preload seo-briefs-all.json (optional):', e.message);
+  }
+}
+
+function loadSEOData(slug) {
+  try {
+    const raw = localStorage.getItem('cms-seo-' + slug);
+    if (raw) return JSON.parse(raw);
+  } catch (e) {
+    console.warn('SEO load failed:', e);
+  }
+  // Fallback: try from preloaded file data
+  if (seoBriefsFromFile && seoBriefsFromFile[slug]) {
+    return { ...seoBriefsFromFile[slug] };
+  }
+  return {};
+}
+
+function debouncedSaveSEO(index) {
+  const slug = pages[index].slug;
+  clearTimeout(seoTimers[slug]);
+  seoTimers[slug] = setTimeout(() => collectAndSaveSEO(index), 500);
+}
+
+// ═══════════════════════════════════════════════════
+//  SEO EXPORT
+// ═══════════════════════════════════════════════════
+
+function exportSEOBriefs() {
+  // Save current page first
+  if (activePageIndex >= 0) collectAndSaveSEO(activePageIndex);
+
+  const allBriefs = {};
+  pages.forEach(page => {
+    const data = loadSEOData(page.slug);
+    if (Object.keys(data).length > 0) {
+      allBriefs[page.slug] = data;
+    }
+  });
+
+  const json = JSON.stringify(allBriefs, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `seo-briefs-${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('SEO briefs exported');
+}
+
+// ═══════════════════════════════════════════════════
+//  DATA COLLECTION (content)
+// ═══════════════════════════════════════════════════
+
+function collectPageData(index) {
+  const page = JSON.parse(JSON.stringify(pages[index]));
+  const main = document.getElementById('mainContent');
+
+  ['title', 'metaDescription', 'h1', 'heroSubtitle', 'trustSignal'].forEach(field => {
+    const el = main.querySelector(`[data-field="${field}"]`);
+    if (el) page[field] = el.value;
+  });
+
+  page.examples.forEach((t, i) => {
+    const nameEl = main.querySelector(`[data-field="examples.${i}.name"]`);
+    const descEl = main.querySelector(`[data-field="examples.${i}.description"]`);
+    if (nameEl) t.name = nameEl.value;
+    if (descEl) t.description = descEl.value;
+
+    t.tags = [0, 1, 2].map(j => {
+      const el = main.querySelector(`[data-field="examples.${i}.tags.${j}"]`);
+      return el ? el.value : '';
+    });
+
+    t.badges = BADGE_TYPES.filter(b => {
+      const el = main.querySelector(`[data-field="examples.${i}.badges.${b.key}"]`);
+      return el && el.checked;
+    }).map(b => b.key);
+  });
+
+  const wiH = main.querySelector('[data-field="guide.whatIs.heading"]');
+  const wiB = main.querySelector('[data-field="guide.whatIs.body"]');
+  if (wiH) page.guide.whatIs.heading = wiH.value;
+  if (wiB) page.guide.whatIs.body = wiB.value;
+
+  const wtuH = main.querySelector('[data-field="guide.whenToUse.heading"]');
+  if (wtuH) page.guide.whenToUse.heading = wtuH.value;
+  page.guide.whenToUse.items = collectListItems('guide.whenToUse.items');
+
+  const wntuH = main.querySelector('[data-field="guide.whenNotToUse.heading"]');
+  if (wntuH) page.guide.whenNotToUse.heading = wntuH.value;
+  page.guide.whenNotToUse.items = collectListItems('guide.whenNotToUse.items');
+
+  const htcH = main.querySelector('[data-field="guide.howToCustomize.heading"]');
+  if (htcH) page.guide.howToCustomize.heading = htcH.value;
+  page.guide.howToCustomize.steps = collectSteps('guide.howToCustomize.steps');
+
+  const etH = main.querySelector('[data-field="guide.expertTips.heading"]');
+  if (etH) page.guide.expertTips.heading = etH.value;
+  page.guide.expertTips.tips = collectSteps('guide.expertTips.tips');
+
+  page.faqs = page.faqs.map((faq, i) => {
+    const qEl = main.querySelector(`[data-field="faqs.${i}.question"]`);
+    const aEl = main.querySelector(`[data-field="faqs.${i}.answer"]`);
+    return {
+      question: qEl ? qEl.value : faq.question,
+      answer: aEl ? aEl.value : faq.answer
+    };
+  });
+
+  page.relatedSlugs = Array.from({ length: 5 }, (_, i) => {
+    const el = main.querySelector(`[data-field="relatedSlugs.${i}"]`);
+    return el ? el.value : '';
+  }).filter(Boolean);
+
+  return page;
+}
+
+function collectListItems(listPath) {
+  const items = [];
+  const container = document.querySelector(`[data-list="${listPath}"]`);
+  if (!container) return items;
+  container.querySelectorAll('textarea[data-field]').forEach(ta => {
+    if (ta.value.trim()) items.push(ta.value.trim());
+  });
+  return items;
+}
+
+function collectSteps(stepsPath) {
+  const steps = [];
+  const container = document.querySelector(`[data-steps="${stepsPath}"]`);
+  if (!container) return steps;
+  container.querySelectorAll('.step-editor').forEach(stepEl => {
+    const titleEl = stepEl.querySelector('input[data-field]');
+    const bodyEl = stepEl.querySelector('textarea[data-field]');
+    if (titleEl && bodyEl && (titleEl.value.trim() || bodyEl.value.trim())) {
+      steps.push({ title: titleEl.value.trim(), body: bodyEl.value.trim() });
+    }
+  });
+  return steps;
+}
+
+// ═══════════════════════════════════════════════════
+//  LIST / STEP OPERATIONS
+// ═══════════════════════════════════════════════════
+
+function addListItem(btn, listPath) {
+  const container = btn.previousElementSibling;
+  const idx = container.querySelectorAll('.list-item').length;
+  const collapsedClass = showSEO ? '' : 'collapsed';
+  const div = document.createElement('div');
+  div.className = 'list-item';
+  div.dataset.listIndex = idx;
+  div.innerHTML = `
+    <span class="list-item-num">${idx + 1}</span>
+    <div class="list-item-content">
+      <textarea data-field="${listPath}.${idx}" rows="2"></textarea>
+      <div class="seo-brief ${collapsedClass}">
+        <button class="seo-brief-toggle" onclick="toggleSEOBrief(this)" type="button">
+          <span class="seo-brief-dot"></span>
+          SEO Brief <span class="seo-arrow">\u25BE</span>
+        </button>
+        <textarea class="seo-brief-input" data-seo="${listPath}.${idx}" rows="2"
+          placeholder="Keyword/scenario to target\u2026"></textarea>
+      </div>
+    </div>
+    <button class="list-item-remove" onclick="removeListItem(this, '${listPath}')" title="Remove">&times;</button>
+  `;
+  container.appendChild(div);
+  div.querySelector('textarea[data-field]').focus();
+  markPageModified(pages[activePageIndex].slug);
+}
+
+function removeListItem(btn, listPath) {
+  const item = btn.closest('.list-item');
+  const container = item.parentElement;
+  item.remove();
+  container.querySelectorAll('.list-item').forEach((li, i) => {
+    li.querySelector('.list-item-num').textContent = i + 1;
+    li.dataset.listIndex = i;
+  });
+  markPageModified(pages[activePageIndex].slug);
+}
+
+function addStep(btn, stepsPath) {
+  const container = btn.previousElementSibling;
+  const idx = container.querySelectorAll('.step-editor').length;
+  const label = stepsPath.includes('expertTips') ? 'Tip' : 'Step';
+  const collapsedClass = showSEO ? '' : 'collapsed';
+  const div = document.createElement('div');
+  div.className = 'step-editor';
+  div.dataset.stepIndex = idx;
+  div.innerHTML = `
+    <div class="step-header">
+      <span class="step-num">${label} ${idx + 1}</span>
+      <button class="step-remove" onclick="removeStep(this, '${stepsPath}')" title="Remove">&times;</button>
+    </div>
+    <div class="field">
+      <label>Title</label>
+      <input type="text" data-field="${stepsPath}.${idx}.title" value="">
+      <div class="seo-brief ${collapsedClass}">
+        <button class="seo-brief-toggle" onclick="toggleSEOBrief(this)" type="button">
+          <span class="seo-brief-dot"></span>
+          SEO Brief <span class="seo-arrow">\u25BE</span>
+        </button>
+        <textarea class="seo-brief-input" data-seo="${stepsPath}.${idx}.title" rows="2"
+          placeholder="Keyword for this ${label.toLowerCase()}\u2026"></textarea>
+      </div>
+    </div>
+    <div class="field">
+      <label>Body</label>
+      <textarea data-field="${stepsPath}.${idx}.body" rows="3"></textarea>
+      <div class="seo-brief ${collapsedClass}">
+        <button class="seo-brief-toggle" onclick="toggleSEOBrief(this)" type="button">
+          <span class="seo-brief-dot"></span>
+          SEO Brief <span class="seo-arrow">\u25BE</span>
+        </button>
+        <textarea class="seo-brief-input" data-seo="${stepsPath}.${idx}.body" rows="2"
+          placeholder="Keywords, depth guidance\u2026"></textarea>
+      </div>
+    </div>
+  `;
+  container.appendChild(div);
+  div.querySelector('input').focus();
+  markPageModified(pages[activePageIndex].slug);
+}
+
+function removeStep(btn, stepsPath) {
+  const step = btn.closest('.step-editor');
+  const container = step.parentElement;
+  step.remove();
+  const label = stepsPath.includes('expertTips') ? 'Tip' : 'Step';
+  container.querySelectorAll('.step-editor').forEach((s, i) => {
+    s.querySelector('.step-num').textContent = `${label} ${i + 1}`;
+    s.dataset.stepIndex = i;
+  });
+  markPageModified(pages[activePageIndex].slug);
+}
+
+// ═══════════════════════════════════════════════════
+//  CHAR COUNTERS
+// ═══════════════════════════════════════════════════
+
+function setupCharCounters() {
+  document.querySelectorAll('.char-counter').forEach(counter => {
+    const fieldName = counter.dataset.counter;
+    const max = parseInt(counter.dataset.max);
+    const el = document.querySelector(`[data-field="${fieldName}"]`);
+    if (!el) return;
+    const len = el.value.length;
+    counter.textContent = `${len} / ${max}`;
+    counter.className = 'char-counter ' + (
+      len <= max ? 'ok' :
+      len <= max + 10 ? 'warn' : 'over'
+    );
+  });
+}
+
+// ═══════════════════════════════════════════════════
+//  AUTO-SAVE (localStorage) — content
+// ═══════════════════════════════════════════════════
+
+function debouncedSave(index) {
+  const slug = pages[index].slug;
+  clearTimeout(saveTimers[slug]);
+  saveTimers[slug] = setTimeout(() => collectAndSave(index), 500);
+}
+
+function collectAndSave(index) {
+  if (index < 0 || index >= pages.length) return;
+  try {
+    const data = collectPageData(index);
+    localStorage.setItem('cms-page-' + pages[index].slug, JSON.stringify(data));
+  } catch (e) {
+    console.warn('Auto-save failed:', e);
+  }
+}
+
+function getPageWithSaved(index) {
+  const page = pages[index];
+  try {
+    const saved = localStorage.getItem('cms-page-' + page.slug);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      return mergePageData(page, parsed);
+    }
+  } catch (e) {
+    console.warn('Failed to load saved data:', e);
+  }
+  return page;
+}
+
+function mergePageData(original, saved) {
+  const merged = JSON.parse(JSON.stringify(original));
+  ['title', 'metaDescription', 'h1', 'heroSubtitle', 'trustSignal'].forEach(f => {
+    if (saved[f] !== undefined) merged[f] = saved[f];
+  });
+
+  if (saved.examples) {
+    merged.examples.forEach((t, i) => {
+      if (saved.examples[i]) {
+        t.name = saved.examples[i].name ?? t.name;
+        t.description = saved.examples[i].description ?? t.description;
+        t.tags = saved.examples[i].tags ?? t.tags;
+        t.badges = saved.examples[i].badges ?? t.badges;
+      }
+    });
+  }
+
+  if (saved.guide) {
+    if (saved.guide.whatIs) {
+      merged.guide.whatIs.heading = saved.guide.whatIs.heading ?? merged.guide.whatIs.heading;
+      merged.guide.whatIs.body = saved.guide.whatIs.body ?? merged.guide.whatIs.body;
+    }
+    if (saved.guide.whenToUse) {
+      merged.guide.whenToUse.heading = saved.guide.whenToUse.heading ?? merged.guide.whenToUse.heading;
+      if (saved.guide.whenToUse.items) merged.guide.whenToUse.items = saved.guide.whenToUse.items;
+    }
+    if (saved.guide.whenNotToUse) {
+      merged.guide.whenNotToUse.heading = saved.guide.whenNotToUse.heading ?? merged.guide.whenNotToUse.heading;
+      if (saved.guide.whenNotToUse.items) merged.guide.whenNotToUse.items = saved.guide.whenNotToUse.items;
+    }
+    if (saved.guide.howToCustomize) {
+      merged.guide.howToCustomize.heading = saved.guide.howToCustomize.heading ?? merged.guide.howToCustomize.heading;
+      if (saved.guide.howToCustomize.steps) merged.guide.howToCustomize.steps = saved.guide.howToCustomize.steps;
+    }
+    if (saved.guide.expertTips) {
+      merged.guide.expertTips.heading = saved.guide.expertTips.heading ?? merged.guide.expertTips.heading;
+      if (saved.guide.expertTips.tips) merged.guide.expertTips.tips = saved.guide.expertTips.tips;
+    }
+  }
+
+  if (saved.faqs) merged.faqs = saved.faqs;
+  if (saved.relatedSlugs) merged.relatedSlugs = saved.relatedSlugs;
+
+  return merged;
+}
+
+// ═══════════════════════════════════════════════════
+//  CHANGE TRACKING
+// ═══════════════════════════════════════════════════
+
+function markPageModified(slug) {
+  modifiedPages.add(slug);
+  const dot = document.querySelector(`.sidebar-status[data-slug="${slug}"]`);
+  if (dot) dot.className = 'sidebar-status modified';
+  document.getElementById('globalModified').style.display = 'flex';
+}
+
+// ═══════════════════════════════════════════════════
+//  EXPORT (content)
+// ═══════════════════════════════════════════════════
+
+function exportPageData() {
+  if (activePageIndex >= 0) collectAndSave(activePageIndex);
+
+  const fullData = pages.map((page, i) => {
+    const merged = getPageWithSaved(i);
+    return buildExportPage(page, merged);
+  });
+
+  const jsContent = 'module.exports = ' + JSON.stringify(fullData, null, 2)
+    .replace(/"([^"]+)":/g, (m, key) => {
+      return /^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(key) ? key + ':' : m;
+    }) + ';\n';
+
+  const blob = new Blob([jsContent], { type: 'application/javascript' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'page-data.js';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('page-data.js exported');
+}
+
+function buildExportPage(original, merged) {
+  const p = JSON.parse(JSON.stringify(original));
+  p.title = merged.title;
+  p.metaDescription = merged.metaDescription;
+  p.h1 = merged.h1;
+  p.heroSubtitle = merged.heroSubtitle;
+  p.trustSignal = merged.trustSignal;
+
+  p.examples.forEach((t, i) => {
+    if (merged.examples[i]) {
+      t.name = merged.examples[i].name;
+      t.description = merged.examples[i].description;
+      t.tags = merged.examples[i].tags;
+      t.badges = merged.examples[i].badges;
+    }
+  });
+
+  p.guide.whatIs = merged.guide.whatIs;
+  p.guide.whenToUse = merged.guide.whenToUse;
+  p.guide.whenNotToUse = merged.guide.whenNotToUse;
+  p.guide.howToCustomize = merged.guide.howToCustomize;
+  p.guide.expertTips = merged.guide.expertTips;
+  p.faqs = merged.faqs;
+  p.relatedSlugs = merged.relatedSlugs;
+
+  return p;
+}
+
+// ═══════════════════════════════════════════════════
+//  RESET
+// ═══════════════════════════════════════════════════
+
+function resetAllChanges() {
+  if (!confirm('Clear all saved changes (content + SEO briefs) and reload from page-data.js?')) return;
+  pages.forEach(p => {
+    localStorage.removeItem('cms-page-' + p.slug);
+    localStorage.removeItem('cms-seo-' + p.slug);
+  });
+  modifiedPages.clear();
+  currentSEO = {};
+  document.getElementById('globalModified').style.display = 'none';
+  if (activePageIndex >= 0) renderPage(activePageIndex);
+  renderSidebar();
+  showToast('All changes reset');
+}
+
+// ═══════════════════════════════════════════════════
+//  UTILITIES
+// ═══════════════════════════════════════════════════
+
+function esc(str) {
+  if (!str) return '';
+  const div = document.createElement('div');
+  div.textContent = String(str);
+  return div.innerHTML;
+}
+
+function escAttr(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function showToast(message) {
+  const existing = document.querySelector('.toast');
+  if (existing) existing.remove();
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.textContent = message;
+  document.body.appendChild(toast);
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => toast.classList.add('show'));
+  });
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 300);
+  }, 2000);
+}
+
+// ═══════════════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════════════
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadPageData();
+  preloadSEOBriefs();
+
+  window.addEventListener('beforeunload', (e) => {
+    if (modifiedPages.size > 0) {
+      e.preventDefault();
+      e.returnValue = '';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
