@@ -4,9 +4,9 @@ const PAGE_DATA = [
     "group": "Education",
     "dirPath": "resume-examples/teacher",
     "canonicalUrl": "/resume-examples/teacher",
-    "title": "Teacher Resume Examples & Writing Guide (2025)",
+    "title": "Teacher Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See real teacher resume examples that landed interviews. Expert tips on showcasing classroom skills, certifications, and student outcomes to stand out.",
-    "h1": "Teacher Resume Examples",
+    "h1": "Teacher Resume Examples & Templates",
     "heroSubtitle": "Browse real teacher resumes that helped educators land roles at top school districts. Learn how to highlight your teaching philosophy, certifications, and measurable student outcomes.",
     "trustSignal": "Based on analysis of 10,000+ teacher resumes reviewed by school administrators and hiring committees",
     "iconName": "graduation-cap",
@@ -24,7 +24,13 @@ const PAGE_DATA = [
           "high-school",
           "curriculum-development"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Teacher Resume",
@@ -36,7 +42,13 @@ const PAGE_DATA = [
           "new-grad",
           "student-teaching"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Middle School Teacher Resume",
@@ -48,7 +60,13 @@ const PAGE_DATA = [
           "middle-school",
           "test-scores"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Career-Change Teacher Resume",
@@ -62,7 +80,13 @@ const PAGE_DATA = [
           "career-change",
           "transferable-skills"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "STEM Teacher Resume",
@@ -74,7 +98,13 @@ const PAGE_DATA = [
           "stem",
           "science"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -129,6 +159,38 @@ const PAGE_DATA = [
             "body": "Mention clubs, sports, or programs you have coached or advised. This shows administrators you are willing to contribute to the school community beyond the classroom."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Teacher",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Teacher Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Teacher Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Teacher Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Teacher Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Teacher Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Teacher Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -164,16 +226,44 @@ const PAGE_DATA = [
         "label": "Teacher Resume Examples",
         "url": "/resume-examples/teacher"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "education",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Teacher Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "teacher-assistant",
     "group": "Education",
     "dirPath": "resume-examples/teacher-assistant",
     "canonicalUrl": "/resume-examples/teacher-assistant",
-    "title": "Teacher Assistant Resume Examples & Writing Guide (2025)",
+    "title": "Teacher Assistant Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore teacher assistant resume examples with expert tips. Learn how to highlight classroom support skills, student engagement, and instructional assistance.",
-    "h1": "Teacher Assistant Resume Examples",
+    "h1": "Teacher Assistant Resume Examples & Templates",
     "heroSubtitle": "Review real teacher assistant resumes that helped candidates secure positions in K-12 schools. Discover how to present your classroom support experience effectively.",
     "trustSignal": "Based on analysis of 8,000+ teacher assistant resumes reviewed by school hiring managers",
     "iconName": "users",
@@ -191,7 +281,13 @@ const PAGE_DATA = [
           "experienced",
           "small-group"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Teacher Assistant Resume",
@@ -203,7 +299,13 @@ const PAGE_DATA = [
           "new-grad",
           "volunteer"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Special Needs Teacher Assistant Resume",
@@ -215,7 +317,13 @@ const PAGE_DATA = [
           "special-needs",
           "IEP"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Bilingual Teacher Assistant Resume",
@@ -227,7 +335,13 @@ const PAGE_DATA = [
           "bilingual",
           "ELL"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -280,6 +394,38 @@ const PAGE_DATA = [
             "body": "Mention instances where you created learning materials, organized classroom libraries, or led small enrichment activities on your own."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Teacher Assistant",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Teacher Assistant Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Teacher Assistant Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Teacher Assistant Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Teacher Assistant Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Teacher Assistant Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Teacher Assistant Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -311,16 +457,44 @@ const PAGE_DATA = [
         "label": "Teacher Assistant Resume Examples",
         "url": "/resume-examples/teacher-assistant"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "education",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Teacher Assistant Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "english-teacher",
     "group": "Education",
     "dirPath": "resume-examples/english-teacher",
     "canonicalUrl": "/resume-examples/english-teacher",
-    "title": "English Teacher Resume Examples & Writing Guide (2025)",
+    "title": "English Teacher Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Browse English teacher resume examples that won interviews. Get expert guidance on presenting your literacy skills, curriculum design, and student achievements.",
-    "h1": "English Teacher Resume Examples",
+    "h1": "English Teacher Resume Examples & Templates",
     "heroSubtitle": "Explore real English teacher resumes that helped educators land positions at competitive schools. Learn to showcase your writing instruction expertise and literary analysis skills.",
     "trustSignal": "Based on analysis of 9,000+ English teacher resumes reviewed by department heads and principals",
     "iconName": "book-open",
@@ -338,7 +512,13 @@ const PAGE_DATA = [
           "AP-literature",
           "debate"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level English Teacher Resume",
@@ -350,7 +530,13 @@ const PAGE_DATA = [
           "new-grad",
           "creative-writing"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Middle School English Teacher Resume",
@@ -362,7 +548,13 @@ const PAGE_DATA = [
           "middle-school",
           "reading"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "English Teacher and Writing Coach Resume",
@@ -374,7 +566,13 @@ const PAGE_DATA = [
           "writing-coach",
           "dual-role"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "High School English Teacher Resume",
@@ -386,7 +584,13 @@ const PAGE_DATA = [
           "high-school",
           "SAT-prep"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -440,6 +644,38 @@ const PAGE_DATA = [
             "body": "Highlight projects where you collaborated with history, art, or science departments to create interdisciplinary learning experiences."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for English Teacher",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a English Teacher Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a English Teacher Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in English Teacher Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for English Teacher Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for English Teacher Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for English Teacher Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -471,16 +707,44 @@ const PAGE_DATA = [
         "label": "English Teacher Resume Examples",
         "url": "/resume-examples/english-teacher"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "education",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate English Teacher Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "esl-teacher",
     "group": "Education",
     "dirPath": "resume-examples/esl-teacher",
     "canonicalUrl": "/resume-examples/esl-teacher",
-    "title": "ESL Teacher Resume Examples & Writing Guide (2025)",
+    "title": "ESL Teacher Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "View ESL teacher resume examples that secured interviews. Learn to showcase your language instruction methods, cultural competence, and student proficiency gains.",
-    "h1": "ESL Teacher Resume Examples",
+    "h1": "ESL Teacher Resume Examples & Templates",
     "heroSubtitle": "Review real ESL teacher resumes that helped educators land positions at language schools and public districts. Discover how to present your English language instruction skills.",
     "trustSignal": "Based on analysis of 7,500+ ESL teacher resumes reviewed by language program directors and school administrators",
     "iconName": "globe",
@@ -498,7 +762,13 @@ const PAGE_DATA = [
           "TOEFL",
           "immigrant-education"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level ESL Teacher Resume",
@@ -510,7 +780,13 @@ const PAGE_DATA = [
           "TESOL",
           "new-grad"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Corporate ESL Instructor Resume",
@@ -522,7 +798,13 @@ const PAGE_DATA = [
           "business-english",
           "corporate"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Online ESL Teacher Resume",
@@ -534,7 +816,13 @@ const PAGE_DATA = [
           "online",
           "remote-teaching"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -587,6 +875,38 @@ const PAGE_DATA = [
             "body": "Mention platforms like Duolingo for Schools, Rosetta Stone, or language-learning apps you integrate into your curriculum to enhance engagement."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for ESL Teacher",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a ESL Teacher Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a ESL Teacher Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in ESL Teacher Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for ESL Teacher Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for ESL Teacher Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for ESL Teacher Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -618,16 +938,44 @@ const PAGE_DATA = [
         "label": "ESL Teacher Resume Examples",
         "url": "/resume-examples/esl-teacher"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "education",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate ESL Teacher Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "elementary-teacher",
     "group": "Education",
     "dirPath": "resume-examples/elementary-teacher",
     "canonicalUrl": "/resume-examples/elementary-teacher",
-    "title": "Elementary Teacher Resume Examples & Writing Guide (2025)",
+    "title": "Elementary Teacher Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See elementary teacher resume examples that landed top positions. Expert tips on presenting classroom management, literacy instruction, and student growth data.",
-    "h1": "Elementary Teacher Resume Examples",
+    "h1": "Elementary Teacher Resume Examples & Templates",
     "heroSubtitle": "Browse real elementary teacher resumes that helped educators secure positions at sought-after schools. Learn how to highlight your multi-subject instruction and student development skills.",
     "trustSignal": "Based on analysis of 12,000+ elementary teacher resumes reviewed by principals and district hiring committees",
     "iconName": "school",
@@ -645,7 +993,13 @@ const PAGE_DATA = [
           "multi-grade",
           "literacy"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "First-Year Elementary Teacher Resume",
@@ -657,7 +1011,13 @@ const PAGE_DATA = [
           "new-grad",
           "student-teaching"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "3rd Grade Teacher Resume",
@@ -669,7 +1029,13 @@ const PAGE_DATA = [
           "3rd-grade",
           "common-core"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Elementary STEM Teacher Resume",
@@ -681,7 +1047,13 @@ const PAGE_DATA = [
           "STEM",
           "coding"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Dual-Language Elementary Teacher Resume",
@@ -693,7 +1065,13 @@ const PAGE_DATA = [
           "bilingual",
           "dual-language"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -747,6 +1125,38 @@ const PAGE_DATA = [
             "body": "Highlight your participation in PLCs or grade-level teams to show you are a collaborative educator who contributes to school-wide improvement."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Elementary Teacher",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Elementary Teacher Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Elementary Teacher Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Elementary Teacher Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Elementary Teacher Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Elementary Teacher Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Elementary Teacher Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -779,16 +1189,44 @@ const PAGE_DATA = [
         "label": "Elementary Teacher Resume Examples",
         "url": "/resume-examples/elementary-teacher"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "education",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Elementary Teacher Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "preschool-teacher",
     "group": "Education",
     "dirPath": "resume-examples/preschool-teacher",
     "canonicalUrl": "/resume-examples/preschool-teacher",
-    "title": "Preschool Teacher Resume Examples & Writing Guide (2025)",
+    "title": "Preschool Teacher Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "View preschool teacher resume examples that won interviews. Get tips on showcasing early childhood development skills, play-based learning, and parent engagement.",
-    "h1": "Preschool Teacher Resume Examples",
+    "h1": "Preschool Teacher Resume Examples & Templates",
     "heroSubtitle": "Explore real preschool teacher resumes that helped early childhood educators land rewarding positions. Learn how to present your developmental knowledge and nurturing approach.",
     "trustSignal": "Based on analysis of 6,500+ preschool teacher resumes reviewed by early childhood center directors",
     "iconName": "baby",
@@ -806,7 +1244,13 @@ const PAGE_DATA = [
           "play-based",
           "literacy"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Preschool Teacher Resume",
@@ -818,7 +1262,13 @@ const PAGE_DATA = [
           "CDA",
           "new-grad"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Montessori Preschool Teacher Resume",
@@ -830,7 +1280,13 @@ const PAGE_DATA = [
           "montessori",
           "self-directed"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Head Preschool Teacher Resume",
@@ -842,7 +1298,13 @@ const PAGE_DATA = [
           "lead-teacher",
           "curriculum"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -895,6 +1357,38 @@ const PAGE_DATA = [
             "body": "Mention how you share daily reports, conduct parent-teacher conferences, and use apps or newsletters to keep families informed about development."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Preschool Teacher",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Preschool Teacher Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Preschool Teacher Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Preschool Teacher Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Preschool Teacher Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Preschool Teacher Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Preschool Teacher Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -926,16 +1420,44 @@ const PAGE_DATA = [
         "label": "Preschool Teacher Resume Examples",
         "url": "/resume-examples/preschool-teacher"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "education",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Preschool Teacher Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "kindergarten-teacher",
     "group": "Education",
     "dirPath": "resume-examples/kindergarten-teacher",
     "canonicalUrl": "/resume-examples/kindergarten-teacher",
-    "title": "Kindergarten Teacher Resume Examples & Writing Guide (2025)",
+    "title": "Kindergarten Teacher Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See kindergarten teacher resume examples that secured top positions. Learn to highlight early literacy, classroom management, and student readiness outcomes.",
-    "h1": "Kindergarten Teacher Resume Examples",
+    "h1": "Kindergarten Teacher Resume Examples & Templates",
     "heroSubtitle": "Browse real kindergarten teacher resumes that helped educators win positions at excellent schools. Discover how to showcase your ability to build foundational academic skills.",
     "trustSignal": "Based on analysis of 8,500+ kindergarten teacher resumes reviewed by elementary school principals",
     "iconName": "puzzle",
@@ -953,7 +1475,13 @@ const PAGE_DATA = [
           "literacy",
           "hands-on"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "New Kindergarten Teacher Resume",
@@ -965,7 +1493,13 @@ const PAGE_DATA = [
           "new-grad",
           "student-teaching"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Kindergarten STEM Teacher Resume",
@@ -977,7 +1511,13 @@ const PAGE_DATA = [
           "STEM",
           "science"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Bilingual Kindergarten Teacher Resume",
@@ -989,7 +1529,13 @@ const PAGE_DATA = [
           "bilingual",
           "dual-language"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Kindergarten Lead Teacher Resume",
@@ -1001,7 +1547,13 @@ const PAGE_DATA = [
           "lead-teacher",
           "mentoring"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -1055,6 +1607,38 @@ const PAGE_DATA = [
             "body": "Mention your experience with kindergarten screening tools, running records, and progress monitoring to show data-driven instructional decisions."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Kindergarten Teacher",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Kindergarten Teacher Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Kindergarten Teacher Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Kindergarten Teacher Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Kindergarten Teacher Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Kindergarten Teacher Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Kindergarten Teacher Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -1086,16 +1670,44 @@ const PAGE_DATA = [
         "label": "Kindergarten Teacher Resume Examples",
         "url": "/resume-examples/kindergarten-teacher"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "education",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Kindergarten Teacher Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "special-education-teacher",
     "group": "Education",
     "dirPath": "resume-examples/special-education-teacher",
     "canonicalUrl": "/resume-examples/special-education-teacher",
-    "title": "Special Education Teacher Resume Examples & Writing Guide (2025)",
+    "title": "Special Education Teacher Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Browse special education teacher resume examples that got interviews. Learn to showcase IEP expertise, behavioral interventions, and inclusive teaching methods.",
-    "h1": "Special Education Teacher Resume Examples",
+    "h1": "Special Education Teacher Resume Examples & Templates",
     "heroSubtitle": "Explore real special education teacher resumes that helped educators land impactful roles. Learn how to present your expertise in individualized instruction and compliance.",
     "trustSignal": "Based on analysis of 9,500+ special education teacher resumes reviewed by special services directors and principals",
     "iconName": "heart-handshake",
@@ -1113,7 +1725,13 @@ const PAGE_DATA = [
           "IEP",
           "caseload-management"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Special Education Teacher Resume",
@@ -1125,7 +1743,13 @@ const PAGE_DATA = [
           "new-grad",
           "inclusion"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Autism Specialist Teacher Resume",
@@ -1137,7 +1761,13 @@ const PAGE_DATA = [
           "autism",
           "sensory"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Resource Room Teacher Resume",
@@ -1149,7 +1779,13 @@ const PAGE_DATA = [
           "resource-room",
           "pull-out"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Special Education Department Chair Resume",
@@ -1161,7 +1797,13 @@ const PAGE_DATA = [
           "leadership",
           "compliance"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -1215,6 +1857,38 @@ const PAGE_DATA = [
             "body": "Mention tools like augmentative communication devices, text-to-speech software, or adaptive keyboards that you use to support student learning."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Special Education Teacher",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Special Education Teacher Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Special Education Teacher Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Special Education Teacher Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Special Education Teacher Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Special Education Teacher Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Special Education Teacher Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -1246,16 +1920,44 @@ const PAGE_DATA = [
         "label": "Special Education Teacher Resume Examples",
         "url": "/resume-examples/special-education-teacher"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "education",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Special Education Teacher Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "nurse",
     "group": "Healthcare",
     "dirPath": "resume-examples/nurse",
     "canonicalUrl": "/resume-examples/nurse",
-    "title": "Nurse Resume Examples & Writing Guide (2025)",
+    "title": "Nurse Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See real nurse resume examples that landed interviews. Expert tips on showcasing clinical skills, patient care experience, and nursing certifications effectively.",
-    "h1": "Nurse Resume Examples",
+    "h1": "Nurse Resume Examples & Templates",
     "heroSubtitle": "Browse real nurse resumes that helped healthcare professionals land positions at top hospitals and clinics. Learn how to present your clinical competencies and patient care achievements.",
     "trustSignal": "Based on analysis of 15,000+ nurse resumes reviewed by nurse managers and healthcare recruiters",
     "iconName": "heart-pulse",
@@ -1273,7 +1975,13 @@ const PAGE_DATA = [
           "med-surg",
           "charge-nurse"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "New Graduate Nurse Resume",
@@ -1285,7 +1993,13 @@ const PAGE_DATA = [
           "new-grad",
           "BSN"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "ICU Nurse Resume",
@@ -1297,7 +2011,13 @@ const PAGE_DATA = [
           "ICU",
           "critical-care"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Pediatric Nurse Resume",
@@ -1309,7 +2029,13 @@ const PAGE_DATA = [
           "pediatrics",
           "family-care"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Travel Nurse Resume",
@@ -1321,7 +2047,13 @@ const PAGE_DATA = [
           "travel-nurse",
           "multi-specialty"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -1376,6 +2108,38 @@ const PAGE_DATA = [
             "body": "If you have served as a charge nurse, preceptor, or unit council member, include these leadership experiences to demonstrate your growth potential."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Nurse",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Nurse Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Nurse Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Nurse Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Nurse Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Nurse Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Nurse Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -1411,16 +2175,44 @@ const PAGE_DATA = [
         "label": "Nurse Resume Examples",
         "url": "/resume-examples/nurse"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "healthcare",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Nurse Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "registered-nurse",
     "group": "Healthcare",
     "dirPath": "resume-examples/registered-nurse",
     "canonicalUrl": "/resume-examples/registered-nurse",
-    "title": "Registered Nurse Resume Examples & Writing Guide (2025)",
+    "title": "Registered Nurse Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore registered nurse resume examples that won interviews. Learn to present your RN license, clinical expertise, and patient outcomes for maximum impact.",
-    "h1": "Registered Nurse Resume Examples",
+    "h1": "Registered Nurse Resume Examples & Templates",
     "heroSubtitle": "Review real registered nurse resumes that helped RNs secure positions at leading healthcare facilities. Discover how to highlight your clinical skills and professional credentials.",
     "trustSignal": "Based on analysis of 14,000+ registered nurse resumes reviewed by nursing directors and hospital recruiters",
     "iconName": "stethoscope",
@@ -1438,7 +2230,13 @@ const PAGE_DATA = [
           "acute-care",
           "quality-improvement"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "New Graduate RN Resume",
@@ -1450,7 +2248,13 @@ const PAGE_DATA = [
           "new-grad",
           "NCLEX"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Emergency Room RN Resume",
@@ -1462,7 +2266,13 @@ const PAGE_DATA = [
           "emergency",
           "trauma"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Operating Room RN Resume",
@@ -1474,7 +2284,13 @@ const PAGE_DATA = [
           "OR",
           "surgical"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Home Health RN Resume",
@@ -1486,7 +2302,13 @@ const PAGE_DATA = [
           "home-health",
           "community"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -1540,6 +2362,38 @@ const PAGE_DATA = [
             "body": "If you have worked at a Magnet-designated hospital or participated in Joint Commission surveys, mention this to demonstrate your familiarity with high standards."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Registered Nurse",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Registered Nurse Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Registered Nurse Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Registered Nurse Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Registered Nurse Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Registered Nurse Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Registered Nurse Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -1571,16 +2425,44 @@ const PAGE_DATA = [
         "label": "Registered Nurse Resume Examples",
         "url": "/resume-examples/registered-nurse"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "healthcare",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Registered Nurse Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "medical-assistant",
     "group": "Healthcare",
     "dirPath": "resume-examples/medical-assistant",
     "canonicalUrl": "/resume-examples/medical-assistant",
-    "title": "Medical Assistant Resume Examples & Writing Guide (2025)",
+    "title": "Medical Assistant Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See medical assistant resume examples that landed jobs. Expert tips on highlighting clinical and administrative skills, EHR proficiency, and patient interaction.",
-    "h1": "Medical Assistant Resume Examples",
+    "h1": "Medical Assistant Resume Examples & Templates",
     "heroSubtitle": "Browse real medical assistant resumes that helped candidates secure positions at clinics and hospitals. Learn to present your dual clinical and administrative expertise.",
     "trustSignal": "Based on analysis of 11,000+ medical assistant resumes reviewed by practice managers and healthcare recruiters",
     "iconName": "clipboard-plus",
@@ -1598,7 +2480,13 @@ const PAGE_DATA = [
           "CMA",
           "family-practice"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Entry-Level Medical Assistant Resume",
@@ -1610,7 +2498,13 @@ const PAGE_DATA = [
           "new-grad",
           "externship"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Senior Medical Assistant Resume",
@@ -1622,7 +2516,13 @@ const PAGE_DATA = [
           "leadership",
           "training"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Specialty Clinic Medical Assistant Resume",
@@ -1634,7 +2534,13 @@ const PAGE_DATA = [
           "dermatology",
           "specialty"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -1687,6 +2593,38 @@ const PAGE_DATA = [
             "body": "Name the specific EHR platforms you have used such as Epic, eClinicalWorks, or athenahealth. This is often a requirement for medical assistant positions."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Medical Assistant",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Medical Assistant Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Medical Assistant Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Medical Assistant Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Medical Assistant Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Medical Assistant Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Medical Assistant Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -1718,16 +2656,44 @@ const PAGE_DATA = [
         "label": "Medical Assistant Resume Examples",
         "url": "/resume-examples/medical-assistant"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "healthcare",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Medical Assistant Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "pharmacy-technician",
     "group": "Healthcare",
     "dirPath": "resume-examples/pharmacy-technician",
     "canonicalUrl": "/resume-examples/pharmacy-technician",
-    "title": "Pharmacy Technician Resume Examples & Writing Guide (2025)",
+    "title": "Pharmacy Technician Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore pharmacy technician resume examples that got interviews. Learn to showcase prescription processing, inventory management, and customer service expertise.",
-    "h1": "Pharmacy Technician Resume Examples",
+    "h1": "Pharmacy Technician Resume Examples & Templates",
     "heroSubtitle": "Review real pharmacy technician resumes that helped candidates land positions at retail and hospital pharmacies. Discover how to highlight your accuracy and patient service skills.",
     "trustSignal": "Based on analysis of 8,500+ pharmacy technician resumes reviewed by pharmacy directors and hiring managers",
     "iconName": "pill",
@@ -1745,7 +2711,13 @@ const PAGE_DATA = [
           "retail",
           "CPhT"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Pharmacy Technician Resume",
@@ -1757,7 +2729,13 @@ const PAGE_DATA = [
           "new-grad",
           "externship"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Hospital Pharmacy Technician Resume",
@@ -1769,7 +2747,13 @@ const PAGE_DATA = [
           "hospital",
           "IV-compounding"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Lead Pharmacy Technician Resume",
@@ -1781,7 +2765,13 @@ const PAGE_DATA = [
           "lead",
           "inventory"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -1834,6 +2824,38 @@ const PAGE_DATA = [
             "body": "Pharmacy technicians interact with patients daily. Highlight your ability to answer medication questions, resolve insurance issues, and handle difficult situations."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Pharmacy Technician",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Pharmacy Technician Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Pharmacy Technician Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Pharmacy Technician Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Pharmacy Technician Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Pharmacy Technician Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Pharmacy Technician Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -1865,16 +2887,44 @@ const PAGE_DATA = [
         "label": "Pharmacy Technician Resume Examples",
         "url": "/resume-examples/pharmacy-technician"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "healthcare",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Pharmacy Technician Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "physical-therapist",
     "group": "Healthcare",
     "dirPath": "resume-examples/physical-therapist",
     "canonicalUrl": "/resume-examples/physical-therapist",
-    "title": "Physical Therapist Resume Examples & Writing Guide (2025)",
+    "title": "Physical Therapist Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See physical therapist resume examples that landed top positions. Learn to highlight patient outcomes, treatment planning, and rehabilitation expertise effectively.",
-    "h1": "Physical Therapist Resume Examples",
+    "h1": "Physical Therapist Resume Examples & Templates",
     "heroSubtitle": "Browse real physical therapist resumes that helped PTs secure positions at hospitals, outpatient clinics, and sports medicine facilities. Learn to showcase your rehabilitation expertise.",
     "trustSignal": "Based on analysis of 7,000+ physical therapist resumes reviewed by rehab directors and clinical hiring managers",
     "iconName": "activity",
@@ -1892,7 +2942,13 @@ const PAGE_DATA = [
           "orthopedic",
           "DPT"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "New Graduate Physical Therapist Resume",
@@ -1904,7 +2960,13 @@ const PAGE_DATA = [
           "new-grad",
           "clinical-rotations"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Sports Physical Therapist Resume",
@@ -1916,7 +2978,13 @@ const PAGE_DATA = [
           "sports",
           "rehabilitation"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Pediatric Physical Therapist Resume",
@@ -1928,7 +2996,13 @@ const PAGE_DATA = [
           "pediatric",
           "school-based"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Home Health Physical Therapist Resume",
@@ -1940,7 +3014,13 @@ const PAGE_DATA = [
           "home-health",
           "geriatric"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -1994,6 +3074,38 @@ const PAGE_DATA = [
             "body": "Highlight your experience working with physicians, occupational therapists, speech pathologists, and athletic trainers as part of a comprehensive care team."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Physical Therapist",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Physical Therapist Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Physical Therapist Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Physical Therapist Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Physical Therapist Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Physical Therapist Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Physical Therapist Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -2025,16 +3137,44 @@ const PAGE_DATA = [
         "label": "Physical Therapist Resume Examples",
         "url": "/resume-examples/physical-therapist"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "healthcare",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Physical Therapist Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "software-engineer",
     "group": "Technology",
     "dirPath": "resume-examples/software-engineer",
     "canonicalUrl": "/resume-examples/software-engineer",
-    "title": "Software Engineer Resume Examples & Writing Guide (2025)",
+    "title": "Software Engineer Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See real software engineer resume examples that landed interviews. Expert tips on showcasing technical skills, project impact, and system design experience.",
-    "h1": "Software Engineer Resume Examples",
+    "h1": "Software Engineer Resume Examples & Templates",
     "heroSubtitle": "Browse real software engineer resumes that helped developers land roles at top tech companies. Learn how to highlight your technical stack, project contributions, and engineering impact.",
     "trustSignal": "Based on analysis of 10,000+ software engineer resumes reviewed by hiring managers at leading tech companies",
     "iconName": "code",
@@ -2052,7 +3192,13 @@ const PAGE_DATA = [
           "backend",
           "full-stack"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Junior Software Engineer Resume",
@@ -2064,7 +3210,13 @@ const PAGE_DATA = [
           "new-grad",
           "internship"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Full-Stack Software Engineer Resume",
@@ -2076,7 +3228,13 @@ const PAGE_DATA = [
           "full-stack",
           "React"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Backend Software Engineer Resume",
@@ -2088,7 +3246,13 @@ const PAGE_DATA = [
           "backend",
           "microservices"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Staff Software Engineer Resume",
@@ -2100,7 +3264,13 @@ const PAGE_DATA = [
           "staff-level",
           "architecture"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -2155,6 +3325,38 @@ const PAGE_DATA = [
             "body": "Instead of listing responsibilities, describe what you built and the business value it created. Focus on outcomes rather than activities."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Software Engineer",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Software Engineer Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Software Engineer Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Software Engineer Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Software Engineer Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Software Engineer Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Software Engineer Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -2190,16 +3392,44 @@ const PAGE_DATA = [
         "label": "Software Engineer Resume Examples",
         "url": "/resume-examples/software-engineer"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "technology",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Software Engineer Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "software-developer",
     "group": "Technology",
     "dirPath": "resume-examples/software-developer",
     "canonicalUrl": "/resume-examples/software-developer",
-    "title": "Software Developer Resume Examples & Writing Guide (2025)",
+    "title": "Software Developer Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore software developer resume examples that won interviews. Learn to present your coding skills, project contributions, and development methodology experience.",
-    "h1": "Software Developer Resume Examples",
+    "h1": "Software Developer Resume Examples & Templates",
     "heroSubtitle": "Review real software developer resumes that helped candidates land positions at companies of all sizes. Discover how to showcase your development expertise and collaborative skills.",
     "trustSignal": "Based on analysis of 9,000+ software developer resumes reviewed by technical hiring managers and recruiters",
     "iconName": "terminal",
@@ -2217,7 +3447,13 @@ const PAGE_DATA = [
           "web-apps",
           "CI-CD"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Junior Software Developer Resume",
@@ -2229,7 +3465,13 @@ const PAGE_DATA = [
           "bootcamp",
           "career-change"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Mobile App Developer Resume",
@@ -2241,7 +3483,13 @@ const PAGE_DATA = [
           "mobile",
           "React-Native"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Frontend Developer Resume",
@@ -2253,7 +3501,13 @@ const PAGE_DATA = [
           "frontend",
           "JavaScript"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -2307,6 +3561,38 @@ const PAGE_DATA = [
             "body": "Mention recent courses, certifications, or conferences that demonstrate you stay current with evolving technologies and best practices."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Software Developer",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Software Developer Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Software Developer Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Software Developer Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Software Developer Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Software Developer Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Software Developer Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -2338,16 +3624,44 @@ const PAGE_DATA = [
         "label": "Software Developer Resume Examples",
         "url": "/resume-examples/software-developer"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "technology",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Software Developer Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "data-analyst",
     "group": "Technology",
     "dirPath": "resume-examples/data-analyst",
     "canonicalUrl": "/resume-examples/data-analyst",
-    "title": "Data Analyst Resume Examples & Writing Guide (2025)",
+    "title": "Data Analyst Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See data analyst resume examples that landed interviews. Expert tips on presenting your SQL skills, data visualization expertise, and business insights effectively.",
-    "h1": "Data Analyst Resume Examples",
+    "h1": "Data Analyst Resume Examples & Templates",
     "heroSubtitle": "Browse real data analyst resumes that helped professionals secure analytical roles. Learn how to showcase your data querying, visualization, and storytelling skills.",
     "trustSignal": "Based on analysis of 8,000+ data analyst resumes reviewed by analytics managers and hiring teams",
     "iconName": "bar-chart-2",
@@ -2365,7 +3679,13 @@ const PAGE_DATA = [
           "dashboards",
           "A/B-testing"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Data Analyst Resume",
@@ -2377,7 +3697,13 @@ const PAGE_DATA = [
           "new-grad",
           "SQL"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Business Data Analyst Resume",
@@ -2389,7 +3715,13 @@ const PAGE_DATA = [
           "business",
           "marketing-analytics"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Healthcare Data Analyst Resume",
@@ -2401,7 +3733,13 @@ const PAGE_DATA = [
           "healthcare",
           "clinical-data"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -2454,6 +3792,38 @@ const PAGE_DATA = [
             "body": "Data analysts work across departments. Mention how you partnered with product, marketing, or engineering teams to deliver insights that shaped strategy."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Data Analyst",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Data Analyst Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Data Analyst Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Data Analyst Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Data Analyst Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Data Analyst Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Data Analyst Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -2485,16 +3855,44 @@ const PAGE_DATA = [
         "label": "Data Analyst Resume Examples",
         "url": "/resume-examples/data-analyst"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "technology",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Data Analyst Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "data-analytics",
     "group": "Technology",
     "dirPath": "resume-examples/data-analytics",
     "canonicalUrl": "/resume-examples/data-analytics",
-    "title": "Data Analytics Resume Examples & Writing Guide (2025)",
+    "title": "Data Analytics Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "View data analytics resume examples that secured interviews. Learn to present your analytics methodology, reporting skills, and data-driven decision-making ability.",
-    "h1": "Data Analytics Resume Examples",
+    "h1": "Data Analytics Resume Examples & Templates",
     "heroSubtitle": "Explore real data analytics resumes that helped professionals land analytical roles. Learn to showcase your ability to transform raw data into strategic business recommendations.",
     "trustSignal": "Based on analysis of 7,500+ data analytics resumes reviewed by analytics directors and hiring managers",
     "iconName": "line-chart",
@@ -2512,7 +3910,13 @@ const PAGE_DATA = [
           "reporting",
           "automation"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Data Analytics Resume",
@@ -2524,7 +3928,13 @@ const PAGE_DATA = [
           "certificate",
           "new-grad"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Marketing Data Analytics Resume",
@@ -2536,7 +3946,13 @@ const PAGE_DATA = [
           "marketing",
           "ROI"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Operations Data Analytics Resume",
@@ -2548,7 +3964,13 @@ const PAGE_DATA = [
           "operations",
           "supply-chain"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -2601,6 +4023,38 @@ const PAGE_DATA = [
             "body": "Highlight any experience automating reports, building data pipelines, or creating self-service dashboards that saved your team time and improved data access."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Data Analytics",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Data Analytics Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Data Analytics Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Data Analytics Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Data Analytics Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Data Analytics Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Data Analytics Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -2632,16 +4086,44 @@ const PAGE_DATA = [
         "label": "Data Analytics Resume Examples",
         "url": "/resume-examples/data-analytics"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "technology",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Data Analytics Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "data-scientist",
     "group": "Technology",
     "dirPath": "resume-examples/data-scientist",
     "canonicalUrl": "/resume-examples/data-scientist",
-    "title": "Data Scientist Resume Examples & Writing Guide (2025)",
+    "title": "Data Scientist Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore data scientist resume examples that landed top roles. Learn to showcase machine learning expertise, statistical modeling, and research-driven impact.",
-    "h1": "Data Scientist Resume Examples",
+    "h1": "Data Scientist Resume Examples & Templates",
     "heroSubtitle": "Review real data scientist resumes that helped professionals secure positions at innovative companies. Discover how to present your ML expertise and analytical research skills.",
     "trustSignal": "Based on analysis of 6,000+ data scientist resumes reviewed by data science managers and technical recruiters",
     "iconName": "brain",
@@ -2659,7 +4141,13 @@ const PAGE_DATA = [
           "machine-learning",
           "production-ML"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Data Scientist Resume",
@@ -2671,7 +4159,13 @@ const PAGE_DATA = [
           "PhD",
           "research"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "NLP Data Scientist Resume",
@@ -2683,7 +4177,13 @@ const PAGE_DATA = [
           "NLP",
           "text-classification"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Data Scientist in Finance Resume",
@@ -2695,7 +4195,13 @@ const PAGE_DATA = [
           "finance",
           "fraud-detection"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Lead Data Scientist Resume",
@@ -2707,7 +4213,13 @@ const PAGE_DATA = [
           "leadership",
           "ML-ops"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -2761,6 +4273,38 @@ const PAGE_DATA = [
             "body": "Companies increasingly value data scientists who can deploy models to production. Mention experience with Docker, Kubernetes, ML pipelines, or model monitoring tools."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Data Scientist",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Data Scientist Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Data Scientist Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Data Scientist Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Data Scientist Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Data Scientist Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Data Scientist Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -2792,16 +4336,44 @@ const PAGE_DATA = [
         "label": "Data Scientist Resume Examples",
         "url": "/resume-examples/data-scientist"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "technology",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Data Scientist Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "business-analyst",
     "group": "Business & Management",
     "dirPath": "resume-examples/business-analyst",
     "canonicalUrl": "/resume-examples/business-analyst",
-    "title": "Business Analyst Resume Examples & Writing Guide (2025)",
+    "title": "Business Analyst Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See business analyst resume examples that secured interviews. Expert tips on showcasing requirements gathering, stakeholder management, and process improvement.",
-    "h1": "Business Analyst Resume Examples",
+    "h1": "Business Analyst Resume Examples & Templates",
     "heroSubtitle": "Browse real business analyst resumes that helped professionals land roles at top organizations. Learn how to present your analytical, communication, and problem-solving skills.",
     "trustSignal": "Based on analysis of 9,000+ business analyst resumes reviewed by project managers and hiring directors",
     "iconName": "briefcase",
@@ -2819,7 +4391,13 @@ const PAGE_DATA = [
           "enterprise",
           "requirements"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Business Analyst Resume",
@@ -2831,7 +4409,13 @@ const PAGE_DATA = [
           "new-grad",
           "process-mapping"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "IT Business Analyst Resume",
@@ -2843,7 +4427,13 @@ const PAGE_DATA = [
           "IT",
           "UAT"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Agile Business Analyst Resume",
@@ -2855,7 +4445,13 @@ const PAGE_DATA = [
           "agile",
           "scrum"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -2908,6 +4504,38 @@ const PAGE_DATA = [
             "body": "Show that you can write detailed BRDs and also present executive summaries. Business analysts must communicate at every level of the organization."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Business Analyst",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Business Analyst Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Business Analyst Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Business Analyst Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Business Analyst Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Business Analyst Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Business Analyst Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -2939,16 +4567,44 @@ const PAGE_DATA = [
         "label": "Business Analyst Resume Examples",
         "url": "/resume-examples/business-analyst"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "business-management",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Business Analyst Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "product-manager",
     "group": "Business & Management",
     "dirPath": "resume-examples/product-manager",
     "canonicalUrl": "/resume-examples/product-manager",
-    "title": "Product Manager Resume Examples & Writing Guide (2025)",
+    "title": "Product Manager Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore product manager resume examples that won interviews. Learn to showcase product strategy, cross-functional leadership, and data-driven decision-making skills.",
-    "h1": "Product Manager Resume Examples",
+    "h1": "Product Manager Resume Examples & Templates",
     "heroSubtitle": "Review real product manager resumes that helped professionals land PM roles at top tech companies. Discover how to present your product vision and execution track record.",
     "trustSignal": "Based on analysis of 7,000+ product manager resumes reviewed by VP-level product leaders and recruiters",
     "iconName": "layout",
@@ -2966,7 +4622,13 @@ const PAGE_DATA = [
           "roadmap",
           "user-growth"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Associate Product Manager Resume",
@@ -2978,7 +4640,13 @@ const PAGE_DATA = [
           "APM",
           "rotational"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Technical Product Manager Resume",
@@ -2990,7 +4658,13 @@ const PAGE_DATA = [
           "technical",
           "API"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "B2B Product Manager Resume",
@@ -3002,7 +4676,13 @@ const PAGE_DATA = [
           "B2B",
           "SaaS"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -3055,6 +4735,38 @@ const PAGE_DATA = [
             "body": "Mention user research methods you use such as interviews, surveys, usability testing, or A/B experiments to demonstrate you build for real user needs."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Product Manager",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Product Manager Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Product Manager Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Product Manager Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Product Manager Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Product Manager Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Product Manager Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -3086,16 +4798,44 @@ const PAGE_DATA = [
         "label": "Product Manager Resume Examples",
         "url": "/resume-examples/product-manager"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "business-management",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Product Manager Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "product-owner",
     "group": "Business & Management",
     "dirPath": "resume-examples/product-owner",
     "canonicalUrl": "/resume-examples/product-owner",
-    "title": "Product Owner Resume Examples & Writing Guide (2025)",
+    "title": "Product Owner Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "View product owner resume examples that got interviews. Learn to present your backlog management, stakeholder alignment, and agile delivery expertise effectively.",
-    "h1": "Product Owner Resume Examples",
+    "h1": "Product Owner Resume Examples & Templates",
     "heroSubtitle": "Browse real product owner resumes that helped professionals secure PO roles. Learn to showcase your backlog prioritization, sprint planning, and value delivery skills.",
     "trustSignal": "Based on analysis of 5,500+ product owner resumes reviewed by agile coaches and delivery managers",
     "iconName": "clipboard-list",
@@ -3113,7 +4853,13 @@ const PAGE_DATA = [
           "backlog",
           "scrum"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Product Owner Resume",
@@ -3125,7 +4871,13 @@ const PAGE_DATA = [
           "CSPO",
           "user-stories"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "SAFe Product Owner Resume",
@@ -3137,7 +4889,13 @@ const PAGE_DATA = [
           "SAFe",
           "enterprise"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "E-Commerce Product Owner Resume",
@@ -3149,7 +4907,13 @@ const PAGE_DATA = [
           "e-commerce",
           "conversion"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -3202,6 +4966,38 @@ const PAGE_DATA = [
             "body": "Product owners need to understand the business model. Highlight how you connect product decisions to revenue, retention, or competitive positioning."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Product Owner",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Product Owner Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Product Owner Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Product Owner Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Product Owner Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Product Owner Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Product Owner Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -3233,16 +5029,44 @@ const PAGE_DATA = [
         "label": "Product Owner Resume Examples",
         "url": "/resume-examples/product-owner"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "business-management",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Product Owner Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "operations-manager",
     "group": "Business & Management",
     "dirPath": "resume-examples/operations-manager",
     "canonicalUrl": "/resume-examples/operations-manager",
-    "title": "Operations Manager Resume Examples & Writing Guide (2025)",
+    "title": "Operations Manager Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See operations manager resume examples that landed interviews. Learn to showcase process optimization, team leadership, and cost reduction achievements effectively.",
-    "h1": "Operations Manager Resume Examples",
+    "h1": "Operations Manager Resume Examples & Templates",
     "heroSubtitle": "Browse real operations manager resumes that helped professionals secure leadership roles. Learn how to highlight your ability to streamline processes and drive organizational efficiency.",
     "trustSignal": "Based on analysis of 8,000+ operations manager resumes reviewed by directors and VP-level hiring managers",
     "iconName": "settings",
@@ -3260,7 +5084,13 @@ const PAGE_DATA = [
           "multi-site",
           "cost-reduction"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Operations Manager Resume",
@@ -3272,7 +5102,13 @@ const PAGE_DATA = [
           "promoted",
           "coordinator"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Manufacturing Operations Manager Resume",
@@ -3284,7 +5120,13 @@ const PAGE_DATA = [
           "manufacturing",
           "lean"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Logistics Operations Manager Resume",
@@ -3296,7 +5138,13 @@ const PAGE_DATA = [
           "logistics",
           "supply-chain"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -3349,6 +5197,38 @@ const PAGE_DATA = [
             "body": "Describe how you led organizational changes, adopted new systems, or transformed team cultures to achieve operational goals."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Operations Manager",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Operations Manager Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Operations Manager Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Operations Manager Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Operations Manager Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Operations Manager Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Operations Manager Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -3380,16 +5260,44 @@ const PAGE_DATA = [
         "label": "Operations Manager Resume Examples",
         "url": "/resume-examples/operations-manager"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "business-management",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Operations Manager Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "account-manager",
     "group": "Business & Management",
     "dirPath": "resume-examples/account-manager",
     "canonicalUrl": "/resume-examples/account-manager",
-    "title": "Account Manager Resume Examples & Writing Guide (2025)",
+    "title": "Account Manager Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Browse account manager resume examples that secured interviews. Learn to present your client retention, revenue growth, and relationship management achievements.",
-    "h1": "Account Manager Resume Examples",
+    "h1": "Account Manager Resume Examples & Templates",
     "heroSubtitle": "Explore real account manager resumes that helped professionals land client-facing roles. Discover how to showcase your ability to grow accounts and build lasting relationships.",
     "trustSignal": "Based on analysis of 7,500+ account manager resumes reviewed by sales directors and hiring managers",
     "iconName": "user-check",
@@ -3407,7 +5315,13 @@ const PAGE_DATA = [
           "enterprise",
           "ARR"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Account Manager Resume",
@@ -3419,7 +5333,13 @@ const PAGE_DATA = [
           "coordinator",
           "upsell"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Key Account Manager Resume",
@@ -3431,7 +5351,13 @@ const PAGE_DATA = [
           "key-accounts",
           "strategic"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Digital Account Manager Resume",
@@ -3443,7 +5369,13 @@ const PAGE_DATA = [
           "digital",
           "agency"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -3496,6 +5428,38 @@ const PAGE_DATA = [
             "body": "If your work has resulted in case studies, testimonials, or NPS improvements, mention these as evidence of strong client relationships."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Account Manager",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Account Manager Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Account Manager Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Account Manager Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Account Manager Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Account Manager Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Account Manager Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -3527,16 +5491,44 @@ const PAGE_DATA = [
         "label": "Account Manager Resume Examples",
         "url": "/resume-examples/account-manager"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "business-management",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Account Manager Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "property-manager",
     "group": "Business & Management",
     "dirPath": "resume-examples/property-manager",
     "canonicalUrl": "/resume-examples/property-manager",
-    "title": "Property Manager Resume Examples & Writing Guide (2025)",
+    "title": "Property Manager Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See property manager resume examples that landed interviews. Expert tips on showcasing tenant relations, lease management, and property maintenance oversight skills.",
-    "h1": "Property Manager Resume Examples",
+    "h1": "Property Manager Resume Examples & Templates",
     "heroSubtitle": "Browse real property manager resumes that helped professionals secure positions at management companies and real estate firms. Learn to highlight your portfolio management skills.",
     "trustSignal": "Based on analysis of 6,000+ property manager resumes reviewed by regional managers and real estate hiring teams",
     "iconName": "building",
@@ -3554,7 +5546,13 @@ const PAGE_DATA = [
           "residential",
           "portfolio"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Property Manager Resume",
@@ -3566,7 +5564,13 @@ const PAGE_DATA = [
           "leasing",
           "assistant"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Commercial Property Manager Resume",
@@ -3578,7 +5582,13 @@ const PAGE_DATA = [
           "commercial",
           "lease-negotiation"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "HOA Community Manager Resume",
@@ -3590,7 +5600,13 @@ const PAGE_DATA = [
           "HOA",
           "community"
         ],
-        "mockVariation": 8
+        "mockVariation": 8,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -3643,6 +5659,38 @@ const PAGE_DATA = [
             "body": "Mention your familiarity with fair housing laws, building codes, and local landlord-tenant regulations to demonstrate your risk management awareness."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Property Manager",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Property Manager Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Property Manager Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Property Manager Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Property Manager Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Property Manager Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Property Manager Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -3674,16 +5722,44 @@ const PAGE_DATA = [
         "label": "Property Manager Resume Examples",
         "url": "/resume-examples/property-manager"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "business-management",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Property Manager Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "administrative-assistant",
     "group": "Administrative",
     "dirPath": "resume-examples/administrative-assistant",
     "canonicalUrl": "/resume-examples/administrative-assistant",
-    "title": "Administrative Assistant Resume Examples & Writing Guide (2025)",
+    "title": "Administrative Assistant Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See administrative assistant resume examples that got interviews. Learn to highlight your organizational, scheduling, and office management skills effectively.",
-    "h1": "Administrative Assistant Resume Examples",
+    "h1": "Administrative Assistant Resume Examples & Templates",
     "heroSubtitle": "Browse real administrative assistant resumes that helped candidates land positions at top companies. Learn to present your office management and multitasking expertise.",
     "trustSignal": "Based on analysis of 12,000+ administrative assistant resumes reviewed by office managers and HR professionals",
     "iconName": "file-text",
@@ -3701,7 +5777,13 @@ const PAGE_DATA = [
           "executive-support",
           "calendar-management"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Administrative Assistant Resume",
@@ -3713,7 +5795,13 @@ const PAGE_DATA = [
           "new-grad",
           "Microsoft-Office"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Medical Administrative Assistant Resume",
@@ -3725,7 +5813,13 @@ const PAGE_DATA = [
           "medical",
           "HIPAA"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Legal Administrative Assistant Resume",
@@ -3737,7 +5831,13 @@ const PAGE_DATA = [
           "legal",
           "court-documents"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -3790,6 +5890,38 @@ const PAGE_DATA = [
             "body": "Describe situations where you proactively identified and resolved office challenges before they became bigger issues."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Administrative Assistant",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Administrative Assistant Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Administrative Assistant Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Administrative Assistant Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Administrative Assistant Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Administrative Assistant Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Administrative Assistant Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -3821,16 +5953,44 @@ const PAGE_DATA = [
         "label": "Administrative Assistant Resume Examples",
         "url": "/resume-examples/administrative-assistant"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "administrative",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Administrative Assistant Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "office-assistant",
     "group": "Administrative",
     "dirPath": "resume-examples/office-assistant",
     "canonicalUrl": "/resume-examples/office-assistant",
-    "title": "Office Assistant Resume Examples & Writing Guide (2025)",
+    "title": "Office Assistant Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "View office assistant resume examples that won interviews. Get tips on presenting your multitasking abilities, front-desk skills, and office coordination experience.",
-    "h1": "Office Assistant Resume Examples",
+    "h1": "Office Assistant Resume Examples & Templates",
     "heroSubtitle": "Explore real office assistant resumes that helped candidates land support roles. Learn how to showcase your versatility and reliability in daily office operations.",
     "trustSignal": "Based on analysis of 9,000+ office assistant resumes reviewed by office managers and hiring coordinators",
     "iconName": "inbox",
@@ -3848,7 +6008,13 @@ const PAGE_DATA = [
           "front-desk",
           "supply-management"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Office Assistant Resume",
@@ -3860,7 +6026,13 @@ const PAGE_DATA = [
           "data-entry",
           "customer-service"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Part-Time Office Assistant Resume",
@@ -3872,7 +6044,13 @@ const PAGE_DATA = [
           "part-time",
           "student"
         ],
-        "mockVariation": 8
+        "mockVariation": 8,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Office Assistant to Office Manager Resume",
@@ -3884,7 +6062,13 @@ const PAGE_DATA = [
           "promotion",
           "systems"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -3937,6 +6121,38 @@ const PAGE_DATA = [
             "body": "A one-page resume is ideal for office assistant roles. Focus on the most relevant experience and skills that match the job posting."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Office Assistant",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Office Assistant Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Office Assistant Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Office Assistant Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Office Assistant Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Office Assistant Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Office Assistant Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -3968,16 +6184,44 @@ const PAGE_DATA = [
         "label": "Office Assistant Resume Examples",
         "url": "/resume-examples/office-assistant"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "administrative",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Office Assistant Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "executive-assistant",
     "group": "Administrative",
     "dirPath": "resume-examples/executive-assistant",
     "canonicalUrl": "/resume-examples/executive-assistant",
-    "title": "Executive Assistant Resume Examples & Writing Guide (2025)",
+    "title": "Executive Assistant Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore executive assistant resume examples that won top roles. Learn to showcase C-suite support, strategic calendar management, and high-level project coordination.",
-    "h1": "Executive Assistant Resume Examples",
+    "h1": "Executive Assistant Resume Examples & Templates",
     "heroSubtitle": "Review real executive assistant resumes that helped professionals land high-impact support roles. Discover how to present your ability to partner with senior leadership.",
     "trustSignal": "Based on analysis of 8,000+ executive assistant resumes reviewed by chiefs of staff and senior leadership teams",
     "iconName": "crown",
@@ -3995,7 +6239,13 @@ const PAGE_DATA = [
           "CEO-support",
           "board-meetings"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Executive Assistant Resume",
@@ -4007,7 +6257,13 @@ const PAGE_DATA = [
           "promoted",
           "calendar"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Tech Company Executive Assistant Resume",
@@ -4019,7 +6275,13 @@ const PAGE_DATA = [
           "tech",
           "multi-executive"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Remote Executive Assistant Resume",
@@ -4031,7 +6293,13 @@ const PAGE_DATA = [
           "remote",
           "virtual"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -4084,6 +6352,38 @@ const PAGE_DATA = [
             "body": "Mention your experience handling board materials, financial data, or personnel matters to demonstrate your trustworthiness."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Executive Assistant",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Executive Assistant Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Executive Assistant Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Executive Assistant Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Executive Assistant Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Executive Assistant Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Executive Assistant Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -4115,16 +6415,44 @@ const PAGE_DATA = [
         "label": "Executive Assistant Resume Examples",
         "url": "/resume-examples/executive-assistant"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "administrative",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Executive Assistant Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "office-administrator",
     "group": "Administrative",
     "dirPath": "resume-examples/office-administrator",
     "canonicalUrl": "/resume-examples/office-administrator",
-    "title": "Office Administrator Resume Examples & Writing Guide (2025)",
+    "title": "Office Administrator Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See office administrator resume examples that landed interviews. Learn to highlight office management, vendor coordination, and budget oversight capabilities.",
-    "h1": "Office Administrator Resume Examples",
+    "h1": "Office Administrator Resume Examples & Templates",
     "heroSubtitle": "Browse real office administrator resumes that helped professionals secure management-level administrative roles. Learn to present your office operations leadership.",
     "trustSignal": "Based on analysis of 7,000+ office administrator resumes reviewed by operations managers and HR directors",
     "iconName": "folder",
@@ -4142,7 +6470,13 @@ const PAGE_DATA = [
           "office-management",
           "budget"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Office Administrator Resume",
@@ -4154,7 +6488,13 @@ const PAGE_DATA = [
           "progressive",
           "assistant-to-admin"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Small Business Office Administrator Resume",
@@ -4166,7 +6506,13 @@ const PAGE_DATA = [
           "small-business",
           "jack-of-all-trades"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Nonprofit Office Administrator Resume",
@@ -4178,7 +6524,13 @@ const PAGE_DATA = [
           "nonprofit",
           "grants"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -4231,6 +6583,38 @@ const PAGE_DATA = [
             "body": "Mention your familiarity with workplace safety regulations, insurance coordination, or emergency preparedness procedures."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Office Administrator",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Office Administrator Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Office Administrator Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Office Administrator Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Office Administrator Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Office Administrator Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Office Administrator Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -4262,16 +6646,44 @@ const PAGE_DATA = [
         "label": "Office Administrator Resume Examples",
         "url": "/resume-examples/office-administrator"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "administrative",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Office Administrator Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "sales-associate",
     "group": "Sales & Customer Service",
     "dirPath": "resume-examples/sales-associate",
     "canonicalUrl": "/resume-examples/sales-associate",
-    "title": "Sales Associate Resume Examples & Writing Guide (2025)",
+    "title": "Sales Associate Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Browse sales associate resume examples that landed retail jobs. Learn to showcase your customer service skills, product knowledge, and sales target achievements.",
-    "h1": "Sales Associate Resume Examples",
+    "h1": "Sales Associate Resume Examples & Templates",
     "heroSubtitle": "Explore real sales associate resumes that helped candidates secure retail and customer-facing positions. Discover how to present your selling skills and customer relationship abilities.",
     "trustSignal": "Based on analysis of 10,000+ sales associate resumes reviewed by retail managers and district hiring teams",
     "iconName": "shopping-bag",
@@ -4289,7 +6701,13 @@ const PAGE_DATA = [
           "top-performer",
           "targets"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Sales Associate Resume",
@@ -4301,7 +6719,13 @@ const PAGE_DATA = [
           "first-job",
           "cashier"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Luxury Retail Sales Associate Resume",
@@ -4313,7 +6737,13 @@ const PAGE_DATA = [
           "luxury",
           "clienteling"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Electronics Sales Associate Resume",
@@ -4325,7 +6755,13 @@ const PAGE_DATA = [
           "electronics",
           "tech"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -4378,6 +6814,38 @@ const PAGE_DATA = [
             "body": "Retail is a team sport. Describe how you collaborate with colleagues to maintain store standards, cover shifts, and achieve team sales goals."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Sales Associate",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Sales Associate Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Sales Associate Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Sales Associate Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Sales Associate Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Sales Associate Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Sales Associate Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -4409,16 +6877,44 @@ const PAGE_DATA = [
         "label": "Sales Associate Resume Examples",
         "url": "/resume-examples/sales-associate"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "sales-customer-service",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Sales Associate Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "sales",
     "group": "Sales & Customer Service",
     "dirPath": "resume-examples/sales",
     "canonicalUrl": "/resume-examples/sales",
-    "title": "Sales Resume Examples & Writing Guide (2025)",
+    "title": "Sales Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See sales resume examples that landed high-paying roles. Expert tips on showcasing quota attainment, pipeline management, and deal closing abilities on your resume.",
-    "h1": "Sales Resume Examples",
+    "h1": "Sales Resume Examples & Templates",
     "heroSubtitle": "Browse real sales resumes that helped professionals land competitive roles. Learn how to present your revenue generation, prospecting, and relationship-building expertise.",
     "trustSignal": "Based on analysis of 11,000+ sales resumes reviewed by sales directors and VP-level hiring managers",
     "iconName": "trending-up",
@@ -4436,7 +6932,13 @@ const PAGE_DATA = [
           "enterprise",
           "quota"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Sales Representative Resume",
@@ -4448,7 +6950,13 @@ const PAGE_DATA = [
           "SDR",
           "cold-calling"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "SaaS Sales Resume",
@@ -4460,7 +6968,13 @@ const PAGE_DATA = [
           "SaaS",
           "full-cycle"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Inside Sales Resume",
@@ -4472,7 +6986,13 @@ const PAGE_DATA = [
           "inside-sales",
           "virtual"
         ],
-        "mockVariation": 8
+        "mockVariation": 8,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -4525,6 +7045,38 @@ const PAGE_DATA = [
             "body": "Sales leaders love to see growth. Show your progression from SDR to AE to senior AE with increasing quota responsibility at each stage."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Sales",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Sales Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Sales Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Sales Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Sales Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Sales Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Sales Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -4556,16 +7108,44 @@ const PAGE_DATA = [
         "label": "Sales Resume Examples",
         "url": "/resume-examples/sales"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "sales-customer-service",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Sales Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "customer-service-representative",
     "group": "Sales & Customer Service",
     "dirPath": "resume-examples/customer-service-representative",
     "canonicalUrl": "/resume-examples/customer-service-representative",
-    "title": "Customer Service Representative Resume Examples & Writing Guide (2025)",
+    "title": "Customer Service Representative Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See customer service representative resume examples that got interviews. Learn to showcase problem resolution, communication skills, and customer satisfaction metrics.",
-    "h1": "Customer Service Representative Resume Examples",
+    "h1": "Customer Service Representative Resume Examples & Templates",
     "heroSubtitle": "Browse real customer service representative resumes that helped candidates land support roles. Learn to present your problem-solving abilities and customer-first mindset.",
     "trustSignal": "Based on analysis of 13,000+ customer service representative resumes reviewed by customer experience managers",
     "iconName": "headphones",
@@ -4583,7 +7163,13 @@ const PAGE_DATA = [
           "CSAT",
           "mentoring"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Customer Service Resume",
@@ -4595,7 +7181,13 @@ const PAGE_DATA = [
           "entry-level",
           "phone-support"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Technical Support Representative Resume",
@@ -4607,7 +7199,13 @@ const PAGE_DATA = [
           "tech-support",
           "troubleshooting"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Bilingual Customer Service Resume",
@@ -4619,7 +7217,13 @@ const PAGE_DATA = [
           "bilingual",
           "Spanish"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -4672,6 +7276,38 @@ const PAGE_DATA = [
             "body": "Mention any leadership, training, or quality assurance responsibilities to show you are ready for advancement beyond a frontline role."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Customer Service Representative",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Customer Service Representative Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Customer Service Representative Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Customer Service Representative Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Customer Service Representative Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Customer Service Representative Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Customer Service Representative Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -4703,16 +7339,44 @@ const PAGE_DATA = [
         "label": "Customer Service Representative Resume Examples",
         "url": "/resume-examples/customer-service-representative"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "sales-customer-service",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Customer Service Representative Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "customer-service",
     "group": "Sales & Customer Service",
     "dirPath": "resume-examples/customer-service",
     "canonicalUrl": "/resume-examples/customer-service",
-    "title": "Customer Service Resume Examples & Writing Guide (2025)",
+    "title": "Customer Service Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore customer service resume examples that secured interviews. Get tips on presenting communication skills, conflict resolution, and service excellence.",
-    "h1": "Customer Service Resume Examples",
+    "h1": "Customer Service Resume Examples & Templates",
     "heroSubtitle": "Review real customer service resumes that helped professionals land service-oriented roles. Discover how to highlight your dedication to customer satisfaction and retention.",
     "trustSignal": "Based on analysis of 11,000+ customer service resumes reviewed by service managers and hiring teams",
     "iconName": "message-circle",
@@ -4730,7 +7394,13 @@ const PAGE_DATA = [
           "team-lead",
           "NPS"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Customer Service Resume",
@@ -4742,7 +7412,13 @@ const PAGE_DATA = [
           "hospitality",
           "transferable"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Call Center Customer Service Resume",
@@ -4754,7 +7430,13 @@ const PAGE_DATA = [
           "call-center",
           "high-volume"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "E-Commerce Customer Service Resume",
@@ -4766,7 +7448,13 @@ const PAGE_DATA = [
           "e-commerce",
           "chat-support"
         ],
-        "mockVariation": 8
+        "mockVariation": 8,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -4819,6 +7507,38 @@ const PAGE_DATA = [
             "body": "If you have trained or mentored new team members, include this to show leadership potential and deep operational knowledge."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Customer Service",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Customer Service Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Customer Service Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Customer Service Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Customer Service Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Customer Service Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Customer Service Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -4850,16 +7570,44 @@ const PAGE_DATA = [
         "label": "Customer Service Resume Examples",
         "url": "/resume-examples/customer-service"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "sales-customer-service",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Customer Service Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "graphic-designer",
     "group": "Creative & Design",
     "dirPath": "resume-examples/graphic-designer",
     "canonicalUrl": "/resume-examples/graphic-designer",
-    "title": "Graphic Designer Resume Examples & Writing Guide (2025)",
+    "title": "Graphic Designer Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See graphic designer resume examples that landed creative roles. Expert tips on showcasing your design portfolio, software skills, and brand identity experience.",
-    "h1": "Graphic Designer Resume Examples",
+    "h1": "Graphic Designer Resume Examples & Templates",
     "heroSubtitle": "Browse real graphic designer resumes that helped creatives land positions at agencies and in-house teams. Learn to present your visual storytelling and technical design skills.",
     "trustSignal": "Based on analysis of 8,000+ graphic designer resumes reviewed by creative directors and design managers",
     "iconName": "palette",
@@ -4877,7 +7625,13 @@ const PAGE_DATA = [
           "branding",
           "packaging"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Junior Graphic Designer Resume",
@@ -4889,7 +7643,13 @@ const PAGE_DATA = [
           "new-grad",
           "Adobe"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "UI/UX Graphic Designer Resume",
@@ -4901,7 +7661,13 @@ const PAGE_DATA = [
           "UI-UX",
           "web-design"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Freelance Graphic Designer Resume",
@@ -4913,7 +7679,13 @@ const PAGE_DATA = [
           "freelance",
           "multi-client"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -4966,6 +7738,38 @@ const PAGE_DATA = [
             "body": "Show your range by mentioning experience in both print production and digital design, even if one is stronger than the other."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Graphic Designer",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Graphic Designer Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Graphic Designer Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Graphic Designer Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Graphic Designer Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Graphic Designer Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Graphic Designer Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -4997,16 +7801,44 @@ const PAGE_DATA = [
         "label": "Graphic Designer Resume Examples",
         "url": "/resume-examples/graphic-designer"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "creative-design",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Graphic Designer Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "graphic-artist",
     "group": "Creative & Design",
     "dirPath": "resume-examples/graphic-artist",
     "canonicalUrl": "/resume-examples/graphic-artist",
-    "title": "Graphic Artist Resume Examples & Writing Guide (2025)",
+    "title": "Graphic Artist Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore graphic artist resume examples that won creative positions. Learn to present your illustration skills, visual storytelling ability, and artistic versatility.",
-    "h1": "Graphic Artist Resume Examples",
+    "h1": "Graphic Artist Resume Examples & Templates",
     "heroSubtitle": "Review real graphic artist resumes that helped creatives secure positions at studios, publishers, and marketing agencies. Discover how to showcase your artistic talent and technical skills.",
     "trustSignal": "Based on analysis of 5,000+ graphic artist resumes reviewed by art directors and creative hiring managers",
     "iconName": "pen-tool",
@@ -5024,7 +7856,13 @@ const PAGE_DATA = [
           "illustration",
           "editorial"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Graphic Artist Resume",
@@ -5036,7 +7874,13 @@ const PAGE_DATA = [
           "new-grad",
           "illustration"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Digital Graphic Artist Resume",
@@ -5048,7 +7892,13 @@ const PAGE_DATA = [
           "digital",
           "animation"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Production Graphic Artist Resume",
@@ -5060,7 +7910,13 @@ const PAGE_DATA = [
           "production",
           "prepress"
         ],
-        "mockVariation": 8
+        "mockVariation": 8,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -5113,6 +7969,38 @@ const PAGE_DATA = [
             "body": "Mentioning hand-drawing, painting, or printmaking alongside digital tools shows depth and versatility that many employers value."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Graphic Artist",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Graphic Artist Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Graphic Artist Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Graphic Artist Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Graphic Artist Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Graphic Artist Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Graphic Artist Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -5143,16 +8031,44 @@ const PAGE_DATA = [
         "label": "Graphic Artist Resume Examples",
         "url": "/resume-examples/graphic-artist"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "creative-design",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Graphic Artist Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "designer",
     "group": "Creative & Design",
     "dirPath": "resume-examples/designer",
     "canonicalUrl": "/resume-examples/designer",
-    "title": "Designer Resume Examples & Writing Guide (2025)",
+    "title": "Designer Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "View designer resume examples that secured creative roles. Learn to showcase your design process, user-centered thinking, and cross-disciplinary design expertise.",
-    "h1": "Designer Resume Examples",
+    "h1": "Designer Resume Examples & Templates",
     "heroSubtitle": "Explore real designer resumes that helped creatives land versatile design positions. Learn how to present your design thinking, process, and multi-disciplinary skills.",
     "trustSignal": "Based on analysis of 7,000+ designer resumes reviewed by design directors and creative leads",
     "iconName": "figma",
@@ -5170,7 +8086,13 @@ const PAGE_DATA = [
           "product-design",
           "design-systems"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Junior Designer Resume",
@@ -5182,7 +8104,13 @@ const PAGE_DATA = [
           "junior",
           "Figma"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "UX Designer Resume",
@@ -5194,7 +8122,13 @@ const PAGE_DATA = [
           "UX",
           "wireframes"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Brand Designer Resume",
@@ -5206,7 +8140,13 @@ const PAGE_DATA = [
           "branding",
           "visual-identity"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -5259,6 +8199,38 @@ const PAGE_DATA = [
             "body": "Include metrics such as task completion rate improvements, reduced support tickets, or conversion rate increases that resulted from your design work."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Designer",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Designer Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Designer Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Designer Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Designer Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Designer Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Designer Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -5290,16 +8262,44 @@ const PAGE_DATA = [
         "label": "Designer Resume Examples",
         "url": "/resume-examples/designer"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "creative-design",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Designer Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "social-media-manager",
     "group": "Creative & Design",
     "dirPath": "resume-examples/social-media-manager",
     "canonicalUrl": "/resume-examples/social-media-manager",
-    "title": "Social Media Manager Resume Examples & Writing Guide (2025)",
+    "title": "Social Media Manager Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Browse social media manager resume examples that got interviews. Learn to showcase content strategy, audience growth, and engagement metrics on your resume.",
-    "h1": "Social Media Manager Resume Examples",
+    "h1": "Social Media Manager Resume Examples & Templates",
     "heroSubtitle": "Explore real social media manager resumes that helped marketers land digital roles. Discover how to present your content creation, community management, and analytics expertise.",
     "trustSignal": "Based on analysis of 7,500+ social media manager resumes reviewed by marketing directors and brand managers",
     "iconName": "share-2",
@@ -5317,7 +8317,13 @@ const PAGE_DATA = [
           "strategy",
           "team-lead"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Social Media Manager Resume",
@@ -5329,7 +8335,13 @@ const PAGE_DATA = [
           "content-creation",
           "new-grad"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "B2B Social Media Manager Resume",
@@ -5341,7 +8353,13 @@ const PAGE_DATA = [
           "B2B",
           "LinkedIn"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Agency Social Media Manager Resume",
@@ -5353,7 +8371,13 @@ const PAGE_DATA = [
           "agency",
           "multi-brand"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -5406,6 +8430,38 @@ const PAGE_DATA = [
             "body": "Mention tools like Sprout Social, Hootsuite, Buffer, Google Analytics, or native platform analytics to demonstrate your data-driven approach."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Social Media Manager",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Social Media Manager Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Social Media Manager Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Social Media Manager Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Social Media Manager Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Social Media Manager Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Social Media Manager Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -5437,16 +8493,44 @@ const PAGE_DATA = [
         "label": "Social Media Manager Resume Examples",
         "url": "/resume-examples/social-media-manager"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "creative-design",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Social Media Manager Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "financial-analyst",
     "group": "Finance",
     "dirPath": "resume-examples/financial-analyst",
     "canonicalUrl": "/resume-examples/financial-analyst",
-    "title": "Financial Analyst Resume Examples & Writing Guide (2025)",
+    "title": "Financial Analyst Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See financial analyst resume examples that landed top roles. Expert tips on presenting financial modeling, forecasting, and strategic analysis skills effectively.",
-    "h1": "Financial Analyst Resume Examples",
+    "h1": "Financial Analyst Resume Examples & Templates",
     "heroSubtitle": "Browse real financial analyst resumes that helped professionals secure positions at leading firms. Learn to showcase your modeling, forecasting, and reporting expertise.",
     "trustSignal": "Based on analysis of 8,500+ financial analyst resumes reviewed by finance directors and corporate recruiters",
     "iconName": "dollar-sign",
@@ -5464,7 +8548,13 @@ const PAGE_DATA = [
           "modeling",
           "budgeting"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Financial Analyst Resume",
@@ -5476,7 +8566,13 @@ const PAGE_DATA = [
           "CFA",
           "FP&A"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Investment Banking Analyst Resume",
@@ -5488,7 +8584,13 @@ const PAGE_DATA = [
           "investment-banking",
           "M&A"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Corporate Financial Analyst Resume",
@@ -5500,7 +8602,13 @@ const PAGE_DATA = [
           "corporate",
           "forecasting"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Financial Analyst Manager Resume",
@@ -5512,7 +8620,13 @@ const PAGE_DATA = [
           "management",
           "automation"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -5565,6 +8679,38 @@ const PAGE_DATA = [
             "body": "Finance analysts who can partner with operations, sales, and marketing to drive strategy are more valuable than those who only crunch numbers."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Financial Analyst",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Financial Analyst Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Financial Analyst Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Financial Analyst Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Financial Analyst Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Financial Analyst Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Financial Analyst Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -5596,16 +8742,44 @@ const PAGE_DATA = [
         "label": "Financial Analyst Resume Examples",
         "url": "/resume-examples/financial-analyst"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "finance",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Financial Analyst Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "architect",
     "group": "Architecture",
     "dirPath": "resume-examples/architect",
     "canonicalUrl": "/resume-examples/architect",
-    "title": "Architect Resume Examples & Writing Guide (2025)",
+    "title": "Architect Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See architect resume examples that landed top positions. Learn to showcase design skills, project management, and sustainable building expertise on your resume.",
-    "h1": "Architect Resume Examples",
+    "h1": "Architect Resume Examples & Templates",
     "heroSubtitle": "Browse real architect resumes that helped professionals secure positions at prestigious firms. Learn to present your design vision, technical expertise, and project leadership.",
     "trustSignal": "Based on analysis of 5,500+ architect resumes reviewed by principals and design directors at architecture firms",
     "iconName": "ruler",
@@ -5623,7 +8797,13 @@ const PAGE_DATA = [
           "licensed",
           "commercial"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Architect Resume",
@@ -5635,7 +8815,13 @@ const PAGE_DATA = [
           "M.Arch",
           "Revit"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Sustainable Design Architect Resume",
@@ -5647,7 +8833,13 @@ const PAGE_DATA = [
           "LEED",
           "sustainable"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Residential Architect Resume",
@@ -5659,7 +8851,13 @@ const PAGE_DATA = [
           "residential",
           "renovation"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -5712,6 +8910,38 @@ const PAGE_DATA = [
             "body": "Mention your experience with building codes, ADA compliance, zoning regulations, and permitting processes to demonstrate practical expertise."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Architect",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Architect Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Architect Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Architect Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Architect Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Architect Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Architect Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -5743,16 +8973,44 @@ const PAGE_DATA = [
         "label": "Architect Resume Examples",
         "url": "/resume-examples/architect"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "architecture",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Architect Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "social-worker",
     "group": "Social Services",
     "dirPath": "resume-examples/social-worker",
     "canonicalUrl": "/resume-examples/social-worker",
-    "title": "Social Worker Resume Examples & Writing Guide (2025)",
+    "title": "Social Worker Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore social worker resume examples that won interviews. Learn to present your case management skills, client advocacy, and community outreach expertise.",
-    "h1": "Social Worker Resume Examples",
+    "h1": "Social Worker Resume Examples & Templates",
     "heroSubtitle": "Review real social worker resumes that helped professionals secure meaningful positions. Discover how to showcase your commitment to client welfare and community impact.",
     "trustSignal": "Based on analysis of 7,000+ social worker resumes reviewed by clinical supervisors and agency directors",
     "iconName": "hand-helping",
@@ -5770,7 +9028,13 @@ const PAGE_DATA = [
           "LCSW",
           "clinical"
         ],
-        "mockVariation": 2
+        "mockVariation": 2,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Social Worker Resume",
@@ -5782,7 +9046,13 @@ const PAGE_DATA = [
           "MSW",
           "field-placement"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "School Social Worker Resume",
@@ -5794,7 +9064,13 @@ const PAGE_DATA = [
           "school",
           "counseling"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Medical Social Worker Resume",
@@ -5806,7 +9082,13 @@ const PAGE_DATA = [
           "medical",
           "discharge-planning"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -5859,6 +9141,38 @@ const PAGE_DATA = [
             "body": "If you have supervised interns or provided clinical supervision, mention this to demonstrate leadership and advanced clinical skills."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Social Worker",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Social Worker Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Social Worker Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Social Worker Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Social Worker Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Social Worker Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Social Worker Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -5890,16 +9204,44 @@ const PAGE_DATA = [
         "label": "Social Worker Resume Examples",
         "url": "/resume-examples/social-worker"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "social-services",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Social Worker Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "electrician",
     "group": "Trades",
     "dirPath": "resume-examples/electrician",
     "canonicalUrl": "/resume-examples/electrician",
-    "title": "Electrician Resume Examples & Writing Guide (2025)",
+    "title": "Electrician Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See electrician resume examples that landed top positions. Learn to showcase your electrical certifications, code expertise, and hands-on installation experience.",
-    "h1": "Electrician Resume Examples",
+    "h1": "Electrician Resume Examples & Templates",
     "heroSubtitle": "Browse real electrician resumes that helped tradespeople secure positions at contractors and electrical firms. Learn to present your technical skills and safety expertise.",
     "trustSignal": "Based on analysis of 6,500+ electrician resumes reviewed by electrical contractors and project supervisors",
     "iconName": "zap",
@@ -5917,7 +9259,13 @@ const PAGE_DATA = [
           "master",
           "commercial"
         ],
-        "mockVariation": 3
+        "mockVariation": 3,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Apprentice Electrician Resume",
@@ -5929,7 +9277,13 @@ const PAGE_DATA = [
           "apprentice",
           "residential"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Journeyman Electrician Resume",
@@ -5941,7 +9295,13 @@ const PAGE_DATA = [
           "journeyman",
           "troubleshooting"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Industrial Electrician Resume",
@@ -5953,7 +9313,13 @@ const PAGE_DATA = [
           "industrial",
           "PLC"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -6006,6 +9372,38 @@ const PAGE_DATA = [
             "body": "If you have experience with renewable energy systems, fire alarm installation, data cabling, or building automation, highlight these growing specialties."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Electrician",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Electrician Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Electrician Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Electrician Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Electrician Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Electrician Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Electrician Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -6036,16 +9434,44 @@ const PAGE_DATA = [
         "label": "Electrician Resume Examples",
         "url": "/resume-examples/electrician"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "trades",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Electrician Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "pilot",
     "group": "Aviation",
     "dirPath": "resume-examples/pilot",
     "canonicalUrl": "/resume-examples/pilot",
-    "title": "Pilot Resume Examples & Writing Guide (2025)",
+    "title": "Pilot Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore pilot resume examples that landed aviation jobs. Learn to present your flight hours, type ratings, certifications, and safety record on your resume.",
-    "h1": "Pilot Resume Examples",
+    "h1": "Pilot Resume Examples & Templates",
     "heroSubtitle": "Review real pilot resumes that helped aviators secure positions at airlines and charter companies. Discover how to present your flight experience and certifications.",
     "trustSignal": "Based on analysis of 4,500+ pilot resumes reviewed by chief pilots and airline recruitment teams",
     "iconName": "plane",
@@ -6063,7 +9489,13 @@ const PAGE_DATA = [
           "ATP",
           "airline"
         ],
-        "mockVariation": 4
+        "mockVariation": 4,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "First Officer Resume",
@@ -6075,7 +9507,13 @@ const PAGE_DATA = [
           "first-officer",
           "regional"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "New Commercial Pilot Resume",
@@ -6087,7 +9525,13 @@ const PAGE_DATA = [
           "commercial",
           "CFI"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Corporate Pilot Resume",
@@ -6099,7 +9543,13 @@ const PAGE_DATA = [
           "corporate",
           "private"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       }
     ],
     "guide": {
@@ -6152,6 +9602,38 @@ const PAGE_DATA = [
             "body": "A clean training record with first-time pass rates on check rides demonstrates your proficiency and preparedness."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Pilot",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Pilot Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Pilot Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Pilot Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Pilot Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Pilot Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Pilot Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -6182,16 +9664,44 @@ const PAGE_DATA = [
         "label": "Pilot Resume Examples",
         "url": "/resume-examples/pilot"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "aviation",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Pilot Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "event-planner",
     "group": "Events",
     "dirPath": "resume-examples/event-planner",
     "canonicalUrl": "/resume-examples/event-planner",
-    "title": "Event Planner Resume Examples & Writing Guide (2025)",
+    "title": "Event Planner Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "See event planner resume examples that secured top roles. Learn to showcase your event coordination, vendor management, and budget oversight skills effectively.",
-    "h1": "Event Planner Resume Examples",
+    "h1": "Event Planner Resume Examples & Templates",
     "heroSubtitle": "Browse real event planner resumes that helped professionals land positions at agencies, hotels, and corporations. Learn to present your organizational mastery and creative vision.",
     "trustSignal": "Based on analysis of 5,000+ event planner resumes reviewed by event directors and hospitality hiring managers",
     "iconName": "calendar",
@@ -6209,7 +9719,13 @@ const PAGE_DATA = [
           "conferences",
           "large-scale"
         ],
-        "mockVariation": 5
+        "mockVariation": 5,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "Entry-Level Event Coordinator Resume",
@@ -6221,7 +9737,13 @@ const PAGE_DATA = [
           "coordinator",
           "internship"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Corporate Event Planner Resume",
@@ -6233,7 +9755,13 @@ const PAGE_DATA = [
           "corporate",
           "meetings"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Wedding Planner Resume",
@@ -6245,7 +9773,13 @@ const PAGE_DATA = [
           "weddings",
           "day-of"
         ],
-        "mockVariation": 8
+        "mockVariation": 8,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -6298,6 +9832,38 @@ const PAGE_DATA = [
             "body": "If your events have generated positive feedback, media coverage, or repeat business, reference these outcomes to demonstrate your value."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Event Planner",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Event Planner Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Event Planner Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Event Planner Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Event Planner Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Event Planner Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Event Planner Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -6329,16 +9895,44 @@ const PAGE_DATA = [
         "label": "Event Planner Resume Examples",
         "url": "/resume-examples/event-planner"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "events",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Event Planner Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   },
   {
     "slug": "real-estate-agent",
     "group": "Real Estate",
     "dirPath": "resume-examples/real-estate-agent",
     "canonicalUrl": "/resume-examples/real-estate-agent",
-    "title": "Real Estate Agent Resume Examples & Writing Guide (2025)",
+    "title": "Real Estate Agent Resume Examples & Templates & Writing Guide (2025)",
     "metaDescription": "Explore real estate agent resume examples that won positions. Learn to present your sales volume, client relationships, and market expertise on your resume.",
-    "h1": "Real Estate Agent Resume Examples",
+    "h1": "Real Estate Agent Resume Examples & Templates",
     "heroSubtitle": "Review real estate agent resumes that helped agents land positions at top brokerages. Discover how to present your transaction history, marketing skills, and negotiation expertise.",
     "trustSignal": "Based on analysis of 6,000+ real estate agent resumes reviewed by brokers and team leaders",
     "iconName": "home",
@@ -6356,7 +9950,13 @@ const PAGE_DATA = [
           "top-producer",
           "high-volume"
         ],
-        "mockVariation": 6
+        "mockVariation": 6,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "senior"
       },
       {
         "name": "New Real Estate Agent Resume",
@@ -6368,7 +9968,13 @@ const PAGE_DATA = [
           "newly-licensed",
           "sales-background"
         ],
-        "mockVariation": 7
+        "mockVariation": 7,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "entry-level"
       },
       {
         "name": "Luxury Real Estate Agent Resume",
@@ -6380,7 +9986,13 @@ const PAGE_DATA = [
           "luxury",
           "high-net-worth"
         ],
-        "mockVariation": 8
+        "mockVariation": 8,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       },
       {
         "name": "Commercial Real Estate Agent Resume",
@@ -6392,7 +10004,13 @@ const PAGE_DATA = [
           "commercial",
           "leasing"
         ],
-        "mockVariation": 1
+        "mockVariation": 1,
+        "whyThisWorks": {
+          "summary": "",
+          "bullets": [],
+          "isHumanEdited": false
+        },
+        "variantType": "mid-career"
       }
     ],
     "guide": {
@@ -6445,6 +10063,38 @@ const PAGE_DATA = [
             "body": "Describe specific negotiation wins such as average list-to-sale price ratios or savings achieved for buyer clients to demonstrate your deal-making skills."
           }
         ]
+      },
+      "howToWrite": {
+        "summaryVsObjective": {
+          "heading": "Resume Summary vs Resume Objective for Real Estate Agent",
+          "body": ""
+        },
+        "skills": {
+          "heading": "Resume Skills for a Real Estate Agent Resume",
+          "body": "",
+          "skillsList": []
+        },
+        "keywords": {
+          "heading": "Resume Keywords for a Real Estate Agent Resume",
+          "body": "",
+          "keywordsList": []
+        },
+        "commonMistakes": {
+          "heading": "Common Mistakes in Real Estate Agent Resumes",
+          "items": []
+        },
+        "geographyHiring": {
+          "heading": "Geography & Hiring Standards for Real Estate Agent Resumes",
+          "body": ""
+        },
+        "atsOptimization": {
+          "heading": "ATS Optimization for Real Estate Agent Resumes",
+          "body": ""
+        },
+        "designStyle": {
+          "heading": "Design & Style Guidelines for Real Estate Agent Resumes",
+          "body": ""
+        }
       }
     },
     "faqs": [
@@ -6476,7 +10126,35 @@ const PAGE_DATA = [
         "label": "Real Estate Agent Resume Examples",
         "url": "/resume-examples/real-estate-agent"
       }
-    ]
+    ],
+    "tier": 2,
+    "careerArea": "real-estate",
+    "careerAreaGuidelines": {
+      "recruiterValues": "",
+      "designExpectations": "",
+      "atsSensitivity": "medium"
+    },
+    "editorialStandards": {
+      "heading": "Editorial Standards & Methodology",
+      "body": "",
+      "process": []
+    },
+    "evaluationCriteria": {
+      "enabled": false,
+      "heading": "How We Evaluate Real Estate Agent Resumes",
+      "intro": "",
+      "factors": []
+    },
+    "reviewer": {
+      "name": "",
+      "credentials": "",
+      "bio": "",
+      "profileUrl": ""
+    },
+    "aboutSection": {
+      "heading": "About Toptal Resume",
+      "body": ""
+    }
   }
 ];
 

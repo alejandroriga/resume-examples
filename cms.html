@@ -851,13 +851,19 @@ function renderSidebar() {
     sb.innerHTML = `
       <div class="sidebar-search"><input type="text" placeholder="Search pages..." oninput="filterSidebar(this.value)"></div>
       <div class="sidebar-list" id="sidebarList">
-        ${subpages.map((p, i) => `
-          <div class="sidebar-item ${activeSubpageIndex===i?'active':''}" data-index="${i}" data-slug="${p.slug}" onclick="selectSubpage(${i})">
+        ${subpages.map((p, i) => {
+          let tierBadge = '';
+          if (p.tier == 1) tierBadge = '<span style="margin-left:auto;font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;background:rgba(239,68,68,.15);color:#EF4444;">T1</span>';
+          else if (p.tier == 2) tierBadge = '<span style="margin-left:auto;font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;background:rgba(217,119,6,.15);color:#D97706;">T2</span>';
+          else if (p.tier == 3) tierBadge = '<span style="margin-left:auto;font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;background:rgba(148,163,184,.15);color:#94a3b8;">T3</span>';
+          return `
+          <div class="sidebar-item ${activeSubpageIndex===i?'active':''}" data-index="${i}" data-slug="${p.slug}" onclick="selectSubpage(${i})" style="display:flex;align-items:center;">
             <span class="sidebar-dot" style="background:${p.iconBgColor||'#666'};"></span>
             <span class="sidebar-name">${capitalizeSlug(p.slug)}</span>
+            ${tierBadge}
             <span class="sidebar-count">${(p.exampleIds||[]).length}</span>
-          </div>
-        `).join('')}
+          </div>`;
+        }).join('')}
       </div>
       <div class="sidebar-footer">${subpages.length} pages</div>`;
   }
@@ -2397,6 +2403,38 @@ function renderSubpage(m, page) {
         <input data-sp="iconBgColor" value="${escAttr(page.iconBgColor||'')}" type="color" style="height:38px;">
       </div>
     </div>
+    <div style="display:flex;gap:12px;">
+      <div class="field" style="flex:1"><div class="field-label">TIER</div>
+        <select data-sp="tier">
+          <option value="">-- Select --</option>
+          ${[1,2,3].map(t => `<option value="${t}" ${page.tier==t?'selected':''}>${t}</option>`).join('')}
+        </select>
+      </div>
+      <div class="field" style="flex:1"><div class="field-label">CAREER AREA</div>
+        <select data-sp="careerArea">
+          <option value="">-- Select --</option>
+          ${['education','healthcare','technology','business','administrative','sales','creative','finance','architecture','social-services','trades','aviation','events','real-estate'].map(c => `<option value="${c}" ${page.careerArea===c?'selected':''}>${c}</option>`).join('')}
+        </select>
+      </div>
+    </div>
+  </div></div>`;
+
+  // Career Area Guidelines
+  const cag = page.careerAreaGuidelines || {};
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Career Area Guidelines</h3><span class="badge">3 fields</span><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">RECRUITER VALUES</div>
+      <textarea data-sp="careerAreaGuidelines.recruiterValues" rows="3">${esc(cag.recruiterValues||'')}</textarea>
+    </div>
+    <div class="field"><div class="field-label">DESIGN EXPECTATIONS</div>
+      <textarea data-sp="careerAreaGuidelines.designExpectations" rows="3">${esc(cag.designExpectations||'')}</textarea>
+    </div>
+    <div class="field"><div class="field-label">ATS SENSITIVITY</div>
+      <select data-sp="careerAreaGuidelines.atsSensitivity">
+        <option value="">-- Select --</option>
+        ${['low','medium','high'].map(v => `<option value="${v}" ${cag.atsSensitivity===v?'selected':''}>${v}</option>`).join('')}
+      </select>
+    </div>
   </div></div>`;
 
   // Example Assignment
@@ -2434,6 +2472,98 @@ function renderSubpage(m, page) {
   // Expert Tips
   html += renderGuideStepsSection('Expert Tips', 'expertTips', g.expertTips, page.slug, 'tips');
 
+  // ── How to Write Guide ──
+  const htw = g.howToWrite || {};
+  html += `<div style="margin:24px 0 8px;padding:8px 0;border-top:2px solid var(--border);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);">How to Write Guide</div>`;
+
+  // 1. Summary vs Objective
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Summary vs Objective</h3><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">BODY</div>
+      <textarea data-sp="guide.howToWrite.summaryVsObjective.body" rows="4">${esc((htw.summaryVsObjective||{}).body||'')}</textarea>
+    </div>
+  </div></div>`;
+
+  // 2. Skills
+  const htwSkills = htw.skills || {};
+  const htwSkillsList = htwSkills.skillsList || [];
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Skills</h3><span class="badge">${1+htwSkillsList.length} fields</span><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">BODY</div>
+      <textarea data-sp="guide.howToWrite.skills.body" rows="4">${esc(htwSkills.body||'')}</textarea>
+    </div>
+    <div class="field"><div class="field-label">SKILLS LIST</div>
+      <div class="list-editor">
+        ${htwSkillsList.map((s, i) => `<div class="list-item">
+          <span class="list-num">${i+1}</span>
+          <textarea data-sp="guide.howToWrite.skills.skillsList.${i}" rows="1">${esc(s)}</textarea>
+          <button class="btn-remove" onclick="removeSPHtwListItem('${page.slug}','skills','skillsList',${i})">\u00d7</button>
+        </div>`).join('')}
+        <button class="btn-add" onclick="addSPHtwListItem('${page.slug}','skills','skillsList')">+ Add Skill</button>
+      </div>
+    </div>
+  </div></div>`;
+
+  // 3. Keywords
+  const htwKw = htw.keywords || {};
+  const htwKwList = htwKw.keywordsList || [];
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Keywords</h3><span class="badge">${1+htwKwList.length} fields</span><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">BODY</div>
+      <textarea data-sp="guide.howToWrite.keywords.body" rows="4">${esc(htwKw.body||'')}</textarea>
+    </div>
+    <div class="field"><div class="field-label">KEYWORDS LIST</div>
+      <div class="list-editor">
+        ${htwKwList.map((k, i) => `<div class="list-item">
+          <span class="list-num">${i+1}</span>
+          <textarea data-sp="guide.howToWrite.keywords.keywordsList.${i}" rows="1">${esc(k)}</textarea>
+          <button class="btn-remove" onclick="removeSPHtwListItem('${page.slug}','keywords','keywordsList',${i})">\u00d7</button>
+        </div>`).join('')}
+        <button class="btn-add" onclick="addSPHtwListItem('${page.slug}','keywords','keywordsList')">+ Add Keyword</button>
+      </div>
+    </div>
+  </div></div>`;
+
+  // 4. Common Mistakes
+  const htwMistakes = (htw.commonMistakes||{}).items || [];
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Common Mistakes</h3><span class="badge">${htwMistakes.length} items</span><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">ITEMS</div>
+      <div class="list-editor">
+        ${htwMistakes.map((mk, i) => `<div class="list-item">
+          <span class="list-num">${i+1}</span>
+          <textarea data-sp="guide.howToWrite.commonMistakes.items.${i}" rows="2">${esc(mk)}</textarea>
+          <button class="btn-remove" onclick="removeSPHtwMistake('${page.slug}',${i})">\u00d7</button>
+        </div>`).join('')}
+        <button class="btn-add" onclick="addSPHtwMistake('${page.slug}')">+ Add Mistake</button>
+      </div>
+    </div>
+  </div></div>`;
+
+  // 5. Geography & Hiring
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Geography &amp; Hiring</h3><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">BODY</div>
+      <textarea data-sp="guide.howToWrite.geographyHiring.body" rows="4">${esc((htw.geographyHiring||{}).body||'')}</textarea>
+    </div>
+  </div></div>`;
+
+  // 6. ATS Optimization
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>ATS Optimization</h3><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">BODY</div>
+      <textarea data-sp="guide.howToWrite.atsOptimization.body" rows="4">${esc((htw.atsOptimization||{}).body||'')}</textarea>
+    </div>
+  </div></div>`;
+
+  // 7. Design & Style
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Design &amp; Style</h3><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">BODY</div>
+      <textarea data-sp="guide.howToWrite.designStyle.body" rows="4">${esc((htw.designStyle||{}).body||'')}</textarea>
+    </div>
+  </div></div>`;
+
   // FAQs
   const faqs = page.faqs || [];
   html += `<div class="section"><div class="section-head" onclick="toggleSection(this)"><h3>FAQs</h3><span class="badge">${faqs.length} items</span><span class="arrow">\u25BE</span></div>
@@ -2469,6 +2599,91 @@ function renderSubpage(m, page) {
       </select></div>`;
   }
   html += `</div></div>`;
+
+  // ── Editorial Standards ──
+  const es = page.editorialStandards || {};
+  const esSteps = es.processSteps || [];
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Editorial Standards</h3><span class="badge">${1+esSteps.length} fields</span><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">BODY</div>
+      <textarea data-sp="editorialStandards.body" rows="4">${esc(es.body||'')}</textarea>
+    </div>
+    <div class="field"><div class="field-label">PROCESS STEPS</div>
+      <div class="step-editor">
+        ${esSteps.map((st, i) => `<div class="step-item">
+          <span class="step-num">${i+1}</span>
+          <button class="btn-remove" onclick="removeSPEditorialStep('${page.slug}',${i})">\u00d7</button>
+          <div class="field" style="margin-top:8px"><div class="field-label">STEP</div>
+            <input data-sp="editorialStandards.processSteps.${i}.step" value="${escAttr(st.step||'')}">
+          </div>
+          <div class="field"><div class="field-label">DESCRIPTION</div>
+            <textarea data-sp="editorialStandards.processSteps.${i}.description" rows="2">${esc(st.description||'')}</textarea>
+          </div>
+        </div>`).join('')}
+        <button class="btn-add" onclick="addSPEditorialStep('${page.slug}')">+ Add Step</button>
+      </div>
+    </div>
+  </div></div>`;
+
+  // ── Evaluation Criteria ──
+  const ec = page.evaluationCriteria || {};
+  const ecFactors = ec.factors || [];
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Evaluation Criteria</h3><span class="badge">${2+ecFactors.length} fields</span><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">ENABLED</div>
+      <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer;">
+        <input type="checkbox" data-sp="evaluationCriteria.enabled" ${ec.enabled?'checked':''}> Show on page
+      </label>
+    </div>
+    <div class="field"><div class="field-label">INTRO</div>
+      <textarea data-sp="evaluationCriteria.intro" rows="3">${esc(ec.intro||'')}</textarea>
+    </div>
+    <div class="field"><div class="field-label">FACTORS</div>
+      <div class="step-editor">
+        ${ecFactors.map((f, i) => `<div class="step-item">
+          <span class="step-num">${i+1}</span>
+          <button class="btn-remove" onclick="removeSPEvalFactor('${page.slug}',${i})">\u00d7</button>
+          <div class="field" style="margin-top:8px"><div class="field-label">NAME</div>
+            <input data-sp="evaluationCriteria.factors.${i}.name" value="${escAttr(f.name||'')}">
+          </div>
+          <div class="field"><div class="field-label">WEIGHT</div>
+            <input data-sp="evaluationCriteria.factors.${i}.weight" value="${escAttr(f.weight||'')}" placeholder="e.g. 25%">
+          </div>
+          <div class="field"><div class="field-label">DESCRIPTION</div>
+            <textarea data-sp="evaluationCriteria.factors.${i}.description" rows="2">${esc(f.description||'')}</textarea>
+          </div>
+        </div>`).join('')}
+        <button class="btn-add" onclick="addSPEvalFactor('${page.slug}')">+ Add Factor</button>
+      </div>
+    </div>
+  </div></div>`;
+
+  // ── Reviewer ──
+  const rev = page.reviewer || {};
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>Reviewer</h3><span class="badge">4 fields</span><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">NAME</div>
+      <input data-sp="reviewer.name" value="${escAttr(rev.name||'')}">
+    </div>
+    <div class="field"><div class="field-label">CREDENTIALS</div>
+      <input data-sp="reviewer.credentials" value="${escAttr(rev.credentials||'')}">
+    </div>
+    <div class="field"><div class="field-label">BIO</div>
+      <textarea data-sp="reviewer.bio" rows="3">${esc(rev.bio||'')}</textarea>
+    </div>
+    <div class="field"><div class="field-label">PROFILE URL</div>
+      <input data-sp="reviewer.profileUrl" value="${escAttr(rev.profileUrl||'')}" placeholder="https://...">
+    </div>
+  </div></div>`;
+
+  // ── About Section ──
+  const abt = page.aboutSection || {};
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>About Section</h3><span class="badge">1 field</span><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">BODY</div>
+      <textarea data-sp="aboutSection.body" rows="4">${esc(abt.body||'')}</textarea>
+    </div>
+  </div></div>`;
 
   m.innerHTML = html;
   m.scrollTop = 0;
@@ -2605,6 +2820,69 @@ function removeSPStep(slug, key, iKey, i) {
   saveSubpage(slug); renderMain();
 }
 
+// How to Write list helpers
+function addSPHtwListItem(slug, section, listKey) {
+  const page = getSubpageBySlug(slug);
+  if (!page.guide) page.guide = {};
+  if (!page.guide.howToWrite) page.guide.howToWrite = {};
+  if (!page.guide.howToWrite[section]) page.guide.howToWrite[section] = {};
+  if (!page.guide.howToWrite[section][listKey]) page.guide.howToWrite[section][listKey] = [];
+  page.guide.howToWrite[section][listKey].push('');
+  saveSubpage(slug); renderMain();
+}
+
+function removeSPHtwListItem(slug, section, listKey, i) {
+  const page = getSubpageBySlug(slug);
+  page.guide.howToWrite[section][listKey].splice(i, 1);
+  saveSubpage(slug); renderMain();
+}
+
+function addSPHtwMistake(slug) {
+  const page = getSubpageBySlug(slug);
+  if (!page.guide) page.guide = {};
+  if (!page.guide.howToWrite) page.guide.howToWrite = {};
+  if (!page.guide.howToWrite.commonMistakes) page.guide.howToWrite.commonMistakes = {};
+  if (!page.guide.howToWrite.commonMistakes.items) page.guide.howToWrite.commonMistakes.items = [];
+  page.guide.howToWrite.commonMistakes.items.push('');
+  saveSubpage(slug); renderMain();
+}
+
+function removeSPHtwMistake(slug, i) {
+  const page = getSubpageBySlug(slug);
+  page.guide.howToWrite.commonMistakes.items.splice(i, 1);
+  saveSubpage(slug); renderMain();
+}
+
+// Editorial Standards helpers
+function addSPEditorialStep(slug) {
+  const page = getSubpageBySlug(slug);
+  if (!page.editorialStandards) page.editorialStandards = {};
+  if (!page.editorialStandards.processSteps) page.editorialStandards.processSteps = [];
+  page.editorialStandards.processSteps.push({ step: '', description: '' });
+  saveSubpage(slug); renderMain();
+}
+
+function removeSPEditorialStep(slug, i) {
+  const page = getSubpageBySlug(slug);
+  page.editorialStandards.processSteps.splice(i, 1);
+  saveSubpage(slug); renderMain();
+}
+
+// Evaluation Criteria helpers
+function addSPEvalFactor(slug) {
+  const page = getSubpageBySlug(slug);
+  if (!page.evaluationCriteria) page.evaluationCriteria = {};
+  if (!page.evaluationCriteria.factors) page.evaluationCriteria.factors = [];
+  page.evaluationCriteria.factors.push({ name: '', weight: '', description: '' });
+  saveSubpage(slug); renderMain();
+}
+
+function removeSPEvalFactor(slug, i) {
+  const page = getSubpageBySlug(slug);
+  page.evaluationCriteria.factors.splice(i, 1);
+  saveSubpage(slug); renderMain();
+}
+
 // ═══════════════════════════════════════════════════════════════════════
 //  EXAMPLES TAB RENDERING
 // ═══════════════════════════════════════════════════════════════════════
@@ -2672,6 +2950,36 @@ function renderExample(m, tpl) {
     </div>
     <div class="field"><div class="field-label">TAGS</div><div class="field-hint">Comma-separated</div>
       <input data-tpl="tags" value="${escAttr((tpl.tags||[]).join(', '))}">
+    </div>
+    <div class="field"><div class="field-label">VARIANT TYPE</div>
+      <select data-tpl="variantType">
+        ${['entry-level','career-change','industry-specific','ats-optimized','senior','mid-career'].map(v => `<option value="${v}" ${tpl.variantType===v?'selected':''}>${v}</option>`).join('')}
+      </select>
+    </div>
+  </div></div>`;
+
+  // Why This Works
+  const wtw = tpl.whyThisWorks || {};
+  const wtwBullets = wtw.bullets || [];
+  html += `<div class="section collapsed"><div class="section-head" onclick="toggleSection(this)"><h3>\u2726 Why This Works</h3><span class="badge">${2+wtwBullets.length} fields</span><span class="arrow">\u25BE</span></div>
+  <div class="section-body">
+    <div class="field"><div class="field-label">SUMMARY</div>
+      <textarea data-tpl="whyThisWorks.summary" rows="3">${esc(wtw.summary||'')}</textarea>
+    </div>
+    <div class="field"><div class="field-label">BULLETS</div>
+      <div class="list-editor">
+        ${wtwBullets.map((b, i) => `<div class="list-item">
+          <span class="list-num">${i+1}</span>
+          <textarea data-tpl="whyThisWorks.bullets.${i}" rows="2">${esc(b)}</textarea>
+          <button class="btn-remove" onclick="removeExampleWtwBullet(${i})">\u00d7</button>
+        </div>`).join('')}
+        <button class="btn-add" onclick="addExampleWtwBullet()">+ Add Bullet</button>
+      </div>
+    </div>
+    <div class="field"><div class="field-label">IS HUMAN EDITED</div>
+      <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer;">
+        <input type="checkbox" data-tpl="whyThisWorks.isHumanEdited" ${wtw.isHumanEdited?'checked':''} onchange="toggleExampleWtwHumanEdited(this.checked)"> Manually reviewed
+      </label>
     </div>
   </div></div>`;
 
@@ -2776,6 +3084,27 @@ function toggleExampleBadge(badge) {
   const idx = tpl.badges.indexOf(badge);
   if (idx >= 0) tpl.badges.splice(idx, 1);
   else tpl.badges.push(badge);
+  saveExamples();
+}
+
+function addExampleWtwBullet() {
+  const tpl = examples[activeExampleIndex];
+  if (!tpl.whyThisWorks) tpl.whyThisWorks = {};
+  if (!tpl.whyThisWorks.bullets) tpl.whyThisWorks.bullets = [];
+  tpl.whyThisWorks.bullets.push('');
+  saveExamples(); renderMain();
+}
+
+function removeExampleWtwBullet(i) {
+  const tpl = examples[activeExampleIndex];
+  tpl.whyThisWorks.bullets.splice(i, 1);
+  saveExamples(); renderMain();
+}
+
+function toggleExampleWtwHumanEdited(checked) {
+  const tpl = examples[activeExampleIndex];
+  if (!tpl.whyThisWorks) tpl.whyThisWorks = {};
+  tpl.whyThisWorks.isHumanEdited = checked;
   saveExamples();
 }
 
@@ -2884,6 +3213,8 @@ function setupInputListeners() {
         tpl.tags = el.value.split(',').map(s => s.trim()).filter(Boolean);
       } else if (field === 'mockVariation') {
         tpl.mockVariation = parseInt(el.value) || 1;
+      } else if (field.includes('.')) {
+        setNestedValue(tpl, field, el.value);
       } else {
         tpl[field] = el.value;
       }
@@ -2902,6 +3233,22 @@ function setupInputListeners() {
       setNestedValue(homepage, el.dataset.hp, val);
       debouncedSave(saveHomepage);
       if (el.dataset.hp.endsWith('.guideAuthor')) renderMain();
+    }
+    if (el.dataset.sp && activeSubpageIndex >= 0) {
+      const page = subpages[activeSubpageIndex];
+      let val = el.type === 'checkbox' ? el.checked : el.value;
+      if (val === 'true') val = true;
+      if (val === 'false') val = false;
+      setNestedValue(page, el.dataset.sp, val);
+      debouncedSave(() => saveSubpage(page.slug));
+    }
+    if (el.dataset.tpl && activeExampleIndex >= 0) {
+      const tpl = examples[activeExampleIndex];
+      let val = el.type === 'checkbox' ? el.checked : el.value;
+      if (val === 'true') val = true;
+      if (val === 'false') val = false;
+      setNestedValue(tpl, el.dataset.tpl, val);
+      debouncedSave(saveExamples);
     }
   });
 }

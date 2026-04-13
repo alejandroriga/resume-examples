@@ -225,6 +225,34 @@ function getBadgesHtml(badges) {
 }
 
 // ══════════════════════════════════════════════════════
+//  WHY THIS WORKS PANEL
+// ══════════════════════════════════════════════════════
+
+function getWhyThisWorksHtml(card) {
+  if (!card.whyThisWorks) return '';
+  const w = card.whyThisWorks;
+  if (!w.summary && (!w.bullets || !w.bullets.length)) return '';
+
+  let inner = '';
+  if (w.bullets && w.bullets.length) {
+    inner += `<ul class="why-works-bullets">${w.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`;
+  }
+  if (w.summary) {
+    inner += `<p class="why-works-summary">${w.summary}</p>`;
+  }
+
+  return `<div class="why-works-panel" onclick="toggleWhyWorks(this)">
+              <div class="why-works-heading">
+                <span>Why This Works</span>
+                <span class="why-works-toggle"><i data-lucide="chevron-down" style="width:14px;height:14px;"></i></span>
+              </div>
+              <div class="why-works-body">
+                ${inner}
+              </div>
+            </div>`;
+}
+
+// ══════════════════════════════════════════════════════
 //  EXAMPLE CARD HTML
 // ══════════════════════════════════════════════════════
 
@@ -238,7 +266,7 @@ function getExampleCardHtml(card) {
               ${badgesHtml}
               ${mockHtml}
               <div class="example-card-overlay">
-                <button class="btn btn-primary">Preview Example</button>
+                <button class="btn btn-primary">Build my resume like this</button>
                 <button class="btn btn-white">Customize</button>
               </div>
             </div>
@@ -249,6 +277,7 @@ function getExampleCardHtml(card) {
                 ${tagsHtml}
               </div>
             </div>
+            ${getWhyThisWorksHtml(card)}
           </div>`;
 }
 
@@ -455,12 +484,241 @@ function getSchemaHtml(page) {
 }
 
 // ══════════════════════════════════════════════════════
+//  GROUPED EXAMPLES BY EXPERIENCE LEVEL
+// ══════════════════════════════════════════════════════
+
+function formatLevelName(level) {
+  const map = {
+    'senior': 'Senior',
+    'mid-level': 'Mid-Level',
+    'entry-level': 'Entry-Level',
+    'executive': 'Executive',
+    'career-change': 'Career-Change',
+    'internship': 'Internship',
+    'freelance': 'Freelance',
+  };
+  return map[level] || level.charAt(0).toUpperCase() + level.slice(1);
+}
+
+function getGroupedExamplesHtml(page) {
+  const levelOrder = ['senior', 'mid-level', 'entry-level', 'executive', 'career-change'];
+  const groups = {};
+
+  page.examples.forEach(card => {
+    const lvl = card.experienceLevel || 'other';
+    if (!groups[lvl]) groups[lvl] = [];
+    groups[lvl].push(card);
+  });
+
+  const sortedKeys = Object.keys(groups).sort((a, b) => {
+    const ai = levelOrder.indexOf(a);
+    const bi = levelOrder.indexOf(b);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+  });
+
+  const roleName = page.h1.replace(/ — .*$/, '').replace(/ \u2014 .*$/, '').replace(/Resume Examples?/i, '').trim();
+  const showHeadings = sortedKeys.length > 1;
+
+  let html = '';
+  sortedKeys.forEach(level => {
+    if (showHeadings) {
+      html += `<h3 class="seniority-heading">${formatLevelName(level)} ${roleName} Resume</h3>\n`;
+    }
+    html += `<div class="gallery-grid">\n`;
+    html += groups[level].map(card => getExampleCardHtml(card)).join('\n          ');
+    html += `\n</div>\n`;
+  });
+
+  return html;
+}
+
+// ══════════════════════════════════════════════════════
+//  HOW TO WRITE GUIDE SECTION
+// ══════════════════════════════════════════════════════
+
+function getHowToWriteHtml(page) {
+  if (!page.guide || !page.guide.howToWrite) return '';
+  const hw = page.guide.howToWrite;
+  const roleName = page.h1.replace(/ — .*$/, '').replace(/ \u2014 .*$/, '').replace(/Resume Examples?/i, '').trim();
+
+  let html = `<section class="how-to-write-section">
+    <div class="container">
+      <div class="guide-content">
+        <h2>How to Write a ${roleName} Resume</h2>`;
+
+  const subsections = [
+    { key: 'summaryVsObjective', type: 'text' },
+    { key: 'skills', type: 'skills' },
+    { key: 'keywords', type: 'keywords' },
+    { key: 'commonMistakes', type: 'list' },
+    { key: 'geographyHiring', type: 'text' },
+    { key: 'atsOptimization', type: 'text' },
+    { key: 'designStyle', type: 'text' },
+  ];
+
+  subsections.forEach(sub => {
+    const data = hw[sub.key];
+    if (!data) return;
+    if (!data.body && !data.items && !data.skillsList && !data.keywordsList) return;
+
+    if (data.heading) {
+      html += `\n        <h3>${data.heading}</h3>`;
+    }
+    if (data.body) {
+      html += `\n        <p>${data.body}</p>`;
+    }
+    if (sub.type === 'skills' && data.skillsList && data.skillsList.length) {
+      html += `\n        <div class="skill-chips">${data.skillsList.map(s => `<span class="skill-chip">${s}</span>`).join('')}</div>`;
+    }
+    if (sub.type === 'keywords' && data.keywordsList && data.keywordsList.length) {
+      html += `\n        <div class="keyword-chips">${data.keywordsList.map(k => `<span class="keyword-chip">${k}</span>`).join('')}</div>`;
+    }
+    if (sub.type === 'list' && data.items && data.items.length) {
+      html += `\n        <ul>${data.items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+    }
+  });
+
+  html += `
+      </div>
+    </div>
+  </section>`;
+
+  return html;
+}
+
+// ══════════════════════════════════════════════════════
+//  EDITORIAL STANDARDS SECTION
+// ══════════════════════════════════════════════════════
+
+function getEditorialStandardsHtml(page) {
+  if (!page.editorialStandards || !page.editorialStandards.body) return '';
+  const es = page.editorialStandards;
+
+  let html = `<section class="editorial-section">
+    <div class="container">
+      <div class="guide-content">
+        <h2>${es.heading || 'Editorial Standards'}</h2>
+        <p>${es.body}</p>`;
+
+  if (es.process && es.process.length) {
+    html += `\n        <div class="editorial-steps">`;
+    es.process.forEach((step, i) => {
+      html += `\n          <div class="editorial-step">
+            <div class="editorial-step-num">${i + 1}</div>
+            <div class="editorial-step-text">${step}</div>
+          </div>`;
+    });
+    html += `\n        </div>`;
+  }
+
+  html += `
+      </div>
+    </div>
+  </section>`;
+
+  return html;
+}
+
+// ══════════════════════════════════════════════════════
+//  EVALUATION CRITERIA SECTION
+// ══════════════════════════════════════════════════════
+
+function getEvaluationCriteriaHtml(page) {
+  if (!page.evaluationCriteria || !page.evaluationCriteria.enabled) return '';
+  const ec = page.evaluationCriteria;
+
+  let html = `<section class="evaluation-section">
+    <div class="container">
+      <div class="guide-content">
+        <h2>${ec.heading || 'Evaluation Criteria'}</h2>`;
+
+  if (ec.intro) {
+    html += `\n        <p>${ec.intro}</p>`;
+  }
+
+  if (ec.factors && ec.factors.length) {
+    html += `\n        <div class="evaluation-cards">`;
+    ec.factors.forEach(f => {
+      const weightPct = Math.min(f.weight || 0, 100);
+      html += `\n          <div class="evaluation-card">
+            <div class="evaluation-card-header">
+              <h4>${f.name}</h4>
+              <span class="evaluation-weight-label">${weightPct}%</span>
+            </div>
+            <div class="evaluation-bar-track">
+              <div class="evaluation-bar-fill" style="width:${weightPct}%;"></div>
+            </div>
+            ${f.description ? `<p>${f.description}</p>` : ''}
+          </div>`;
+    });
+    html += `\n        </div>`;
+  }
+
+  html += `
+      </div>
+    </div>
+  </section>`;
+
+  return html;
+}
+
+// ══════════════════════════════════════════════════════
+//  WHO REVIEWED THIS PAGE SECTION
+// ══════════════════════════════════════════════════════
+
+function getReviewerHtml(page) {
+  if (!page.reviewer || !page.reviewer.name) return '';
+  const r = page.reviewer;
+
+  let html = `<section class="reviewer-section">
+    <div class="container">
+      <div class="guide-content">
+        <h2>Who Reviewed This Page</h2>
+        <div class="reviewer-card">
+          <div class="reviewer-info">
+            <h4>${r.name}</h4>
+            ${r.credentials ? `<p class="reviewer-credentials">${r.credentials}</p>` : ''}
+            ${r.bio ? `<p class="reviewer-bio">${r.bio}</p>` : ''}
+            ${r.profileUrl ? `<a href="${r.profileUrl}" class="reviewer-link" target="_blank" rel="noopener">View Profile</a>` : ''}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>`;
+
+  return html;
+}
+
+// ══════════════════════════════════════════════════════
+//  ABOUT TOPTAL RESUME SECTION
+// ══════════════════════════════════════════════════════
+
+function getAboutSectionHtml(page) {
+  if (!page.aboutSection || !page.aboutSection.body) return '';
+  const a = page.aboutSection;
+
+  return `<section class="about-section">
+    <div class="container">
+      <div class="guide-content">
+        <h2>${a.heading || 'About Toptal Resume'}</h2>
+        <p>${a.body}</p>
+      </div>
+    </div>
+  </section>`;
+}
+
+// ══════════════════════════════════════════════════════
 //  MAIN HTML TEMPLATE
 // ══════════════════════════════════════════════════════
 
 function htmlTemplate(page, allPages) {
-  const exampleCardsHtml = page.examples.map(card => getExampleCardHtml(card)).join('\n          ');
+  const exampleCardsHtml = getGroupedExamplesHtml(page);
   const guideHtml = getGuideHtml(page.guide, page.relatedSlugs, allPages);
+  const howToWriteHtml = getHowToWriteHtml(page);
+  const editorialHtml = getEditorialStandardsHtml(page);
+  const evaluationHtml = getEvaluationCriteriaHtml(page);
+  const reviewerHtml = getReviewerHtml(page);
+  const aboutHtml = getAboutSectionHtml(page);
   const faqHtml = getFaqHtml(page.faqs);
   const relatedHtml = getRelatedHtml(page, allPages);
   const schemaHtml = getSchemaHtml(page);
@@ -861,6 +1119,128 @@ function htmlTemplate(page, allPages) {
     .footer-bottom-links a:hover { color: rgba(255,255,255,0.6); }
 
     /* ══════════════════════════════════════════════════════
+       WHY THIS WORKS PANEL
+       ══════════════════════════════════════════════════════ */
+    .why-works-panel {
+      background: #F0FDF4; border-left: 3px solid #22C55E;
+      margin: 0 16px 16px; border-radius: 0 var(--radius) var(--radius) 0;
+      cursor: pointer; transition: all var(--transition);
+    }
+    .why-works-heading {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 14px; font-size: 12px; font-weight: 600; color: #166534;
+      user-select: none;
+    }
+    .why-works-toggle {
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.3s ease; color: #166534;
+    }
+    .why-works-panel.active .why-works-toggle { transform: rotate(180deg); }
+    .why-works-body {
+      max-height: 0; overflow: hidden; transition: max-height 0.35s ease;
+    }
+    .why-works-panel.active .why-works-body { max-height: 400px; }
+    .why-works-bullets {
+      margin: 0 14px 10px 28px; padding: 0; font-size: 12px; line-height: 1.6;
+      color: #15803D; list-style: disc;
+    }
+    .why-works-bullets li { margin-bottom: 4px; }
+    .why-works-summary {
+      margin: 0 14px 12px; font-size: 12px; line-height: 1.6; color: #166534;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       SENIORITY GROUP HEADINGS
+       ══════════════════════════════════════════════════════ */
+    .seniority-heading {
+      font-size: 22px; font-weight: 700; color: var(--near-black);
+      margin: 40px 0 20px; padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .seniority-heading:first-child { margin-top: 0; }
+
+    /* ══════════════════════════════════════════════════════
+       HOW TO WRITE SECTION
+       ══════════════════════════════════════════════════════ */
+    .how-to-write-section { padding: 80px 0; background: var(--surface); }
+    .skill-chips, .keyword-chips {
+      display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px;
+    }
+    .skill-chip {
+      display: inline-block; padding: 4px 14px; border-radius: var(--radius-pill);
+      font-size: 13px; font-weight: 500; background: #ECFDF5; color: #065F46;
+      border: 1px solid #A7F3D0;
+    }
+    .keyword-chip {
+      display: inline-block; padding: 4px 14px; border-radius: var(--radius-pill);
+      font-size: 13px; font-weight: 500; background: var(--blue-light); color: var(--blue);
+      border: 1px solid #C7D2FE;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       EDITORIAL STANDARDS SECTION
+       ══════════════════════════════════════════════════════ */
+    .editorial-section { padding: 80px 0; background: var(--white); }
+    .editorial-steps {
+      display: flex; flex-direction: column; gap: 16px; margin-top: 24px;
+    }
+    .editorial-step {
+      display: flex; align-items: flex-start; gap: 16px;
+    }
+    .editorial-step-num {
+      width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+      background: var(--blue); color: var(--white); display: flex;
+      align-items: center; justify-content: center; font-size: 14px; font-weight: 700;
+    }
+    .editorial-step-text {
+      font-size: 15px; line-height: 1.6; color: var(--body-text); padding-top: 6px;
+    }
+
+    /* ══════════════════════════════════════════════════════
+       EVALUATION CRITERIA SECTION
+       ══════════════════════════════════════════════════════ */
+    .evaluation-section { padding: 80px 0; background: var(--surface); }
+    .evaluation-cards {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px; margin-top: 24px;
+    }
+    .evaluation-card {
+      background: var(--white); border-radius: var(--radius-xl); padding: 24px;
+      border: 1px solid var(--border);
+    }
+    .evaluation-card-header {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;
+    }
+    .evaluation-card h4 { font-size: 15px; font-weight: 600; color: var(--near-black); margin: 0; }
+    .evaluation-weight-label { font-size: 14px; font-weight: 700; color: var(--blue); }
+    .evaluation-bar-track {
+      height: 8px; background: var(--surface); border-radius: 4px; overflow: hidden; margin-bottom: 12px;
+    }
+    .evaluation-bar-fill {
+      height: 100%; background: linear-gradient(90deg, var(--blue), var(--green)); border-radius: 4px;
+      transition: width 0.5s ease;
+    }
+    .evaluation-card p { font-size: 14px; line-height: 1.6; color: var(--body-text); margin: 0; }
+
+    /* ══════════════════════════════════════════════════════
+       WHO REVIEWED THIS PAGE
+       ══════════════════════════════════════════════════════ */
+    .reviewer-section { padding: 80px 0; background: var(--white); }
+    .reviewer-card {
+      background: var(--surface); border-radius: var(--radius-xl); padding: 32px;
+      border: 1px solid var(--border); margin-top: 24px;
+    }
+    .reviewer-info h4 { font-size: 18px; font-weight: 700; color: var(--near-black); margin-bottom: 4px; }
+    .reviewer-credentials { font-size: 14px; font-weight: 500; color: var(--blue); margin-bottom: 12px; }
+    .reviewer-bio { font-size: 15px; line-height: 1.7; color: var(--body-text); margin-bottom: 12px; }
+    .reviewer-link { font-size: 14px; font-weight: 600; color: var(--blue); }
+
+    /* ══════════════════════════════════════════════════════
+       ABOUT SECTION
+       ══════════════════════════════════════════════════════ */
+    .about-section { padding: 80px 0; background: var(--surface); }
+
+    /* ══════════════════════════════════════════════════════
        RESPONSIVE
        ══════════════════════════════════════════════════════ */
     @media (max-width: 1024px) {
@@ -881,6 +1261,8 @@ function htmlTemplate(page, allPages) {
       .guide-tip-grid { grid-template-columns: 1fr; }
       .related-grid { grid-template-columns: repeat(2, 1fr); }
       .subpage-hero-ctas { flex-direction: column; }
+      .evaluation-cards { grid-template-columns: 1fr; }
+      .seniority-heading { font-size: 18px; }
     }
 
     @media (max-width: 480px) {
@@ -938,17 +1320,30 @@ function htmlTemplate(page, allPages) {
         <h2>${galleryHeading}</h2>
         <p>Choose from ${page.examples.length} professionally crafted examples, all free to download and customize.</p>
       </div>
-      <div class="gallery-grid">
-          ${exampleCardsHtml}
-      </div>
+      ${exampleCardsHtml}
     </div>
   </section>
 
   <!-- GUIDE -->
   ${guideHtml}
 
+  <!-- HOW TO WRITE -->
+  ${howToWriteHtml}
+
+  <!-- EDITORIAL STANDARDS -->
+  ${editorialHtml}
+
+  <!-- EVALUATION CRITERIA -->
+  ${evaluationHtml}
+
+  <!-- WHO REVIEWED THIS PAGE -->
+  ${reviewerHtml}
+
   <!-- FAQ -->
   ${faqHtml}
+
+  <!-- ABOUT TOPTAL RESUME -->
+  ${aboutHtml}
 
   <!-- RELATED EXAMPLES -->
   ${relatedHtml}
@@ -1048,6 +1443,10 @@ function htmlTemplate(page, allPages) {
       const wasActive = item.classList.contains('active');
       document.querySelectorAll('.faq-item.active').forEach(i => i.classList.remove('active'));
       if (!wasActive) item.classList.add('active');
+    }
+
+    function toggleWhyWorks(el) {
+      el.classList.toggle('active');
     }
   </script>
 </body>
